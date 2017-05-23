@@ -1,0 +1,48 @@
+#event-listing {
+	@extend .flex-section;
+
+	min-height: calc(100vh - #{$nav-height});
+
+	.event {
+		height: calc( (100vh - #{$nav-height}) / 2 ) ;
+		
+	}
+
+	.event:nth-child(even) { background-color: orange; /* TEMP */ }
+
+	.event-thirds {
+		@extend .event;
+		width: 33.33%;
+		background-image: url('https://static.today.ng/wp-content/uploads/2017/03/elon-musk-spacex-690x450.jpg');
+		border:1px solid white;
+
+		  //Transitions 
+		-moz-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.event-thirds:hover {
+		//Scale 
+		-moz-transform:scale(1.1); 
+		-webkit-transform: scale(1.1);
+		transform:  scale(1.1);
+		opacity: 0.5;
+	
+	}
+
+	.event-halves {
+		@extend .event;
+		width: 50%;
+		background-image: url('http://dru-cdn.zipcar.com/sites/default/files/1_fi-ziptopia-10_inspiring_ted_talks_to_rock_2016_3.jpg');
+		border:1px solid white;
+	}
+
+	
+	
+
+}
+
+/*	NOTES:
+	- This component will need a width media query and a height media query! 
+*/

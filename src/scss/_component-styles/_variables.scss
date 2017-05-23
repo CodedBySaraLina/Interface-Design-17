@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i|Pacifico');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* COLORS */
+$white: #fff;
+
+/* STYLE SYSTEM */
+$golden-r: 100vw / 3; /* golden-ratio */
+$margin-g: 60px; /* giant margin */
+$margin-b: 45px; /* big margin */
+$margin-n: 30px; /* normal margin */
+$margin-s: 15px; /* small margin */
+$margin-t: 7px;  /* tiny margin */
+$nav-height: 125px; /* nav height - set height */
+$grid-sys: 1080px; /* based after the classic 960 grid system */
+$btn-dim: 60px; /* dimensions of btns */
+
+$font-display: 'Raleway';
+$font-paragraph: 'Open Sans';
+
+
+$shadow: 2px 3px 5px 0px blue;
+$shadow-inset: 1px 2px 3px 0px blue inset;

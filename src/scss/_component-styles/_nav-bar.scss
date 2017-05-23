@@ -1,0 +1,62 @@
+
+
+#nav-bar {
+	@extend .flex-section;
+	position: relative; //fixed
+	height: $nav-height; //
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw34XQPzeXsgDlGW4K486WrYWGu2wU_elug6dGt7jNNkTKiDPZroPJSPs'); /* TEMP */
+	background-size: cover;
+	z-index: 10;
+
+	div {
+		position: absolute;
+		left: $margin-n;
+	}
+
+	nav {
+		position: absolute;
+		right: $margin-n;
+	}
+
+	nav ul {
+		list-style-type: none;
+	}
+
+	nav ul li {
+		padding-left: $margin-s;
+	}
+
+	#closeLogin {
+		display: none;
+	}
+
+	#linkLogout {
+		display: none;
+	}
+
+	i {
+		color: $white;
+		font-size: $margin-g;
+	}
+}
+
+
+
+#tech {
+	color:white;
+}
+
+
+
+
+
+
+.box {
+	@extend .flex-section;
+	width:33%;
+	height:130px;
+
+
+
+}
+
