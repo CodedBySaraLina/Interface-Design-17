@@ -1,0 +1,11 @@
+[
+	{
+		"id": "1",
+		"username": "sara",
+		"password": "rose",
+		"firstname": "Sara",
+		"lastname": "Mørk",
+		"city" : "Copenhagen",
+		"country": "Denmark"
+	}
+]
