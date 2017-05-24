@@ -30,22 +30,31 @@
 
 	.event-thirds div {
 		@extend .flex-child;
+		position: relative;
 		width: 100%;
 		flex-direction: column;
 	}
 
-	.event-thirds div .hover-hide { visibility: hidden; }
+	.hover-hide { visibility: hidden; }
+	.hover-show { visibility: visible; }
 
-	.event-thirds:hover div .hover-hide {
-		/* Put in a mixin? */
-		-moz-transform:scale(1.1); 
-		-webkit-transform: scale(1.1);
-		transform:  scale(1.1);
-		visibility: visible;
-	}
+	.event-thirds:hover div .hover-hide { @extend .hover-show; }
 
 	.event-thirds .admin-features {
-		
+		@extend .hover-hide;
+		width: 100%;
+		display: inline-flex;
+		flex-direction: row;
+		position: absolute;
+		bottom: $margin-n;
+	}
+	
+	.event-thirds:hover .admin-features { @extend .hover-show; }
+
+	.event-thirds .admin-features i {
+		/* display is changeable depending on login state of admin -
+		do not need to make it perfect */
+		display: block;
 	}
 
 }

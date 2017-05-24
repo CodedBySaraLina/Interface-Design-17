@@ -777,16 +777,25 @@ input {
         transform: scale(1.1);
     opacity: 0.5; }
   #wdw-events .event-thirds div {
+    position: relative;
     width: 100%;
     -ms-flex-direction: column;
         flex-direction: column; }
-  #wdw-events .event-thirds div .hover-hide {
+  #wdw-events .hover-hide, #wdw-events .event-thirds .admin-features {
     visibility: hidden; }
-  #wdw-events .event-thirds:hover div .hover-hide {
-    /* Put in a mixin? */
-    -ms-transform: scale(1.1);
-        transform: scale(1.1);
+  #wdw-events .hover-show, #wdw-events .event-thirds:hover div .hover-hide, #wdw-events .event-thirds:hover div .admin-features, #wdw-events .event-thirds:hover .admin-features {
     visibility: visible; }
+  #wdw-events .event-thirds .admin-features {
+    width: 100%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    position: absolute;
+    bottom: 30px; }
+  #wdw-events .event-thirds .admin-features i {
+    display: block;
+    /*changeable depending on login state of admin - do not need to make it perfect */ }
 
 /*	NOTES:
 	- This component will need a width media query and a height media query! 
