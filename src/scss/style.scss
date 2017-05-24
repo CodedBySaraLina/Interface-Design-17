@@ -45,8 +45,9 @@
 @import 'vendor/_external.scss';
 
 
-/* TEMPLATE STYLE */
+/* TEMPLATE STYLING */
 @import '_component-styles/_template.scss';
+@import '_component-styles/_variables.scss';
 
 
 //----------------------------------*\
@@ -55,13 +56,9 @@
 
 /* STYLE ELEMENTS */
 @import '_component-styles/_nav-bar.scss';
-@import '_component-styles/_main-content.scss';
-@import '_component-styles/_fold.scss';
-@import '_component-styles/_event-listing.scss';
+@import '_component-styles/_main-container.scss';
+@import '_component-styles/_wdw-search.scss';
+@import '_component-styles/_wdw-events.scss';
 @import '_component-styles/_login.scss';
 @import '_component-styles/_events.scss';
-@import '_component-styles/_variables.scss';
 @import '_component-styles/_calendar.scss';
-
-
-
