@@ -3,8 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300i|Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300i|Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 .clear:before, .clear:after {
@@ -575,7 +573,7 @@ div#wdw-calendar {
   h3 {
     page-break-after: avoid; } }
 
-/* TEMPLATE STYLE */
+/* TEMPLATE STYLING */
 /* COLORS */
 /* STYLE SYSTEM */
 /* golden-ratio */
@@ -621,7 +619,7 @@ a {
 ul li {
   display: inline-block; }
 
-.flex-container, .flex-section, #nav-bar, .box, #fold, #event-listing, #loginform, #registerform, .flex-child, .pill-style, .soft-edges, .btn-style {
+.flex-container, .flex-section, #nav-bar, .box, #wdw-search, #wdw-events, #loginform, #registerform, .flex-child, .pill-style, .soft-edges, .btn-style, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -629,11 +627,11 @@ ul li {
   -ms-flex-align: center;
       align-items: center; }
 
-.flex-section, #nav-bar, .box, #fold, #event-listing, #loginform, #registerform {
+.flex-section, #nav-bar, .box, #wdw-search, #wdw-events, #loginform, #registerform {
   width: 100%;
   height: calc(100vh - 125px); }
 
-.flex-child, .pill-style, .soft-edges, .btn-style {
+.flex-child, .pill-style, .soft-edges, .btn-style, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-negative: 1;
@@ -712,6 +710,17 @@ input {
   top: 0;
   bottom: 0; }
 
+/* COLORS */
+/* STYLE SYSTEM */
+/* golden-ratio */
+/* giant margin */
+/* big margin */
+/* normal margin */
+/* small margin */
+/* tiny margin */
+/* nav height - set height */
+/* based after the classic 960 grid system */
+/* dimensions of btns */
 /* STYLE ELEMENTS */
 #nav-bar {
   position: relative;
@@ -745,150 +754,39 @@ input {
   width: 33%;
   height: 130px; }
 
-#main-content {
+#main-container {
   width: auto;
   height: auto;
   position: relative;
   top: 125px; }
 
-/*Boxes**/
-figure.snip0048 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 390px;
-  width: 100%;
-  background: #000000;
-  color: #ffffff;
-  text-align: left;
-  box-sizing: border-box; }
-
-figure.snip0048 * {
-  box-sizing: border-box;
-  transition: all 0.35s ease-in-out; }
-
-figure.snip0048 img {
-  max-width: 100%;
-  opacity: 0.2; }
-
-figure.snip0048 figcaption {
-  position: absolute;
-  top: 0;
-  text-align: center;
-  padding: 20% 15%;
-  height: 100%;
-  width: 100%; }
-
-figure.snip0048 figcaption h2 {
-  font-size: 1.8em;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  padding: 6px;
-  margin: 0;
-  border-bottom: 2px solid #fff; }
-
-figure.snip0048 figcaption h3 {
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 1.5em;
-  margin-top: 10px; }
-
-figure.snip0048 .icons {
-  bottom: 4px;
-  position: absolute;
-  width: 100%;
-  text-align: center; }
-
-figure.snip0048 .icons i {
-  display: inline-block;
-  font-size: 26px;
-  color: #ffffff;
-  padding: 5px;
-  transition: 0.3s ease-in-out;
-  -ms-transform: translate(0, 35px);
-      transform: translate(0, 35px); }
-
-figure.snip0048 a {
-  opacity: 0.7; }
-
-figure.snip0048 a:hover {
-  opacity: 1; }
-
-figure.snip0048.blue {
-  background: #2980b9; }
-
-figure.snip0048.red {
-  background: #c0392b; }
-
-figure.snip0048.yellow {
-  background: #e67e22; }
-
-figure.snip0048.green {
-  background: #27ae60; }
-
-figure.snip0048:hover img,
-figure.snip0048.hover img {
-  opacity: 0;
-  -ms-transform: scale(1.05);
-      transform: scale(1.05); }
-
-figure.snip0048:hover h3,
-figure.snip0048.hover h3 {
-  -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
-  transition-delay: 0.2s;
-  opacity: 1; }
-
-figure.snip0048:hover .icons i,
-figure.snip0048.hover .icons i {
-  -ms-transform: translate(0, 0);
-      transform: translate(0, 0); }
-
-figure.snip0048:hover a:first-child i,
-figure.snip0048.hover a:first-child i {
-  transition-delay: 0.2s; }
-
-figure.snip0048:hover a:nth-child(2) i,
-figure.snip0048.hover a:nth-child(2) i {
-  transition-delay: 0.1s; }
-
-figure.snip0048:hover a:nth-child(3) i,
-figure.snip0048.hover a:nth-child(3) i {
-  transition-delay: 0s; }
-
-#fold {
-  background-color: rgba(255, 255, 255, 0.8); }
-
-#foldbackground {
-  margin: 20px auto 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 0px;
-  z-index: 300; }
-
-#event-listing {
+#wdw-events {
   min-height: calc(100vh - 125px); }
-  #event-listing .event, #event-listing .event-thirds, #event-listing .event-halves {
+  #wdw-events .event, #wdw-events .event-thirds {
     height: calc( (100vh - 125px) / 2); }
-  #event-listing .event:nth-child(even), #event-listing .event-thirds:nth-child(even), #event-listing .event-halves:nth-child(even) {
+  #wdw-events .event:nth-child(even), #wdw-events .event-thirds:nth-child(even) {
     background-color: orange;
     /* TEMP */ }
-  #event-listing .event-thirds {
+  #wdw-events .event-thirds {
     width: 33.33%;
-    background-image: url("https://static.today.ng/wp-content/uploads/2017/03/elon-musk-spacex-690x450.jpg");
-    border: 1px solid white;
+    /* Put in a mixin? */
     transition: all 0.3s; }
-  #event-listing .event-thirds:hover {
+  #wdw-events .event-thirds:hover {
+    /* Put in a mixin? */
     -ms-transform: scale(1.1);
         transform: scale(1.1);
     opacity: 0.5; }
-  #event-listing .event-halves {
-    width: 50%;
-    background-image: url("http://dru-cdn.zipcar.com/sites/default/files/1_fi-ziptopia-10_inspiring_ted_talks_to_rock_2016_3.jpg");
-    border: 1px solid white; }
+  #wdw-events .event-thirds div {
+    width: 100%;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  #wdw-events .event-thirds div .hover-hide {
+    visibility: hidden; }
+  #wdw-events .event-thirds:hover div .hover-hide {
+    /* Put in a mixin? */
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    visibility: visible; }
 
 /*	NOTES:
 	- This component will need a width media query and a height media query! 
@@ -1382,17 +1280,6 @@ figure.effect-milo:hover p {
   to {
     transform: rotate(360deg); } }
 
-/* COLORS */
-/* STYLE SYSTEM */
-/* golden-ratio */
-/* giant margin */
-/* big margin */
-/* normal margin */
-/* small margin */
-/* tiny margin */
-/* nav height - set height */
-/* based after the classic 960 grid system */
-/* dimensions of btns */
 #myInput {
   background-image: url("/css/searchicon.png");
   /* Add a search icon to input */
