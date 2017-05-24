@@ -1,0 +1,13 @@
+[
+	{
+		"id": "1",
+		"name": "Javascript Bootcamp",
+		"topic": "Javascript",
+		"speaker": "Santiago Donoso",
+		"speaker_organization": "KEA",
+		"date": { "day": "1", "month": "September", "year": "2017" },
+		"time_24h": { "hour" : "15", "minute" : "00" } ,
+		"info": "Santiago teaches Javascript in 4 hours!",
+		"past": "false"
+	}
+]
