@@ -6,6 +6,14 @@
  * @version 1.0.5
  * Copyright 2017. MIT licensed.
  */
+$(document).ready(function() {
+	//check if user state == admin or user
+	//if false, do this.. 
+	//if true do that..
+
+});
+
+
 (function ($, window, document, undefined) {
 
   'use strict';

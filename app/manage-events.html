@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+<div id="wdw-event-create">
+	<h1>Create Event</h1>
+	<input type="text" name="event-name" placeholder="Name">
+	<input type="text" name="event-topics" placeholder="Topics (separate by comma)">
+	<input type="text" name="event-level" placeholder="Level">
+	<input type="text" name="event-speaker" placeholder="Speaker">
+	<input type="text" name="event-speaker-org" placeholder="Organization">
+	<input type="date" name="event-date">
+	<input type="text" name="event-time" placeholder="Time (24h)">
+	<input type="text" name="event-info" placeholder="Info">
+	<button id="create-event-btn">Save</button>
+</div>
+
+<div id="wdw-event-update" data-event-id="">
+	<h1>Update Event</h1>
+	<input type="text" name="event-name" placeholder="Name">
+	<input type="text" name="event-topics" placeholder="Topics (separate by comma)">
+	<input type="text" name="event-level" placeholder="Level">
+	<input type="text" name="event-speaker" placeholder="Speaker">
+	<input type="text" name="event-speaker-org" placeholder="Organization">
+	<input type="date" id="edit-event-date" name="event-date">
+	<input type="text" name="event-time" placeholder="Time (24h)">
+	<input type="text" name="event-info" placeholder="Info">
+	<button id="update-event-btn">Save</button>
+	<button id="cancel-update-event-btn">Cancel</button>
+</div>
+
+<div id="wdw-event-manage">
+	<h1>Manage Events</h1>
+	<table id="event-listing">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Topics</th>
+				<th>Speaker</th>
+				<th>Date</th>
+				<th>Time</th>
+				<th><!-- EDITING OPTIONS --></th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+</div>
+
+<!-- JQuery Mini -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/20600c73f5.js"></script>
+
+<script>
+
+	//populate local storage with data
+	if (localStorage.events == null) {
+		//import data from data/events.json
+		//input into localStorage.events
+		//json file will always have data, which is why this method will always work!
+		console.log("localStorage.events is empty");
+		$.getJSON("assets/data/events.json").done( function(jData) {
+			console.log(jData);
+			//put the jData objects into localStorage
+			jData = JSON.stringify(jData);
+			localStorage.events = jData;
+			console.log("localStorage.events successfully populated");
+			initPopData();
+		});		
+	} else if (localStorage.events) {
+		//load everything from localstorage and populate the div with data..
+		console.log("localStorage.events has data");
+		initPopData();
+	}
+
+	//C from CRUD - onClick #save-btn - save data from interface to localStorage
+	$("#create-event-btn").on("click", function() {
+		console.log("save-btn clicked");
+		//get value of all items..
+		var sId = new Date();
+			sId = sId.valueOf();
+		var sName = $("#wdw-event-create").find("input[name='event-name']").val();
+		var sTopics = $("#wdw-event-create").find("input[name='event-topics']").val();
+		var sLevel = $("#wdw-event-create").find("input[name='event-level']").val();
+		var sSpeaker = $("#wdw-event-create").find("input[name='event-speaker']").val();
+		var sSpeakerOrg = $("#wdw-event-create").find("input[name='event-speaker-org']").val();
+		var dDate = new Date($("#wdw-event-create").find("input[name='event-date']").val());
+		var sTime = $("#wdw-event-create").find("input[name='event-time']").val();
+		var sInfo = $("#wdw-event-create").find("input[name='event-info']").val(); //info
+		console.log(aTime);
+		
+		var aTopics = [];
+		//get each topic and store it in an array
+		var aTopics = sTopics.split(",");
+		console.log(aTopics);
+
+		for (i = 0; i < aTopics.length; i++) {
+			if (aTopics[i].charAt(0) == " ") {
+				console.log("first char: " + aTopics[i].charAt(0));
+				aTopics[i] = aTopics[i].slice(1, aTopics[i].length);
+				console.log("str now equals " + aTopics[i]);
+			}
+
+			if (aTopics[i].charAt(aTopics[i].length - 1) == " ") {
+				console.log("last char: " + aTopics[i].charAt(0));
+				aTopics[i] = aTopics[i].slice(0, aTopics[i].length-1);
+				console.log("str now equals " + aTopics[i]);
+			}
+		}
+
+		console.log(aTopics);
+
+		//set time, if input make sense
+		var aTime = sTime.split(":", 2); //split sTime into array with two vars
+		aTime.forEach( function(i) {
+			console.log("aTime Foreach");
+			console.log(i.length);
+			if (i.length > 2) {
+				console.log(i);
+				console.log("Invalid time");
+				return;
+			} else if (i.length <= 2) {
+				var index = aTime.indexOf(i); 
+				if (index == 0) {
+					console.log(i);
+					dDate.setHours(i);
+				} else if (index == 1) {
+					console.log(i);
+					dDate.setMinutes(i);
+				}
+			}
+		});
+		console.log(dDate);
+
+		//create object to push into JSON..
+		var jEventObj = {
+			id: sId,
+			name: sName,
+			topic: aTopics,
+			level: sLevel,
+			speaker: sSpeaker,
+			speaker_organization: sSpeakerOrg,
+			date: { day: dDate.getDate(), month: dDate.getMonth() , year: dDate.getFullYear() },
+			time_24h: { hour: dDate.getHours() , minute: dDate.getMinutes() },
+			info: sInfo,
+			past: false
+		};
+		console.log(jEventObj);
+
+		//push jEventObj to localStorage
+		var localTemp = JSON.parse(localStorage.events);
+		localTemp.push(jEventObj);
+		localStorage.setItem( "events" , JSON.stringify(localTemp) );
+
+		//append newly added data to DOM..
+		$("#event-listing").append('<tr data-event-id="' + jEventObj.id + '">\
+										<td>' + jEventObj.name + '</td>\
+										<td>' + jEventObj.topic + '</td>\
+										<td>' + jEventObj.speaker + '</td>\
+										<td>' + jEventObj.date.day + ' ' + jEventObj.date.month + ' ' + jEventObj.date.year + '</td>\
+										<td>' + jEventObj.time_24h.hour + ':' + jEventObj.time_24h.minute + '</td>\
+										<td>\
+											<i class="fa fa-pencil" aria-hidden="true"></i>\
+											<i class="fa fa-trash" aria-hidden="true"></i>\
+										</td>\
+									</tr>\
+		');
+	});
+
+	//U from CRUD - onClick .fa-edit - open editing interface
+	$(document).on("click", ".fa-pencil", function() {
+		console.log(".fa-pencil icon clicked");
+		//get tr id of .fa-pencil parent
+		var sDataId = $(this).parent().parent().data("event-id");
+		//give id a value
+		$("#wdw-event-update").attr("data-event-id", sDataId);
+		//access localStorage.event
+		var localTemp = JSON.parse(localStorage.events);
+		//find the localTemp.id == sDataId
+		localTemp.forEach( function(j) {
+			//find by unique id
+			if (j.id == sDataId) {
+				//set #wdw-event-update attr to equal sDataId
+				//BEGIN struggle with satan's fart stench
+				var dDate = j.date.year + "-" + j.date.month + "-" + j.date.day;
+				var aDate = dDate.split("-");
+				//date property variables
+				var sMonth = "";
+				var sDay = "";
+				if (aDate[1].length == 1) {
+					var temp = aDate[1].toString();
+					var zero = "0"
+					var str = zero.concat(temp);
+					aDate[1] = str;
+					console.log(aDate[1]);
+				}
+				if (aDate[2].length == 1) {
+					var temp = aDate[2].toString();
+					var zero = "0"
+					var str = zero.concat(temp);
+					aDate[2] = str;
+					console.log(aDate[2]);
+				}
+				var dDate = j.date.year + "-" + aDate[1] + "-" + aDate[2];
+				console.log(dDate);
+				//END struggle with satan's fart stench. God is good.
+
+				//import all input values from localTemp object to DOM
+				$("#wdw-event-update").find("input[name='event-name']").val(j.name);
+				$("#wdw-event-update").find("input[name='event-topics']").val(j.topic);
+				$("#wdw-event-update").find("input[name='event-level']").val(j.level);
+				$("#wdw-event-update").find("input[name='event-speaker']").val(j.speaker);
+				$("#wdw-event-update").find("input[name='event-speaker-org']").val(j.speaker_organization);
+				//SEE NEXT LINE FOR WORKING VERSION - NATIVE JS $("#wdw-event-edit").find("input[name='event-date']").val(dDate);
+				document.getElementById("edit-event-date").value = dDate;
+				$("#wdw-event-update").find("input[name='event-time']").val(j.time_24h.hour + ":" + j.time_24h.minute);
+				$("#wdw-event-update").find("input[name='event-info']").val(j.info);
+			}
+		});
+	});
+
+	//U from CRUD - onClick #update-event-btn - save data from editing interface
+	$("#update-event-btn").on("click", function() {
+		console.log("#update-event clicked");
+		//get value of all items..
+		var sId = $("#wdw-event-update").attr("data-event-id"); //get from DOM
+		var sName = $("#wdw-event-update").find("input[name='event-name']").val();
+		var sTopics = $("#wdw-event-update").find("input[name='event-topics']").val();
+		var sLevel = $("#wdw-event-update").find("input[name='event-level']").val();
+		var sSpeaker = $("#wdw-event-update").find("input[name='event-speaker']").val();
+		var sSpeakerOrg = $("#wdw-event-update").find("input[name='event-speaker-org']").val();
+		var dDate = new Date($("#wdw-event-update").find("input[name='event-date']").val());
+		var sTime = $("#wdw-event-update").find("input[name='event-time']").val();
+		var sInfo = $("#wdw-event-update").find("input[name='event-info']").val(); //info
+		console.log(aTime);
+		
+		var aTopics = [];
+		//get each topic and store it in an array
+		var aTopics = sTopics.split(",");
+		console.log(aTopics);
+
+		for (i = 0; i < aTopics.length; i++) {
+			if (aTopics[i].charAt(0) == " ") {
+				console.log("first char: " + aTopics[i].charAt(0));
+				aTopics[i] = aTopics[i].slice(1, aTopics[i].length);
+				console.log("str now equals " + aTopics[i]);
+			}
+
+			if (aTopics[i].charAt(aTopics[i].length - 1) == " ") {
+				console.log("last char: " + aTopics[i].charAt(0));
+				aTopics[i] = aTopics[i].slice(0, aTopics[i].length-1);
+				console.log("str now equals " + aTopics[i]);
+			}
+		}
+		console.log(aTopics);
+
+		//set time, if input make sense
+		var aTime = sTime.split(":", 2); //split sTime into array with two vars
+		aTime.forEach( function(i) {
+			console.log("aTime Foreach");
+			console.log(i.length);
+			if (i.length > 2) {
+				console.log(i);
+				console.log("Invalid time");
+				return;
+			} else if (i.length <= 2) {
+				var index = aTime.indexOf(i); 
+				if (index == 0) {
+					console.log(i);
+					dDate.setHours(i);
+				} else if (index == 1) {
+					console.log(i);
+					dDate.setMinutes(i);
+				}
+			}
+		});
+		console.log(dDate);
+
+		//create object to push into JSON..
+		var jEventObj = {
+			id: sId,
+			name: sName,
+			topic: aTopics,
+			level: sLevel,
+			speaker: sSpeaker,
+			speaker_organization: sSpeakerOrg,
+			date: { day: dDate.getDate(), month: dDate.getMonth() , year: dDate.getFullYear() },
+			time_24h: { hour: dDate.getHours() , minute: dDate.getMinutes() },
+			info: sInfo,
+			past: false
+		};
+		console.log(jEventObj);
+
+		//push jEventObj to localStorage
+		var localTemp = JSON.parse(localStorage.events);
+		//find the object in JSON
+		localTemp.forEach(function(j) {
+			//find object with matching id
+			if (j.id == jEventObj.id) {
+				//remove object with matching id
+				localTemp.splice( localTemp.indexOf(j), 1 );
+			}
+		});
+		//push jEventObj to localTemp
+		localTemp.push(jEventObj);
+		//rewrite localStorage
+		localStorage.setItem( "events" , JSON.stringify(localTemp) );
+		//remove data attr from window
+		$("#wdw-event-update").attr("data-event-id", "");
+		//delete old DOM representation
+		$(document).find('[data-event-id='+jEventObj.id+']').remove();
+		//append new DOM representation
+		$("#event-listing tbody").prepend('<tr data-event-id="' + jEventObj.id + '">\
+										<td>' + jEventObj.name + '</td>\
+										<td>' + jEventObj.topic + '</td>\
+										<td>' + jEventObj.speaker + '</td>\
+										<td>' + jEventObj.date.day + ' ' + jEventObj.date.month + ' ' + jEventObj.date.year + '</td>\
+										<td>' + jEventObj.time_24h.hour + ':' + jEventObj.time_24h.minute + '</td>\
+										<td>\
+											<i class="fa fa-pencil" aria-hidden="true"></i>\
+											<i class="fa fa-trash" aria-hidden="true"></i>\
+										</td>\
+									</tr>\
+		');
+	});	
+
+	//U from CRUD - onClick #cancel-update-event-btn - cancel
+	$("#cancel-update-event-btn").on("click", function() {
+		//set #wdw-event-update's data-event-id == "";
+		$("#wdw-event-update").attr("data-event-id", "");
+	});
+
+	//D from CRUD - onClick .fa-trash - delete from interface and localstorage
+	$(document).on("click", ".fa-trash", function() {
+		console.log(".fa-trash icon clicked");
+		//get tr id of .fa-trash parent
+		var sDataId = $(this).parent().parent().data("event-id");
+		//access localStorage.event
+		var localTemp = JSON.parse(localStorage.events);
+		//find the localTemp.id == sDataId
+		localTemp.forEach( function(j) {
+			if (j.id == sDataId) {
+				//remove item from localTemp
+
+				localTemp.splice( localTemp.indexOf(j), 1 );
+				console.log("ID " + j.id + "spliced from localTemp");
+			}
+		});
+		console.log(localTemp);
+		localStorage.events = JSON.stringify(localTemp);
+		//delete tr by id
+		$(document).find('[data-event-id='+sDataId+']').remove();
+	});
+
+
+//functions
+//populate data on pageload
+function initPopData() {
+	//since localstorage will always have values,
+	//append all of localstorage's content to the corresponding table
+	var jEvents = JSON.parse(localStorage.events);
+	jEvents.forEach( function(j) {
+			$("#event-listing tbody").append('<tr data-event-id="' + j.id + '">\
+										<td>' + j.name + '</td>\
+										<td>' + j.topic + '</td>\
+										<td>' + j.speaker + '</td>\
+										<td>' + j.date.day + ' ' + j.date.month + ' ' + j.date.year + '</td>\
+										<td>' + j.time_24h.hour + ':' + j.time_24h.minute + '</td>\
+										<td>\
+											<i class="fa fa-pencil" aria-hidden="true"></i>\
+											<i class="fa fa-trash" aria-hidden="true"></i>\
+										</td>\
+									</tr>\
+			');
+	});
+}
+
+</script>
+
+<!-- example of event.json object
+	{
+		"id": "1",
+		"name": "Javascript Bootcamp",
+		"topics": { "1" : "Javascript" },
+		"level": "Beginner",
+		"speaker": "Santiago Donoso",
+		"speaker_organization": "KEA",
+		"date": { "day": "1", "month": "September", "year": "2017" },
+		"time_24h": { "hour" : "15", "minute" : "00" } ,
+		"info": "Santiago teaches Javascript in 4 hours!",
+		"past": "false"
+	}
+-->
+
+</body>
+</html>
