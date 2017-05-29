@@ -2,10 +2,10 @@
 
 #nav-bar {
 	@extend .flex-section;
-	position: relative; //fixed
-	height: $nav-height; //
-	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw34XQPzeXsgDlGW4K486WrYWGu2wU_elug6dGt7jNNkTKiDPZroPJSPs'); /* TEMP */
-	background-size: cover;
+	position: relative;
+	height: $nav-height; 
+	background-color: $purple;
+
 	z-index: 10;
 
 	div {
@@ -26,25 +26,21 @@
 		padding-left: $margin-s;
 	}
 
+	nav ul li#link-logout a {
+		display: none;
+	}
+
 	#closeLogin {
 		display: none;
 	}
 
-	#linkLogout {
+	/* #linkLogout {
 		display: none;
-	}
+	} */
 
-	i {
-		color: $white;
-		font-size: $margin-g;
-	}
 }
 
 
-
-#tech {
-	color:white;
-}
 
 
 

@@ -1,3 +1,11 @@
+$(document).ready(function() {
+	//check if user state == admin or user
+	//if false, do this.. 
+	//if true do that..
+
+});
+
+
 (function ($, window, document, undefined) {
 
   'use strict';

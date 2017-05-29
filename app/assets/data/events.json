@@ -1,13 +1,38 @@
 [
 	{
-		"id": "1",
-		"name": "Javascript Bootcamp",
-		"topic": "Javascript",
-		"speaker": "Santiago Donoso",
-		"speaker_organization": "KEA",
-		"date": { "day": "1", "month": "September", "year": "2017" },
+		"id": "12456",
+		"name": "Beginner Game Development",
+		"topic": ["Unity", "Game Development"],
+		"level": "Beginner",
+		"speaker": "Somebody",
+		"speaker_organization": "Unity",
+		"date": { "day": 8, "month": 9, "year": 2017 },
 		"time_24h": { "hour" : "15", "minute" : "00" } ,
-		"info": "Santiago teaches Javascript in 4 hours!",
+		"info": "Fuck yes!",
+		"past": "false"
+	},
+		{
+		"id": "12456679768",
+		"name": "Introduction to SCRUM",
+		"topic": ["Project Management"],
+		"level": "Beginner",
+		"speaker": "Me",
+		"speaker_organization": "KEA",
+		"date": { "day": 7, "month": 9, "year": 2017 },
+		"time_24h": { "hour" : "15", "minute" : "00" } ,
+		"info": "Get organized, motherfucker",
+		"past": "false"
+	},
+	{
+		"id": "0987543",
+		"name": "Intermediate Java",
+		"topic": ["Java"],
+		"level": "Intermediate",
+		"speaker": "Somebody",
+		"speaker_organization": "Oracle",
+		"date": { "day": 8, "month": 8, "year": 2017 },
+		"time_24h": { "hour" : "15", "minute" : "00" } ,
+		"info": "Learn Java. Coffee not included.",
 		"past": "false"
 	}
 ]

@@ -1,10 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i|Pacifico");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono");
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i|Pacifico");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono");
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -589,7 +587,7 @@ div#wdw-calendar {
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
-  font-family: "Raleway"; }
+  font-family: "Roboto"; }
 
 h1 {
   font-size: 2.67em; }
@@ -607,11 +605,11 @@ h5 {
   font-size: .83em; }
 
 h6 {
-  font-family: "Open Sans";
+  font-family: "Roboto Mono";
   font-size: .75em; }
 
 p {
-  font-family: "Open Sans"; }
+  font-family: "Roboto Mono"; }
 
 a {
   text-decoration: none; }
@@ -646,7 +644,7 @@ ul li {
   padding: 10px;
   border-radius: 30px;
   border: 0px solid #555;
-  font-family: "Open Sans";
+  font-family: "Roboto Mono";
   box-shadow: 1px 2px 3px 0px blue inset; }
 
 .soft-edges, .btn-style {
@@ -725,10 +723,11 @@ input {
 #nav-bar {
   position: relative;
   height: 125px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw34XQPzeXsgDlGW4K486WrYWGu2wU_elug6dGt7jNNkTKiDPZroPJSPs");
-  /* TEMP */
-  background-size: cover;
-  z-index: 10; }
+  background-color: #8C3474;
+  z-index: 10;
+  /* #linkLogout {
+		display: none;
+	} */ }
   #nav-bar div {
     position: absolute;
     left: 30px; }
@@ -739,16 +738,10 @@ input {
     list-style-type: none; }
   #nav-bar nav ul li {
     padding-left: 15px; }
+  #nav-bar nav ul li#link-logout a {
+    display: none; }
   #nav-bar #closeLogin {
     display: none; }
-  #nav-bar #linkLogout {
-    display: none; }
-  #nav-bar i {
-    color: #fff;
-    font-size: 60px; }
-
-#tech {
-  color: white; }
 
 .box {
   width: 33%;
@@ -783,7 +776,7 @@ input {
         flex-direction: column; }
   #wdw-events .hover-hide, #wdw-events .event-thirds .admin-features {
     visibility: hidden; }
-  #wdw-events .hover-show, #wdw-events .event-thirds:hover div .hover-hide, #wdw-events .event-thirds:hover div .admin-features, #wdw-events .event-thirds:hover .admin-features {
+  #wdw-events .hover-show, #wdw-events .event-thirds:hover div .hover-hide, #wdw-events .event-thirds:hover div .admin-features {
     visibility: visible; }
   #wdw-events .event-thirds .admin-features {
     width: 100%;
@@ -793,9 +786,6 @@ input {
         flex-direction: row;
     position: absolute;
     bottom: 30px; }
-  #wdw-events .event-thirds .admin-features i {
-    display: block;
-    /*changeable depending on login state of admin - do not need to make it perfect */ }
 
 /*	NOTES:
 	- This component will need a width media query and a height media query! 

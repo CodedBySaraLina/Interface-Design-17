@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i|Pacifico');
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
 
 /* COLORS */
 $white: #fff;
+$purple: #8C3474;
+$
+$teal: #4E9E93;
+$green: #86B954;
+$gray: #6A6365;
 
 /* STYLE SYSTEM */
 $golden-r: 100vw / 3; /* golden-ratio */
@@ -16,8 +19,8 @@ $nav-height: 125px; /* nav height - set height */
 $grid-sys: 1080px; /* based after the classic 960 grid system */
 $btn-dim: 60px; /* dimensions of btns */
 
-$font-display: 'Raleway';
-$font-paragraph: 'Open Sans';
+$font-display: 'Roboto';
+$font-paragraph: 'Roboto Mono';
 
 
 $shadow: 2px 3px 5px 0px blue;

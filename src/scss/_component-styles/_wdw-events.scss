@@ -48,14 +48,7 @@
 		position: absolute;
 		bottom: $margin-n;
 	}
-	
-	.event-thirds:hover .admin-features { @extend .hover-show; }
 
-	.event-thirds .admin-features i {
-		/* display is changeable depending on login state of admin -
-		do not need to make it perfect */
-		display: block;
-	}
 
 }
 
