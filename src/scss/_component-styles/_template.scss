@@ -24,6 +24,7 @@ ul li {	display: inline-block; }
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+  overflow: hidden;
 }
 
 .flex-section { /* default - flex-direction: row; */
@@ -51,8 +52,8 @@ ul li {	display: inline-block; }
   border: none;
   border-bottom: 1px solid $white;
   font-family: $font-paragraph;
+  background-color: $dark-gray;
   color: $white;
-  background-color: $purple;
   text-align: center;
 }
 
@@ -86,8 +87,8 @@ button {
 .section-heading {
   @extend .flex-section;
   text-align: center;
-  height: $nav-height * 3;
-  background-color: $purple;
+  height: $nav-height * 2.25;
+  background-color: $dark-gray;
   color: $white;
   
   .section-content {
