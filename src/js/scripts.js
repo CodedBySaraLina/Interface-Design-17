@@ -454,7 +454,7 @@ function isLoggedIn() {
 function searchEvents() {
   // Declare variables 
   var input, filter, table, tr, td, i;
-  input = document.getElementById('myInput');
+  input = document.getElementById('topic-search');
   filter = input.value.toUpperCase();
   table = document.getElementById('myTable');
   tr = table.getElementsByTagName('tr');

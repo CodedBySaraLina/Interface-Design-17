@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:100,100i");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:100,100i");
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono");
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -246,7 +246,7 @@ hr {
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-button,
+button, .section-heading .btn-search, #wdw-search .btn-search,
 input,
 select,
 textarea {
@@ -265,7 +265,7 @@ optgroup {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-button,
+button, .section-heading .btn-search, #wdw-search .btn-search,
 input {
   /* 1 */
   overflow: visible; }
@@ -274,7 +274,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button,
+button, .section-heading .btn-search, #wdw-search .btn-search,
 select {
   /* 1 */
   text-transform: none; }
@@ -284,7 +284,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button,
+button, .section-heading .btn-search, #wdw-search .btn-search,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -294,7 +294,7 @@ html [type="button"],
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner,
+button::-moz-focus-inner, .section-heading .btn-search::-moz-focus-inner, #wdw-search .btn-search::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
@@ -304,7 +304,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
+button:-moz-focusring, .section-heading .btn-search:-moz-focusring, #wdw-search .btn-search:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
@@ -406,7 +406,7 @@ textarea {
   list-style: none; }
 
 /*Button submit*/
-button.snip0050 {
+button.snip0050, .section-heading .snip0050.btn-search, #wdw-search .snip0050.btn-search {
   font-family: 'Raleway', Arial, sans-serif;
   border: none;
   background-color: #000000;
@@ -425,13 +425,13 @@ button.snip0050 {
   opacity: 1;
   transition: all 0.3s; }
 
-button.snip0050 span {
+button.snip0050 span, .section-heading .snip0050.btn-search span, #wdw-search .snip0050.btn-search span {
   display: inline-block;
   transition: all 0.3s;
   opacity: 0.8;
   transition-delay: 0.3s; }
 
-button.snip0050 i {
+button.snip0050 i, .section-heading .snip0050.btn-search i, #wdw-search .snip0050.btn-search i {
   font-size: 28px;
   text-align: center;
   width: 100%;
@@ -445,7 +445,7 @@ button.snip0050 i {
   transition: all 0.3s;
   transition-delay: 0s; }
 
-button.snip0050:before {
+button.snip0050:before, .section-heading .snip0050.btn-search:before, #wdw-search .snip0050.btn-search:before {
   border-radius: 3px;
   content: '';
   top: 3px;
@@ -457,49 +457,59 @@ button.snip0050:before {
   transition: all 0.3s;
   transition-delay: 0.15s; }
 
-button.snip0050:hover,
-button.snip0050.hover {
+button.snip0050:hover, .section-heading .snip0050.btn-search:hover, #wdw-search .snip0050.btn-search:hover,
+button.snip0050.hover,
+.section-heading .snip0050.hover.btn-search,
+#wdw-search .snip0050.hover.btn-search {
   color: #000000; }
 
-button.snip0050:hover.blue,
-button.snip0050.hover.blue {
+button.snip0050:hover.blue, .section-heading .snip0050.btn-search:hover.blue, #wdw-search .snip0050.btn-search:hover.blue,
+button.snip0050.hover.blue,
+.section-heading .snip0050.hover.blue.btn-search,
+#wdw-search .snip0050.hover.blue.btn-search {
   color: #20638f; }
 
-button.snip0050:hover.red,
-button.snip0050.hover.red {
+button.snip0050:hover.red, .section-heading .snip0050.btn-search:hover.red, #wdw-search .snip0050.btn-search:hover.red,
+button.snip0050.hover.red,
+.section-heading .snip0050.hover.red.btn-search,
+#wdw-search .snip0050.hover.red.btn-search {
   color: #962d22; }
 
-button.snip0050:hover.yellow,
-button.snip0050.hover.yellow {
+button.snip0050:hover.yellow, .section-heading .snip0050.btn-search:hover.yellow, #wdw-search .snip0050.btn-search:hover.yellow,
+button.snip0050.hover.yellow,
+.section-heading .snip0050.hover.yellow.btn-search,
+#wdw-search .snip0050.hover.yellow.btn-search {
   color: #a85913; }
 
-button.snip0050:hover span,
-button.snip0050.hover span {
+button.snip0050:hover span, .section-heading .snip0050.btn-search:hover span, #wdw-search .snip0050.btn-search:hover span,
+button.snip0050.hover span, .section-heading .snip0050.hover.btn-search span, #wdw-search .snip0050.hover.btn-search span {
   opacity: 0;
   transition-delay: 0s; }
 
-button.snip0050:hover i,
-button.snip0050.hover i {
+button.snip0050:hover i, .section-heading .snip0050.btn-search:hover i, #wdw-search .snip0050.btn-search:hover i,
+button.snip0050.hover i, .section-heading .snip0050.hover.btn-search i, #wdw-search .snip0050.hover.btn-search i {
   opacity: 1;
   transition-delay: 0s; }
 
-button.snip0050:hover:before,
-button.snip0050.hover:before {
+button.snip0050:hover:before, .section-heading .snip0050.btn-search:hover:before, #wdw-search .snip0050.btn-search:hover:before,
+button.snip0050.hover:before,
+.section-heading .snip0050.hover.btn-search:before,
+#wdw-search .snip0050.hover.btn-search:before {
   left: 3px;
   right: 3px;
   background: #ffffff;
   transition-delay: 0s; }
 
-button.snip0050:active:before {
+button.snip0050:active:before, .section-heading .snip0050.btn-search:active:before, #wdw-search .snip0050.btn-search:active:before {
   background: rgba(255, 255, 255, 0.7); }
 
-button.snip0050.blue {
+button.snip0050.blue, .section-heading .snip0050.blue.btn-search, #wdw-search .snip0050.blue.btn-search {
   background-color: #20638f; }
 
-button.snip0050.red {
+button.snip0050.red, .section-heading .snip0050.red.btn-search, #wdw-search .snip0050.red.btn-search {
   background-color: #962d22; }
 
-button.snip0050.yellow {
+button.snip0050.yellow, .section-heading .snip0050.yellow.btn-search, #wdw-search .snip0050.yellow.btn-search {
   background-color: #a85913; }
 
 @font-face {
@@ -571,7 +581,18 @@ div#wdw-calendar {
   h3 {
     page-break-after: avoid; } }
 
-/* TEMPLATE STYLING */
+/* TEMPLATES */
+/* COLORS */
+/* STYLE SYSTEM */
+/* golden-ratio */
+/* giant margin */
+/* big margin */
+/* normal margin */
+/* small margin */
+/* tiny margin */
+/* nav height - set height */
+/* based after the classic 960 grid system */
+/* dimensions of btns */
 /* COLORS */
 /* STYLE SYSTEM */
 /* golden-ratio */
@@ -587,7 +608,7 @@ div#wdw-calendar {
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
-  font-family: "Roboto"; }
+  font-family: "Roboto Mono"; }
 
 h1 {
   font-size: 2.67em; }
@@ -605,11 +626,11 @@ h5 {
   font-size: .83em; }
 
 h6 {
-  font-family: "Roboto Mono";
+  font-family: "Roboto";
   font-size: .75em; }
 
 p {
-  font-family: "Roboto Mono"; }
+  font-family: "Roboto"; }
 
 a {
   text-decoration: none; }
@@ -617,7 +638,7 @@ a {
 ul li {
   display: inline-block; }
 
-.flex-container, .flex-section, #nav-bar, .box, #wdw-search, #wdw-events, #loginform, #registerform, .flex-child, .pill-style, .soft-edges, .btn-style, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
+.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, .section-heading, #wdw-search, #nav-bar, .box, #wdw-events, #loginform, #registerform, .flex-child, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], .section-heading .section-content, #wdw-search .section-content, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -625,11 +646,16 @@ ul li {
   -ms-flex-align: center;
       align-items: center; }
 
-.flex-section, #nav-bar, .box, #wdw-search, #wdw-events, #loginform, #registerform {
+.flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, .section-heading, #wdw-search, #nav-bar, .box, #wdw-events, #loginform, #registerform {
+  /* default - flex-direction: row; */
   width: 100%;
   height: calc(100vh - 125px); }
 
-.flex-child, .pill-style, .soft-edges, .btn-style, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
+.flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.flex-child, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], .section-heading .section-content, #wdw-search .section-content, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-negative: 1;
@@ -637,29 +663,77 @@ ul li {
   -ms-flex-positive: 1;
       flex-grow: 1; }
 
-.pill-style, .soft-edges, .btn-style {
+.line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"] {
   width: 100%;
-  margin-right: 15px;
-  margin-left: 15px;
+  /* just need some value to work with.. */
   padding: 10px;
-  border-radius: 30px;
-  border: 0px solid #555;
-  font-family: "Roboto Mono";
-  box-shadow: 1px 2px 3px 0px blue inset; }
-
-.soft-edges, .btn-style {
-  padding: 0px;
-  border-radius: 7px;
-  box-shadow: none; }
-
-.btn-style {
-  height: 60px;
-  background-color: red;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: "Roboto";
   color: #fff;
-  font-size: 20px; }
+  background-color: #8C3474;
+  text-align: center; }
 
+/* OUT OF ORDER
+@include x-input-placeholder( .line-form, color, $white);
+input.line-form::-webkit-input-placeholder { color: $white; }
+input.line-form::-moz-placeholder { color: $white; }
+input.line-form:-ms-input-placeholder { color: $white; }
+input.line-form:-moz-placeholder { color: $white; }
+*/
 input {
   outline: none; }
+
+input[type="checkbox"] {
+  margin-right: 7px; }
+
+button, .section-heading .btn-search, #wdw-search .btn-search {
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #fff; }
+
+.navigation-container, #wdw-event-manager-container {
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 125px; }
+
+.section-heading, #wdw-search {
+  text-align: center;
+  height: 375px;
+  background-color: #8C3474;
+  color: #fff; }
+  .section-heading .section-content, #wdw-search .section-content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 960px; }
+  .section-heading h1, #wdw-search h1 {
+    margin-top: 0; }
+  .section-heading .search-form, #wdw-search .search-form {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .section-heading .search-form div, #wdw-search .search-form div {
+    text-align: left; }
+  .section-heading .search-form div span, #wdw-search .search-form div span {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 7px;
+    position: relative;
+    left: 0px; }
+  .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"] {
+    width: 100%;
+    height: 50px; }
+  .section-heading .btn-search, #wdw-search .btn-search {
+    color: #fff;
+    background-color: #86B954;
+    margin-left: 30px; }
 
 /*Menu Nav */
 .snip1211 {
@@ -708,20 +782,8 @@ input {
   top: 0;
   bottom: 0; }
 
-/* COLORS */
-/* STYLE SYSTEM */
-/* golden-ratio */
-/* giant margin */
-/* big margin */
-/* normal margin */
-/* small margin */
-/* tiny margin */
-/* nav height - set height */
-/* based after the classic 960 grid system */
-/* dimensions of btns */
 /* STYLE ELEMENTS */
 #nav-bar {
-  position: relative;
   height: 125px;
   background-color: #8C3474;
   z-index: 10;
@@ -750,11 +812,10 @@ input {
 #main-container {
   width: auto;
   height: auto;
-  position: relative;
-  top: 125px; }
+  /* position: relative;
+	top: $nav-height; */ }
 
 #wdw-events {
-  min-height: calc(100vh - 125px);
   /* .event-thirds .admin-features {
 		@extend .hover-hide;
 		width: 100%;
@@ -1334,3 +1395,13 @@ figure.effect-milo:hover p {
 
 #myTable td, #myTable th {
   color: white; }
+
+/* STYLES FOR NAVIGATION CONTAINER */
+/* STYLES FOR NAVIGATION CONTAINER'S SECTIONS */
+#wdw-event-create {
+  background-color: orange;
+  /* for DEV purposes only */ }
+
+#wdw-event-update {
+  background-color: pink;
+  /* for DEV purposes only */ }
