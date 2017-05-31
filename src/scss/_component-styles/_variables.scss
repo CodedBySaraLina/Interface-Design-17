@@ -6,6 +6,7 @@ $purple: #8C3474;
 $teal: #4E9E93;
 $green: #86B954;
 $gray: #6A6365;
+$dark-gray: darken($gray, 25);
 
 /* STYLE SYSTEM */
 $golden-r: 100vw / 3; /* golden-ratio */
@@ -14,7 +15,7 @@ $margin-b: 45px; /* big margin */
 $margin-n: 30px; /* normal margin */
 $margin-s: 15px; /* small margin */
 $margin-t: 7px;  /* tiny margin */
-$nav-height: 125px; /* nav height - set height */
+$nav-height: 110px; /* nav height - set height */
 $grid-sys: 1080px; /* based after the classic 960 grid system */
 $btn-dim: 60px; /* dimensions of btns */
 

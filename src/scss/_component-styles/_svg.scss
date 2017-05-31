@@ -1,0 +1,13 @@
+svg {
+	width: 150px;
+	height: auto;
+}
+
+svg:hover {
+	rect {
+		fill: #fff;
+	}
+	path {
+		fill: $dark-gray;
+	}
+}

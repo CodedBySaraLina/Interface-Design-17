@@ -2,7 +2,7 @@
 	@extend .flex-section;
 	
 	height: $nav-height; 
-	background-color: $purple;
+	background-color: $dark-gray;
 	z-index: 10;
 
 	div {
@@ -19,19 +19,21 @@
 		list-style-type: none;
 	}
 
-	nav ul li {
+	nav ul li a {
+		color: $white;
 		padding-left: $margin-s;
 	}
 
-	nav ul li#link-logout a {
+	nav ul li.user-function {
 		display: none;
 	}
 
-	#closeLogin {
+
+	/* #closeLogin {
 		display: none;
 	}
-
-	/* #linkLogout {
+	
+	#linkLogout {
 		display: none;
 	} */
 

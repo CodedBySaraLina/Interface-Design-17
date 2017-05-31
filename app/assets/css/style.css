@@ -644,12 +644,13 @@ ul li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  overflow: hidden; }
 
 .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, .section-heading, #wdw-search, #nav-bar, .box, #wdw-events, #loginform, #registerform {
   /* default - flex-direction: row; */
   width: 100%;
-  height: calc(100vh - 125px); }
+  height: calc(100vh - 110px); }
 
 .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage {
   -ms-flex-direction: column;
@@ -670,8 +671,8 @@ ul li {
   border: none;
   border-bottom: 1px solid #fff;
   font-family: "Roboto";
+  background-color: #282526;
   color: #fff;
-  background-color: #8C3474;
   text-align: center; }
 
 /* OUT OF ORDER
@@ -699,12 +700,12 @@ button, .section-heading .btn-search, #wdw-search .btn-search {
   width: auto;
   height: auto;
   position: relative;
-  top: 125px; }
+  top: 110px; }
 
 .section-heading, #wdw-search {
   text-align: center;
-  height: 375px;
-  background-color: #8C3474;
+  height: 247.5px;
+  background-color: #282526;
   color: #fff; }
   .section-heading .section-content, #wdw-search .section-content {
     -ms-flex-direction: column;
@@ -783,11 +784,25 @@ button, .section-heading .btn-search, #wdw-search .btn-search {
   bottom: 0; }
 
 /* STYLE ELEMENTS */
+svg {
+  width: 150px;
+  height: auto; }
+
+svg:hover rect {
+  fill: #fff; }
+
+svg:hover path {
+  fill: #282526; }
+
 #nav-bar {
-  height: 125px;
-  background-color: #8C3474;
+  height: 110px;
+  background-color: #282526;
   z-index: 10;
-  /* #linkLogout {
+  /* #closeLogin {
+		display: none;
+	}
+	
+	#linkLogout {
 		display: none;
 	} */ }
   #nav-bar div {
@@ -798,11 +813,10 @@ button, .section-heading .btn-search, #wdw-search .btn-search {
     right: 30px; }
   #nav-bar nav ul {
     list-style-type: none; }
-  #nav-bar nav ul li {
+  #nav-bar nav ul li a {
+    color: #fff;
     padding-left: 15px; }
-  #nav-bar nav ul li#link-logout a {
-    display: none; }
-  #nav-bar #closeLogin {
+  #nav-bar nav ul li.user-function {
     display: none; }
 
 .box {
@@ -825,7 +839,7 @@ button, .section-heading .btn-search, #wdw-search .btn-search {
 		bottom: $margin-n;
 	} */ }
   #wdw-events .event, #wdw-events .event-thirds {
-    height: calc( (100vh - 125px) / 2); }
+    height: calc( (100vh - 110px) / 2); }
   #wdw-events .event:nth-child(even), #wdw-events .event-thirds:nth-child(even) {
     background-color: orange;
     /* TEMP */ }
