@@ -1,11 +1,8 @@
-
-
 #nav-bar {
 	@extend .flex-section;
-	position: relative;
+	
 	height: $nav-height; 
 	background-color: $purple;
-
 	z-index: 10;
 
 	div {

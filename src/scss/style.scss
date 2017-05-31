@@ -2,6 +2,7 @@
 // SCSS MIXINS
 //----------------------------------*/
 
+@import 'mixins/_mixins.scss';
 @import 'mixins/_position.scss';
 
 //----------------------------------*\
@@ -13,6 +14,7 @@
 @import 'modules/_clearfix.scss';
 @import 'modules/_defaults.scss';
 @import 'modules/_normalize.scss';
+
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
@@ -45,9 +47,9 @@
 @import 'vendor/_external.scss';
 
 
-/* TEMPLATE STYLING */
-@import '_component-styles/_template.scss';
+/* TEMPLATES */
 @import '_component-styles/_variables.scss';
+@import '_component-styles/_template.scss';
 
 
 //----------------------------------*\
@@ -62,3 +64,5 @@
 @import '_component-styles/_login.scss';
 @import '_component-styles/_events.scss';
 @import '_component-styles/_calendar.scss';
+
+@import '_component-styles/_wdw-event-manager-container.scss';

@@ -1,0 +1,23 @@
+/* STYLES FOR NAVIGATION CONTAINER */
+#wdw-event-manager-container {
+	@extend .navigation-container;
+}
+
+
+/* STYLES FOR NAVIGATION CONTAINER'S SECTIONS */
+
+#wdw-event-create {
+	@extend .flex-section-column;
+	background-color: orange; /* for DEV purposes only */
+
+	
+}
+
+#wdw-event-update {
+	@extend .flex-section-column;
+	background-color: pink; /* for DEV purposes only */
+}
+
+#wdw-event-manage {
+	@extend .flex-section-column;
+}
