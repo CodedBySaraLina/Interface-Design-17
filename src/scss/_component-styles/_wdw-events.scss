@@ -40,14 +40,14 @@
 
 	.event-thirds:hover div .hover-hide { @extend .hover-show; }
 
-	.event-thirds .admin-features {
+	/* .event-thirds .admin-features {
 		@extend .hover-hide;
 		width: 100%;
 		display: inline-flex;
 		flex-direction: row;
 		position: absolute;
 		bottom: $margin-n;
-	}
+	} */ 
 
 
 }

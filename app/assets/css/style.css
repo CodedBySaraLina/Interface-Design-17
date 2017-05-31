@@ -754,7 +754,15 @@ input {
   top: 125px; }
 
 #wdw-events {
-  min-height: calc(100vh - 125px); }
+  min-height: calc(100vh - 125px);
+  /* .event-thirds .admin-features {
+		@extend .hover-hide;
+		width: 100%;
+		display: inline-flex;
+		flex-direction: row;
+		position: absolute;
+		bottom: $margin-n;
+	} */ }
   #wdw-events .event, #wdw-events .event-thirds {
     height: calc( (100vh - 125px) / 2); }
   #wdw-events .event:nth-child(even), #wdw-events .event-thirds:nth-child(even) {
@@ -774,18 +782,10 @@ input {
     width: 100%;
     -ms-flex-direction: column;
         flex-direction: column; }
-  #wdw-events .hover-hide, #wdw-events .event-thirds .admin-features {
+  #wdw-events .hover-hide {
     visibility: hidden; }
-  #wdw-events .hover-show, #wdw-events .event-thirds:hover div .hover-hide, #wdw-events .event-thirds:hover div .admin-features {
+  #wdw-events .hover-show, #wdw-events .event-thirds:hover div .hover-hide {
     visibility: visible; }
-  #wdw-events .event-thirds .admin-features {
-    width: 100%;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    position: absolute;
-    bottom: 30px; }
 
 /*	NOTES:
 	- This component will need a width media query and a height media query! 
