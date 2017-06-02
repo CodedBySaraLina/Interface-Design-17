@@ -638,7 +638,7 @@ a {
 ul li {
   display: inline-block; }
 
-.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, .section-heading, #wdw-search, #nav-bar, .box, #wdw-events, #loginform, #registerform, .flex-child, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], .section-heading .section-content, #wdw-search .section-content, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
+.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #nav-bar, .box, #wdw-events, #loginform, #registerform, .flex-child, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], .section-heading .section-content, #wdw-search .section-content, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -647,12 +647,12 @@ ul li {
       align-items: center;
   overflow: hidden; }
 
-.flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, .section-heading, #wdw-search, #nav-bar, .box, #wdw-events, #loginform, #registerform {
+.flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #nav-bar, .box, #wdw-events, #loginform, #registerform {
   /* default - flex-direction: row; */
   width: 100%;
   height: calc(100vh - 110px); }
 
-.flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage {
+.flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner {
   -ms-flex-direction: column;
       flex-direction: column; }
 
@@ -1419,3 +1419,35 @@ figure.effect-milo:hover p {
 #wdw-event-update {
   background-color: pink;
   /* for DEV purposes only */ }
+
+#wdw-list-partners, #wdw-edit-partner, #wdw-add-partner {
+  background-color: deepskyblue; }
+
+.partner-input-fields {
+  width: 40%;
+  text-align: center; }
+
+.title-partners {
+  text-align: center; }
+
+.btn-container {
+  text-align: center; }
+
+#partner-save-btn, #back-btn {
+  display: inline-block;
+  margin: 10px;
+  width: auto; }
+
+.edit-partner-btn, .delete-partner-btn, #partner-add-now-btn, #back-btn2 {
+  width: auto;
+  margin-left: 10px; }
+
+#partners-table {
+  text-align: center; }
+
+#add-partner-btn {
+  width: auto; }
+
+/*#partners-table.tr:nth-child(even) {
+  background-color: #f2f2f2;
+}*/

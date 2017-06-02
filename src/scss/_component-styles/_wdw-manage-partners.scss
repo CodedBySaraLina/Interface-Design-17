@@ -1,0 +1,42 @@
+#wdw-list-partners, #wdw-edit-partner, #wdw-add-partner{
+  @extend .flex-section-column;
+  background-color: deepskyblue;
+}
+
+.partner-input-fields{
+  width: 40%;
+  text-align: center;
+}
+
+.title-partners{
+  text-align: center;
+}
+
+.btn-container{
+  text-align: center;
+}
+
+#partner-save-btn, #back-btn{
+  display: inline-block;
+  margin: 10px;
+  width:auto;
+}
+
+.edit-partner-btn, .delete-partner-btn, #partner-add-now-btn, #back-btn2{
+  width:auto;
+  margin-left: 10px;
+}
+
+#partners-table{
+  text-align: center;
+}
+
+#add-partner-btn{
+  width:auto;
+}
+
+/*#partners-table.tr:nth-child(even) {
+  background-color: #f2f2f2;
+}*/
+
+

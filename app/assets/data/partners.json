@@ -3,7 +3,21 @@
 		"id": "1",
 		"name": "KEA",
 		"type": "Educational Institution",
-		"Description": "Lorem Ipsum Dolor. Snoop Dogg.",
+		"description": "Lorem Ipsum Dolor. Snoop Dogg.",
 		"partnerpic_src": "../img/partner-profile/#.png"
-	}
+	},
+  {
+    "id": "2",
+    "name": "KU",
+    "type": "Educational Institution",
+    "description": "Lorem Ipsum Dolor. MC Hammer.",
+    "partnerpic_src": "../img/partner-profile/#.png"
+  },
+  {
+    "id": "3",
+    "name": "CBS",
+    "type": "Educational Institution",
+    "description": "Lorizzle fizzle dolizzle sit amet, consectetuer adipiscing dawg.",
+    "partnerpic_src": "../img/partner-profile/#.png"
+  }
 ]
