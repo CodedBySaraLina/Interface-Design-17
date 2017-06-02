@@ -235,7 +235,14 @@
   <div id="wdw-event-manager-container">
     <!-- START #wdw-event-create -->
     <div id="wdw-event-create">
-      <h1>Create Event</h1>
+	    <!-- START #wdw-event-create-headline -->
+	    <div id="wdw-event-create-headline">
+	      <div class="section-content"> <!-- START .flex-container -->
+	        <h1>Create Event</h1>
+	      </div> <!-- END .flex-container -->
+	    </div> <!-- END #wdw-event-create-headline -->
+
+      
       <input type="text" name="event-name" placeholder="Name">
       <input type="text" name="event-topics" placeholder="Topics (separate by comma)">
       <input type="text" name="event-level" placeholder="Level">
@@ -248,7 +255,13 @@
     </div> <!-- END #wdw-event-create -->
     <!-- START #wdw-event-update -->
     <div id="wdw-event-update" data-event-id="">
-      <h1>Update Event</h1>
+      	<!-- START #wdw-event-update-headline -->
+      	<div id="wdw-event-update-headline">
+	      <div class="section-content"> <!-- START .flex-container -->
+      		<h1>Update Event</h1> 
+	      </div> <!-- END .flex-container -->
+	    </div> <!-- END #wdw-event-update-headline -->
+
       <input type="text" name="event-name" placeholder="Name">
       <input type="text" name="event-topics" placeholder="Topics (separate by comma)">
       <input type="text" name="event-level" placeholder="Level">
@@ -262,7 +275,20 @@
     </div> <!-- END #wdw-event-update -->
     <!-- START #wdw-event-manage -->
     <div id="wdw-event-manage">
-      <h1>Manage Events</h1>
+      <!-- START #wdw-event-manage-headline -->
+		<div id="wdw-event-manage-headline">
+		  <div class="section-content"> <!-- START .flex-container -->
+		    <h1>Manage Events</h1>
+		    <div class="search-form">
+		      <div>
+		        <input type="text" name="search-engine" placeholder="Search Events">
+		      </div>
+		      <button class="btn-search">
+		        <i class="fa fa-search" aria-hidden="true"></i>
+		      </button>
+		    </div>
+		  </div> <!-- END .flex-container -->
+		</div> <!-- END #wdw-event-manage-headline -->
       <table id="event-listing">
         <thead>
         <tr>
@@ -282,9 +308,24 @@
   </div> <!-- END #wdw-event-manager-container -->
 
   <div id="partners-container">
+    
     <!-- START #wdw-list-partner -->
     <div id="wdw-list-partners">
-      <h1>Manage Partners</h1>
+    	<!-- START #wdw-list-partners-headline -->
+		<div id="wdw-list-partners-headline">
+		  <div class="section-content"> <!-- START .flex-container -->
+		    <h1>Manage Partners</h1>
+		    <div class="search-form">
+		      <div>
+		        <input type="text" name="search-engine" placeholder="Search Partners">
+		      </div>
+		      <button class="btn-search">
+		        <i class="fa fa-search" aria-hidden="true"></i>
+		      </button>
+		    </div>
+		  </div> <!-- END .flex-container -->
+		</div> <!-- END #wdw-list-partners-headline -->
+
       <table id="partners-table">
         <thead>
         <tr>
@@ -306,19 +347,29 @@
 
     <!-- START #wdw-edit-partner -->
     <div id="wdw-edit-partner">
+    	<!-- START #wdw-edit-partner-headline -->
+      	<div id="wdw-edit-partner-headline">
+	      <div class="section-content"> <!-- START .flex-container -->
+      		<h1>Edit Partner</h1> 
+	      </div> <!-- END .flex-container -->
+	    </div> <!-- END #wdw-edit-partner-headline -->
 
-      <h1 class="title-partners">Edit Partners</h1>
-    <input class="partner-input-fields" type="text" name="partner-name" placeholder="Name">
-    <input class="partner-input-fields" type="text" name="partner-type" placeholder="Type">
-    <input class="partner-input-fields" type="text" name="partner-descr" placeholder="Description">
-    <input class="partner-input-fields" type="text" name="partner-pict" placeholder="Picture source(for now)">
-      <div class="btn-container"><button id="partner-save-btn">Save</button><button id="back-btn">Back</button></div>
+	    <input class="partner-input-fields" type="text" name="partner-name" placeholder="Name">
+	    <input class="partner-input-fields" type="text" name="partner-type" placeholder="Type">
+	    <input class="partner-input-fields" type="text" name="partner-descr" placeholder="Description">
+	    <input class="partner-input-fields" type="text" name="partner-pict" placeholder="Picture source(for now)">
+	    <div class="btn-container"><button id="partner-save-btn">Save</button><button id="back-btn">Back</button></div>
     </div><!-- END #wdw-edit-partner-container -->
 
     <!-- START #wdw-add-partner -->
     <div id="wdw-add-partner">
+    	<!-- START #wdw-add-partner-headline -->
+      	<div id="wdw-add-partner-headline">
+	      <div class="section-content"> <!-- START .flex-container -->
+      		<h1>Add Partner</h1> 
+	      </div> <!-- END .flex-container -->
+	    </div> <!-- END #wdw-add-partner-headline -->
 
-      <h1 class="title-partners">Add Partner</h1>
       <input class="partner-input-fields" type="text" name="partner-add-name" placeholder="Name">
       <input class="partner-input-fields" type="text" name="partner-add-type" placeholder="Type">
       <input class="partner-input-fields" type="text" name="partner-add-descr" placeholder="Description">
