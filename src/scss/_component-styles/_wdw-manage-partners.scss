@@ -1,3 +1,7 @@
+#partners-container {
+  @extend .navigation-column;
+}
+
 #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner{
   @extend .flex-section-column;
   background-color: deepskyblue;
@@ -39,4 +43,6 @@
   background-color: #f2f2f2;
 }*/
 
-
+#wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline {
+  @extend .section-heading;
+}

@@ -1,23 +1,16 @@
 /* STYLES FOR NAVIGATION CONTAINER */
 #wdw-event-manager-container {
 	@extend .navigation-container;
+	display: none;
 }
-
 
 /* STYLES FOR NAVIGATION CONTAINER'S SECTIONS */
 
-#wdw-event-create {
+#wdw-event-create, #wdw-event-update, #wdw-event-manage {
 	@extend .flex-section-column;
 	background-color: orange; /* for DEV purposes only */
-
-	
 }
 
-#wdw-event-update {
-	@extend .flex-section-column;
-	background-color: pink; /* for DEV purposes only */
-}
-
-#wdw-event-manage {
-	@extend .flex-section-column;
+#wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline {
+	@extend .section-heading;
 }
