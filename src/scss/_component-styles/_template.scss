@@ -43,38 +43,6 @@ ul li {	display: inline-block; }
   flex-grow: 1;
 }
 
-.line-form {
-  @extend .flex-child;
-  width: 100%; /* just need some value to work with.. */
-  padding: 10px;
-  border: none;
-  border-bottom: 1px solid $white;
-  font-family: $font-paragraph;
-  background-color: $dark-gray;
-  color: $white;
-  text-align: center;
-}
-
-/* OUT OF ORDER
-@include x-input-placeholder( .line-form, color, $white);
-input.line-form::-webkit-input-placeholder { color: $white; }
-input.line-form::-moz-placeholder { color: $white; }
-input.line-form:-ms-input-placeholder { color: $white; }
-input.line-form:-moz-placeholder { color: $white; }
-*/
-
-input { outline: none; }
-input[type="checkbox"] { margin-right: $margin-t; }
-
-button {
-  width: $btn-dim;
-  height: $btn-dim;
-  border: none;
-  outline: none;
-  font-size: 24px;
-  color: $white;
-}
-
 .navigation-container {
   width: auto;
   height: auto;
@@ -82,18 +50,51 @@ button {
   top: $nav-height;
 }
 
+.section-content {
+  @extend .flex-child;
+  align-self: center;
+  flex-direction: column;
+  width: 960px;
+}
+
+.form-container {
+  @extend .flex-container;
+  width: 300px;
+  min-height: 500px;
+  padding-top: $margin-g;
+  padding-bottom: $margin-g;
+
+  div {
+    @extend .section-content;
+  }
+
+  div input:first-child {
+    margin-top: 0;
+  }
+
+  div input {
+    width: 100%;
+  }
+
+  div button {
+    margin-top: $margin-s;
+  }
+
+  .btn-row {
+    height: auto;
+    width: inherit;
+    display: inline;
+  }
+
+}
+
+
 .section-heading {
   @extend .flex-section;
   text-align: center;
   height: $nav-height * 2.25;
   background-color: $dark-gray;
   color: $white;
-  
-  .section-content {
-    @extend .flex-child;
-    flex-direction: column;
-    width: 960px;
-  }
 
   h1 {
     margin-top: 0;
@@ -120,7 +121,47 @@ button {
     color: $white;
     background-color: $green;
     margin-left: $margin-n;
+    width: $btn-dim;
+    height: $btn-dim;
   }
+}
+
+.line-form {
+  @extend .flex-child;
+  width: 100%; /* just need some value to work with.. */
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid $white;
+  font-family: $font-paragraph;
+  background-color: $dark-gray;
+  color: $white;
+  text-align: center;
+}
+
+/* OUT OF ORDER
+@include x-input-placeholder( .line-form, color, $white);
+input.line-form::-webkit-input-placeholder { color: $white; }
+input.line-form::-moz-placeholder { color: $white; }
+input.line-form:-ms-input-placeholder { color: $white; }
+input.line-form:-moz-placeholder { color: $white; }
+*/
+
+input {
+  border: none;
+  outline: none;
+  margin-top: $margin-s;
+  padding: $margin-t $margin-s;
+}
+
+input[type="checkbox"] { margin-right: $margin-t; }
+
+button {
+  padding: $margin-s;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: $white;
+  overflow-wrap: break-word;
 }
 
 

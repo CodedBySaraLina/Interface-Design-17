@@ -19,9 +19,9 @@ $nav-height: 110px; /* nav height - set height */
 $grid-sys: 1080px; /* based after the classic 960 grid system */
 $btn-dim: 60px; /* dimensions of btns */
 
-$font-display: 'Roboto Mono';
-$font-paragraph: 'Roboto';
+$font-display: 'Roboto Mono', sans-serif;
+$font-paragraph: 'Roboto', sans-serif;
 
 
-$shadow: 2px 3px 5px 0px blue;
-$shadow-inset: 1px 2px 3px 0px blue inset;
+$shadow: 2px 3px 5px 0px $dark-gray;
+$shadow-inset: 1px 2px 3px 0px $dark-gray inset;

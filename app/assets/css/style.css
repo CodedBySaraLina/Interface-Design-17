@@ -638,7 +638,7 @@ div#wdw-calendar {
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
-  font-family: "Roboto Mono"; }
+  font-family: "Roboto Mono", sans-serif; }
 
 h1 {
   font-size: 2.67em; }
@@ -656,11 +656,11 @@ h5 {
   font-size: .83em; }
 
 h6 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: .75em; }
 
 p {
-  font-family: "Roboto"; }
+  font-family: "Roboto", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -668,7 +668,7 @@ a {
 ul li {
   display: inline-block; }
 
-.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events, #loginform, #registerform, .flex-child, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], .section-heading .section-content, #wdw-search .section-content, #wdw-event-create-headline .section-content, #wdw-event-update-headline .section-content, #wdw-event-manage-headline .section-content, #wdw-list-partners-headline .section-content, #wdw-edit-partner-headline .section-content, #wdw-add-partner-headline .section-content, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
+.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events, #loginform, #registerform, .flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div, .form-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -686,7 +686,7 @@ ul li {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.flex-child, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], .section-heading .section-content, #wdw-search .section-content, #wdw-event-create-headline .section-content, #wdw-event-update-headline .section-content, #wdw-event-manage-headline .section-content, #wdw-list-partners-headline .section-content, #wdw-edit-partner-headline .section-content, #wdw-add-partner-headline .section-content, #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
+.flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-negative: 1;
@@ -694,53 +694,41 @@ ul li {
   -ms-flex-positive: 1;
       flex-grow: 1; }
 
-.line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"] {
-  width: 100%;
-  /* just need some value to work with.. */
-  padding: 10px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  font-family: "Roboto";
-  background-color: #282526;
-  color: #fff;
-  text-align: center; }
-
-/* OUT OF ORDER
-@include x-input-placeholder( .line-form, color, $white);
-input.line-form::-webkit-input-placeholder { color: $white; }
-input.line-form::-moz-placeholder { color: $white; }
-input.line-form:-ms-input-placeholder { color: $white; }
-input.line-form:-moz-placeholder { color: $white; }
-*/
-input {
-  outline: none; }
-
-input[type="checkbox"] {
-  margin-right: 7px; }
-
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
-  width: 60px;
-  height: 60px;
-  border: none;
-  outline: none;
-  font-size: 24px;
-  color: #fff; }
-
-.navigation-container, #wdw-event-manager-container {
+.navigation-container, #wdw-event-manager-container, #partners-container {
   width: auto;
   height: auto;
   position: relative;
   top: 110px; }
+
+.section-content, .form-container div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 960px; }
+
+.form-container {
+  width: 300px;
+  min-height: 500px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .form-container div input:first-child {
+    margin-top: 0; }
+  .form-container div input {
+    width: 100%; }
+  .form-container div button, .form-container div .section-heading .btn-search, .section-heading .form-container div .btn-search, .form-container div #wdw-search .btn-search, #wdw-search .form-container div .btn-search, .form-container div #wdw-event-create-headline .btn-search, #wdw-event-create-headline .form-container div .btn-search, .form-container div #wdw-event-update-headline .btn-search, #wdw-event-update-headline .form-container div .btn-search, .form-container div #wdw-event-manage-headline .btn-search, #wdw-event-manage-headline .form-container div .btn-search, .form-container div #wdw-list-partners-headline .btn-search, #wdw-list-partners-headline .form-container div .btn-search, .form-container div #wdw-edit-partner-headline .btn-search, #wdw-edit-partner-headline .form-container div .btn-search, .form-container div #wdw-add-partner-headline .btn-search, #wdw-add-partner-headline .form-container div .btn-search {
+    margin-top: 15px; }
+  .form-container .btn-row {
+    height: auto;
+    width: inherit;
+    display: inline; }
 
 .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline {
   text-align: center;
   height: 247.5px;
   background-color: #282526;
   color: #fff; }
-  .section-heading .section-content, #wdw-search .section-content, #wdw-event-create-headline .section-content, #wdw-event-update-headline .section-content, #wdw-event-manage-headline .section-content, #wdw-list-partners-headline .section-content, #wdw-edit-partner-headline .section-content, #wdw-add-partner-headline .section-content {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    width: 960px; }
   .section-heading h1, #wdw-search h1, #wdw-event-create-headline h1, #wdw-event-update-headline h1, #wdw-event-manage-headline h1, #wdw-list-partners-headline h1, #wdw-edit-partner-headline h1, #wdw-add-partner-headline h1 {
     margin-top: 0; }
   .section-heading .search-form, #wdw-search .search-form, #wdw-event-create-headline .search-form, #wdw-event-update-headline .search-form, #wdw-event-manage-headline .search-form, #wdw-list-partners-headline .search-form, #wdw-edit-partner-headline .search-form, #wdw-add-partner-headline .search-form {
@@ -764,7 +752,44 @@ button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create
   .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
     color: #fff;
     background-color: #86B954;
-    margin-left: 30px; }
+    margin-left: 30px;
+    width: 60px;
+    height: 60px; }
+
+.line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"] {
+  width: 100%;
+  /* just need some value to work with.. */
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: "Roboto", sans-serif;
+  background-color: #282526;
+  color: #fff;
+  text-align: center; }
+
+/* OUT OF ORDER
+@include x-input-placeholder( .line-form, color, $white);
+input.line-form::-webkit-input-placeholder { color: $white; }
+input.line-form::-moz-placeholder { color: $white; }
+input.line-form:-ms-input-placeholder { color: $white; }
+input.line-form:-moz-placeholder { color: $white; }
+*/
+input {
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  padding: 7px 15px; }
+
+input[type="checkbox"] {
+  margin-right: 7px; }
+
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #fff;
+  overflow-wrap: break-word; }
 
 /*Menu Nav */
 .snip1211 {
@@ -1443,8 +1468,12 @@ figure.effect-milo:hover p {
   color: white; }
 
 /* STYLES FOR NAVIGATION CONTAINER */
+#wdw-event-manager-container {
+  /* display: none; */ }
+
 /* STYLES FOR NAVIGATION CONTAINER'S SECTIONS */
 #wdw-event-create, #wdw-event-update, #wdw-event-manage {
+  height: auto;
   background-color: orange;
   /* for DEV purposes only */ }
 

@@ -1,13 +1,14 @@
 /* STYLES FOR NAVIGATION CONTAINER */
 #wdw-event-manager-container {
 	@extend .navigation-container;
-	display: none;
+	/* display: none; */
 }
 
 /* STYLES FOR NAVIGATION CONTAINER'S SECTIONS */
 
 #wdw-event-create, #wdw-event-update, #wdw-event-manage {
 	@extend .flex-section-column;
+	height: auto;
 	background-color: orange; /* for DEV purposes only */
 }
 
