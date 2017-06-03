@@ -241,17 +241,21 @@
 	        <h1>Create Event</h1>
 	      </div> <!-- END .flex-container -->
 	    </div> <!-- END #wdw-event-create-headline -->
+	    <!-- START .form-container -->
+	    <div class="form-container">
+		    <div>
+				<input type="text" name="event-name" placeholder="Name">
+				<input type="text" name="event-topics" placeholder="Topics (separate by comma)">
+				<input type="text" name="event-level" placeholder="Level">
+				<input type="text" name="event-speaker" placeholder="Speaker">
+				<input type="text" name="event-speaker-org" placeholder="Organization">
+				<input type="date" name="event-date">
+				<input type="text" name="event-time" placeholder="Time (24h)">
+				<input type="text" name="event-info" placeholder="Info">
+				<button id="create-event-btn">Save</button>
+		    </div>
+	    </div> <!-- END .form-container -->
 
-      
-      <input type="text" name="event-name" placeholder="Name">
-      <input type="text" name="event-topics" placeholder="Topics (separate by comma)">
-      <input type="text" name="event-level" placeholder="Level">
-      <input type="text" name="event-speaker" placeholder="Speaker">
-      <input type="text" name="event-speaker-org" placeholder="Organization">
-      <input type="date" name="event-date">
-      <input type="text" name="event-time" placeholder="Time (24h)">
-      <input type="text" name="event-info" placeholder="Info">
-      <button id="create-event-btn">Save</button>
     </div> <!-- END #wdw-event-create -->
     <!-- START #wdw-event-update -->
     <div id="wdw-event-update" data-event-id="">
@@ -261,17 +265,23 @@
       		<h1>Update Event</h1> 
 	      </div> <!-- END .flex-container -->
 	    </div> <!-- END #wdw-event-update-headline -->
-
-      <input type="text" name="event-name" placeholder="Name">
-      <input type="text" name="event-topics" placeholder="Topics (separate by comma)">
-      <input type="text" name="event-level" placeholder="Level">
-      <input type="text" name="event-speaker" placeholder="Speaker">
-      <input type="text" name="event-speaker-org" placeholder="Organization">
-      <input type="date" id="edit-event-date" name="event-date">
-      <input type="text" name="event-time" placeholder="Time (24h)">
-      <input type="text" name="event-info" placeholder="Info">
-      <button id="update-event-btn">Save</button>
-      <button id="cancel-update-event-btn">Cancel</button>
+		<!-- START .form-container -->
+	    <div class="form-container">
+		    <div>
+				<input type="text" name="event-name" placeholder="Name">
+				<input type="text" name="event-topics" placeholder="Topics (separate by comma)">
+				<input type="text" name="event-level" placeholder="Level">
+				<input type="text" name="event-speaker" placeholder="Speaker">
+				<input type="text" name="event-speaker-org" placeholder="Organization">
+				<input type="date" id="edit-event-date" name="event-date">
+				<input type="text" name="event-time" placeholder="Time (24h)">
+				<input type="text" name="event-info" placeholder="Info">
+				<div class="btn-row">
+					<button id="update-event-btn">Save</button>
+					<button id="cancel-update-event-btn">Cancel</button>
+				</div>
+			</div>
+		</div> <!-- END .form-container -->
     </div> <!-- END #wdw-event-update -->
     <!-- START #wdw-event-manage -->
     <div id="wdw-event-manage">
