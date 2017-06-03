@@ -668,6 +668,13 @@ a {
 ul li {
   display: inline-block; }
 
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, input {
+  border-radius: 5px; }
+
+i:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%); }
+
 .flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events, #loginform, #registerform, .flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div, .form-container {
   display: -ms-flexbox;
   display: flex;
@@ -1488,14 +1495,15 @@ figure.effect-milo:hover p {
   text-align: center; }
 
 .btn-container {
-  text-align: center; }
+  text-align: center;
+  margin: 10px; }
 
-#partner-save-btn, #back-btn {
+#partner-save-btn, #cancel-btn {
   display: inline-block;
-  margin: 10px;
-  width: auto; }
+  width: auto;
+  margin-left: 10px; }
 
-.edit-partner-btn, .delete-partner-btn, #partner-add-now-btn, #back-btn2 {
+#partner-add-now-btn, #cancel-btn2 {
   width: auto;
   margin-left: 10px; }
 
@@ -1503,7 +1511,8 @@ figure.effect-milo:hover p {
   text-align: center; }
 
 #add-partner-btn {
-  width: auto; }
+  width: auto;
+  margin: 10px; }
 
 /*#partners-table.tr:nth-child(even) {
   background-color: #f2f2f2;
