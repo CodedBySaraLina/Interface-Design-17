@@ -6,7 +6,7 @@
  * @version 1.0.5
  * Copyright 2017. MIT licensed.
  */
-       
+
 
 
 
@@ -127,15 +127,15 @@
 									<td>' + jEventObj.date.day + ' ' + jEventObj.date.month + ' ' + jEventObj.date.year + '</td>\
 									<td>' + jEventObj.time_24h.hour + ':' + jEventObj.time_24h.minute + '</td>\
 									<td>\
-										<i class="fa fa-pencil" aria-hidden="true"></i>\
-										<i class="fa fa-trash" aria-hidden="true"></i>\
+										<i class="fa fa-pencil" id="edit-event-icon" aria-hidden="true"></i>\
+										<i class="fa fa-trash" id="delete-event-icon" aria-hidden="true"></i>\
 									</td>\
 								</tr>\
 	');
   });
 
 //U from CRUD - onClick .fa-edit - open editing interface
-  $(document).on("click", ".fa-pencil", function() {
+  $(document).on("click", "#edit-event-icon", function() {
     console.log(".fa-pencil icon clicked");
     //get tr id of .fa-pencil parent
     var sDataId = $(this).parent().parent().data("event-id");
@@ -284,8 +284,8 @@
 									<td>' + jEventObj.date.day + ' ' + jEventObj.date.month + ' ' + jEventObj.date.year + '</td>\
 									<td>' + jEventObj.time_24h.hour + ':' + jEventObj.time_24h.minute + '</td>\
 									<td>\
-										<i class="fa fa-pencil" aria-hidden="true"></i>\
-										<i class="fa fa-trash" aria-hidden="true"></i>\
+										<i class="fa fa-pencil" id="edit-event-icon" aria-hidden="true"></i>\
+										<i class="fa fa-trash" id="delete-event-icon" aria-hidden="true"></i>\
 									</td>\
 								</tr>\
 	');
@@ -298,7 +298,7 @@
   });
 
 //D from CRUD - onClick .fa-trash - delete from interface and localstorage
-  $(document).on("click", ".fa-trash", function() {
+  $(document).on("click", "#delete-event-icon", function() {
     console.log(".fa-trash icon clicked");
     //get tr id of .fa-trash parent
     var sDataId = $(this).parent().parent().data("event-id");
@@ -333,8 +333,8 @@
 										<td>' + j.date.day + ' ' + j.date.month + ' ' + j.date.year + '</td>\
 										<td>' + j.time_24h.hour + ':' + j.time_24h.minute + '</td>\
 										<td>\
-											<i class="fa fa-pencil" aria-hidden="true"></i>\
-											<i class="fa fa-trash" aria-hidden="true"></i>\
+											<i class="fa fa-pencil" id="edit-event-icon" aria-hidden="true"></i>\
+											<i class="fa fa-trash" id="delete-event-icon" aria-hidden="true"></i>\
 										</td>\
 									</tr>\
 			');
@@ -621,15 +621,15 @@
     //append each partner in the table
     finalPartners.forEach(function (item) {
       $('#partners-table tbody').append(
-        "<tr>" +
-        "<td>" + item.id + "</td>" +
-        "<td>" + item.name + "</td>" +
-        "<td>" + item.type + "</td>" +
-        "<td>" + item.description + "</td>" +
-        "<td>" + item.partnerpic_src + "</td>" +
-        "<td><button class='edit-partner-btn' id='edit" + item.id + "'>Edit</button>" +
-        "<button class='delete-partner-btn' id='delete" + item.id + "'>Delete</button></td>" +
-        "</tr>");
+        "<tr>\
+        <td>" + item.id + "</td>\
+        <td>" + item.name + "</td>\
+        <td>" + item.type + "</td>\
+        <td>" + item.description + "</td>\
+        <td>" + item.partnerpic_src + "</td>\
+        <td><i class='fa fa-pencil' id='edit-partner-btn' data-partner-id = '"+ item.id +"'></i>\
+        <i class='fa fa-trash' id='delete-partner-btn' data-partner-id = '" + item.id + "'></i></td>\
+        </tr>");
     });
     
   }
@@ -678,8 +678,8 @@
   
   var id;
   //listener to display the edit container and fill input fields with the clicked partner
-  $("body").on("click",".edit-partner-btn",function(){
-    id = (this.id).replace("edit","");
+  $("body").on("click", "#edit-partner-btn", function(){
+    id = $(this).data('partner-id');
     //hide partners list and show edit partner container
     $("#wdw-list-partners").hide();
     $("#wdw-edit-partner").show();
@@ -728,7 +728,7 @@
     $("#wdw-list-partners").show();
   });
   
-  $('#back-btn').on('click', function () {
+  $('#cancel-btn').on('click', function () {
     $("#wdw-edit-partner").hide();
     $("#wdw-list-partners").show();
   });
@@ -766,7 +766,7 @@
     $("#wdw-list-partners").show();
   });
   
-  $('#back-btn2').on('click', function () {
+  $('#cancel-btn2').on('click', function () {
     $("#wdw-add-partner").hide();
     $("#wdw-list-partners").show();
   })
@@ -774,8 +774,8 @@
   //Delete Partners
   /**********************************************************************/
   //listener to delete one partner
-  $("body").on("click",".delete-partner-btn",function(){
-    id = (this.id).replace("delete","");
+  $("body").on("click","#delete-partner-btn",function(){
+    id = $(this).data('partner-id');
     //get the partners from local storage
     var oPartners = JSON.parse(localStorage.partners);
     //iterate through partners object and delete the one with a specific id
