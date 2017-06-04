@@ -8,6 +8,7 @@
 		"speaker_organization": "Unity",
 		"date": { "day": 8, "month": 9, "year": 2017 },
 		"time_24h": { "hour" : "15", "minute" : "00" } ,
+		"location" : { "street-add" : "Lygten 37", "city" : "Copenhagen", "zip" : "2200", "country" : "Denmark" },
 		"info": "Fuck yes!",
 		"past": "false"
 	},
