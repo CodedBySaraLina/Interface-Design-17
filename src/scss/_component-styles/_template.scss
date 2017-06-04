@@ -17,6 +17,15 @@ p { font-family: $font-paragraph; }
 a { text-decoration: none; }
 ul li {	display: inline-block; }
 
+button, input{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+i:hover{
+  filter: invert(100%);
+}
 
 .flex-container {
 	display: flex;
@@ -168,7 +177,7 @@ button {
 
 
 
-/*Menu Nav */ 
+/*Menu Nav */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 .snip1211 {

@@ -18,15 +18,17 @@
 
 .btn-container{
   text-align: center;
-}
-
-#partner-save-btn, #back-btn{
-  display: inline-block;
   margin: 10px;
-  width:auto;
 }
 
-.edit-partner-btn, .delete-partner-btn, #partner-add-now-btn, #back-btn2{
+#partner-save-btn, #cancel-btn{
+  display: inline-block;
+  width:auto;
+  margin-left: 10px;
+}
+
+
+#partner-add-now-btn, #cancel-btn2{
   width:auto;
   margin-left: 10px;
 }
@@ -37,6 +39,7 @@
 
 #add-partner-btn{
   width:auto;
+  margin: 10px;
 }
 
 /*#partners-table.tr:nth-child(even) {
