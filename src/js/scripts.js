@@ -871,7 +871,7 @@
   });
 
 //Nav - Login
-  $('#linkLogin').on('click', function() {
+  $('#link-login').on('click', function() {
     hideWindowsAndShowOneWindow('wdw-login');
     console.log('Nav - login clicked');
   });
