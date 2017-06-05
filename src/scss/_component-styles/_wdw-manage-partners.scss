@@ -8,8 +8,9 @@
 }
 
 .partner-input-fields{
-  width: 40%;
+  width: 100%;
   text-align: center;
+  margin: 10px;
 }
 
 .title-partners{
@@ -42,9 +43,9 @@
   margin: 10px;
 }
 
-/*#partners-table.tr:nth-child(even) {
-  background-color: #f2f2f2;
-}*/
+.partners-form-container, #partners-table{
+  margin-top: 30px;
+}
 
 #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline {
   @extend .section-heading;

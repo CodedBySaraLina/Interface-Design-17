@@ -1,0 +1,14 @@
+@mixin custom-transition($value){
+  -moz-transition:    $value;
+  -o-transition:      $value;
+  -webkit-transition: $value;
+  transition:         $value;
+}
+
+
+@mixin custom-transform($value){
+  -moz-transform: scale($value);
+  -o-transform: scale($value);
+  -webkit-transform: scale($value);
+  transform: scale($value);
+}
