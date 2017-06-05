@@ -449,7 +449,7 @@
 //func logout
 
 
-
+/*
 //Define array of events to loop through -> append to the table
   function searchEvents() {
     // Declare variables
@@ -478,7 +478,7 @@
   $('#myInput').keyup(function() {
     searchEvents();
   });
-  
+  */
   
   /*
    function createPost() { //Takes object  Post
@@ -797,11 +797,70 @@
     
     
   });
+
+  /**********************************************************************/
+  //Home page Search 
+  /**********************************************************************/
+
+
+function compare(inputVal, dataVal) {
+	var bool = dataVal.includes(inputVal);
+
+    if (bool == true) {
+    	console.log("True");
+    } else {
+    	console.log("False");
+    }
+
+}
+
+
+
+ //Search input - Home page 
+  $('#searchEvents').on('click', function () {
+      //get input value of #search-engine
+      var inputSearchField =  $('#search-engine').val();
+      var aInput = inputSearchField.split(" ");
+      var jResults = {};
+
+      console.log(aInput);
+      
+      //get instance of localStorage
+      var jTemp = JSON.parse(localStorage.events);
+      
+      //check each aInput for a match
+      aInput.forEach(function(a) {
+
+        //check each array object for a match in corresponding json
+        //a == jTemp.incrementor.property 
+        var temp = a;
+
+        jTemp.forEach(function(j){
+
+           var name = j.name;
+           var topic = j.topic;
+           var level = j.level;
+           var org = j.speaker_organization;
+           var location = j.location;
+
+          // console.log("compare " + temp + " to: " + j.name, "Loca :" + j.location + " Organization " + j.speaker_organization );
+
+           //Compare the values from input -> arrays
+          compare(name, a); 
+
+
+  
+        });
+      }); 
+  }); 
+
+
   
   /**********************************************************************/
   //Event Listeners
   /**********************************************************************/
   
+ 
   //Post
   $('#postbtn').on('click', function() {
     getPost();
