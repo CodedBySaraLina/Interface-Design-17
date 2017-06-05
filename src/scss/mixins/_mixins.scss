@@ -12,3 +12,9 @@
   -webkit-transform: scale($value);
   transform: scale($value);
 }
+
+@mixin roundCorner($value){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}

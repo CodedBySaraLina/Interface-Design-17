@@ -668,12 +668,29 @@ a {
 ul li {
   display: inline-block; }
 
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, input {
-  border-radius: 5px; }
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, input, textarea {
+  border-radius: 0px; }
+
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
+  background-color: #6A6365; }
 
 i:hover {
-  -webkit-filter: invert(100%);
-          filter: invert(100%); }
+  color: #fff;
+  cursor: pointer;
+  -ms-transform: scale(1.3);
+      transform: scale(1.3); }
+
+a:hover {
+  font-weight: 900;
+  color: #4E9E93 !important;
+  cursor: pointer; }
+
+.nav-link {
+  transition: all 0.3s ease-in-out; }
+
+.nav-link:hover {
+  -ms-transform: scale(1.3);
+      transform: scale(1.3); }
 
 .flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events, #loginform, #registerform, .flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-thirds div, .form-container {
   display: -ms-flexbox;
@@ -704,8 +721,7 @@ i:hover {
 .navigation-container, #wdw-event-manager-container, #partners-container {
   width: auto;
   height: auto;
-  position: relative;
-  top: 110px; }
+  position: relative; }
 
 .section-content, .form-container div {
   -ms-flex-item-align: center;
@@ -993,7 +1009,7 @@ div#loginbackground {
 .grid_job {
   position: relative;
   clear: both;
-  margin: 0 auto;
+  margin: auto auto;
   padding: 0;
   background-color: white;
   max-width: 100%;
@@ -1488,8 +1504,9 @@ figure.effect-milo:hover p {
   background-color: deepskyblue; }
 
 .partner-input-fields {
-  width: 40%;
-  text-align: center; }
+  width: 100%;
+  text-align: center;
+  margin: 10px; }
 
 .title-partners {
   text-align: center; }
@@ -1514,6 +1531,5 @@ figure.effect-milo:hover p {
   width: auto;
   margin: 10px; }
 
-/*#partners-table.tr:nth-child(even) {
-  background-color: #f2f2f2;
-}*/
+.partners-form-container, #partners-table {
+  margin-top: 30px; }
