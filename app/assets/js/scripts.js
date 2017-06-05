@@ -811,11 +811,20 @@
   /**********************************************************************/
 
 
-function compare(inputVal, dataVal) {
-	var bool = dataVal.includes(inputVal);
+function compare(inputVal, dataVal, jObj) {
+	inputVal = inputVal.toLowerCase();
+  dataVal = dataVal.toLowerCase();
+
+  console.log("The input value is: " + inputVal);
+  console.log("The JSON data to compare is: " + dataVal);
+
+  var bool = dataVal.includes(inputVal);
+  console.log("The bool = " + bool);
 
     if (bool == true) {
     	console.log("True");
+      //add to jResults (must exist within the scope of the function)
+      jResults.add(jObj);
     } else {
     	console.log("False");
     }
@@ -854,8 +863,11 @@ function compare(inputVal, dataVal) {
           // console.log("compare " + temp + " to: " + j.name, "Loca :" + j.location + " Organization " + j.speaker_organization );
 
            //Compare the values from input -> arrays
-          compare(name, a); 
-
+          compare(temp, name);
+          //compare(temp, topic); //this is an array
+          compare(temp, level);
+          compare(temp, org);
+          //compare(temp, location); //this is a JSON object
 
   
         });
