@@ -14,11 +14,11 @@
 
 </head>
 <body>
-  <!-- START #nav-bar -->
-  <div id="nav-bar">
-    <div>
-      <a class="brand" href="#">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- START #nav-bar -->
+<div id="nav-bar">
+  <div>
+    <a class="brand" href="#">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="345px" height="105px" viewBox="0 0 345 105" enable-background="new 0 0 345 105" xml:space="preserve">
 				<g>
 					<rect fill="#282526" width="345" height="105"/>
@@ -95,351 +95,355 @@
 				<text transform="matrix(1 0 0 1 353 384.8652)" fill="#6A6365" font-family="'RobotoMono-Regular'" font-size="58" letter-spacing="11">.tekhus</text>
 				<text transform="matrix(1 0 0 1 353 174.6445)" fill="#4E9F93" font-family="'RobotoMono-Regular'" font-size="58" letter-spacing="11">.tekhus</text>
 				</svg>
-      </a>
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li class="nav-link" id="link-about"><a>About</a></li>
+      <li class="nav-link" id="link-location"><a>Location</a></li>
+      <li class="nav-link" id="link-home"><a>Home</a></li>
+      <li class="nav-link" id="link-events"><a>Events</a></li>
+      <li class="nav-link" id="link-partners"><a>Partners</a></li>
+      <li class="nav-link" id="link-manage" class="user-function"><a>Manage</a></li><!-- ADD DROP DOWN MENU FOR EASE AND SIMPLICITY -->
+      <li class="nav-link" id="link-login"><a>Login</a></li>
+      <li class="nav-link" id="link-logout" class="user-function"><a>Logout</a></li>
+    </ul>
+  </nav>
+</div> <!-- END #nav-bar -->
+<!-- START #main-container -->
+<div id="main-container">
+  <!-- START #wdw-search -->
+  <div id="wdw-search">
+    <div class="section-content"> <!-- START .flex-container -->
+      <h1>Discover and learn something new!</h1><!-- Filler crap -->
+      <div class="search-form">
+        <div>
+          <input type="text" name="search-engine" id="search-engine"  placeholder="Search for events by name, city, and topic..">
+          <span><input type="checkbox" name=""value="availability"><p>Only show events with available seating</p></span>
+        </div>
+        <button class="btn-search" id="searchEvents">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div> <!-- END .flex-container -->
+  </div> <!-- END #wdw-search -->
+  <!-- START #wdw-events -->
+  <div class="wdw" id="wdw-events">
+    <div class="grid_job">
+
+      <figure class="effect-milo" id="figure1">
+        <img class="featured-company__image" src="https://databricks.com/wp-content/uploads/2016/06/blog-hero@1x.jpg" alt="Spark summit">
+        <figcaption>
+          <h2>Spark Summit  <span> San Francisco, CA </span></h2>
+          <p> Join more than 3,000 Apache Spark engineers, analysts, scientists, and business professionals for three days of in-depth learning and networking.</p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
+
+      <figure class="effect-milo" id="figure2">
+        <img class="featured-company__image" src="http://www.bigdata-toronto.com/2016/images/slider-conf.jpg?crc=380289081" alt="bigdata torronto">
+        <figcaption>
+
+          <h2>Big Data: Toronto 2017 <span>Toronto, Canada</span></h2>
+          <p>  With the rise of Deep Learning, AI, IoT, and Digital Transformation, this conference offers you the knowledge and tools to master the data universe. </p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
+
+      <figure class="effect-milo" id="figure3">
+        <img class="featured-company__image" src="https://static1.squarespace.com/static/555f9696e4b0767a7f0769b3/t/58268b16d1758e699d80e0cc/1478920984616/Black+Hat+USA+Infosec+News+%26+Coverage.jpg?format=2500w " alt="blackhatus">
+        <figcaption>
+          <h2>Black Hat USA <span>Las Vegas, NV</span></h2>
+          <p>A highly technical information security conference that brings together thought leaders from all facets of the infosec world.</p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
+
+
+      <figure class="effect-milo" id="figure4">
+        <img class="featured-company__image" src="http://portugalstartups.com/wp-content/uploads/2015/09/web_summit_01.jpg" alt="web summit">
+        <figcaption>
+          <h2>Web Summit <span>Lisbon, Portugal</span></h2>
+          <p>	Gathering together a diverse group of political leaders, business execs, and startup founders to shed insight on the ever-evolving tech industry.</p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
+
+
+      <figure class="effect-milo" id="figure5">
+        <img class="featured-company__image" src="https://thenextweb.com/conference/uploads/visuals/visual-home.jpg" alt="the next web">
+        <figcaption>
+          <h2>TheNextWeb <span> Brooklyn, NY</span></h2>
+          <p> Discover the true stories behind the make or break moments of the world’s most successful individuals and companies.</p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
+
+
+      <figure class="effect-milo" id="figure6">
+        <img class="featured-company__image" src="http://www.thesfnews.com/wp-content/uploads/2015/09/dreamforce.jpg" alt="dream force">
+        <figcaption>
+          <h2>Dreamforce <span>San Francisco, CA</span></h2>
+          <p>An annual user conference hosted by Salesforce.com, bringing together thought leaders, industry pioneers and thousands of IT professionals.</p>
+          <a href="#">View more</a>
+        </figcaption>
+      </figure>
     </div>
-    <nav>
-      <ul>
-        <li id="link-about"><a>About</a></li>
-        <li id="link-location"><a>Location</a></li>
-        <li id="link-partners"><a>Partners</a></li>
-        <li id="link-manage" class="user-function"><a>Manage</a></li><!-- ADD DROP DOWN MENU FOR EASE AND SIMPLICITY -->
-        <li id="link-login"><a>Login</a></li>
-        <li id="link-logout" class="user-function"><a>Logout</a></li>
-      </ul>
-    </nav>
-  </div> <!-- END #nav-bar -->
-  <!-- START #main-container -->
-  <div id="main-container">
-    <!-- START #wdw-search -->
-    <div id="wdw-search">
+  </div> <!-- END #wdw-events -->
+  <!-- START #wdw-login -->
+  <div class="wdw" id="wdw-login">
+    <div id="loginform">
+      <div id="loginbackground">
+        <h2> Login as Administrator</h2>
+        <input type="text"  placeholder="Username" id="inputusername" >
+        <input type="password" placeholder="Password" id="inputpassword">
+        <button class="snip0050" id="loginbtn"><span>Submit</span><i class="ion-checkmark"></i></button>
+      </div>
+    </div>
+  </div> <!-- END #wdw-login -->
+  <!-- START #wdw-register-member -->
+  <div class="wdw" id="wdw-register-member">
+    <div id="registerform">
+      <div id="regbackground"> <h2>Generate New Members</h2>
+        <input type="text"  placeholder="First Name" id="inputfnamereg" >
+        <input type="text"  placeholder="Last Name" id="inputlnamereg" >
+        <input type="text"  placeholder="Location" id="inputlocationreg" >
+        <input type="text"  placeholder="Email" id="inputemailreg" >
+        <input type="text"  placeholder="Username" id="inputusernamereg" >
+        <input type="password" placeholder="Password" id="inputpasswordreg">
+        <button class="snip0050" id="memberbtn"><span>Submit</span><i class="ion-checkmark"></i></button>
+      </div>
+    </div>
+  </div> <!-- END #wdw-register-member -->
+</div> <!-- END #main-container -->
+
+<!-- START wdw calendar -->
+<div class="wdw" id="wdw-calendar" >
+  <input type="text" id="myInput" onkeyup="searchEvents()" placeholder="Search for events..">
+  <table id="myTable">
+    <tbody class="calendar-back">
+    <tr class="header">
+      <th style="width:20%;">Events</th>
+      <th style="width:20%;">Country</th>
+      <th style="width:20%;">Date</th>
+      <th style="width:20%;">Link</th>
+      <th style="width:20%;">Delete</th>
+    </tr>
+    <tr>
+      <td>Spark Summit</td>
+      <td>San Francisco , CA</td>
+      <td>1 May</td>
+      <td>www..com</td>
+      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+    </tr>
+    <tr>
+      <td>Black hat</td>
+      <td>USA, Las Vegas</td>
+      <td>10 June</td>
+      <td>www..com</td>
+      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+    </tr>
+    <tr>
+      <td>TheNextWeb</td>
+      <td>US, Brooklyn</td>
+      <td>28 December</td>
+      <td>www..com</td>
+      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+    </tr>
+    <tr>
+      <td>bigdata</td>
+      <td>Canada, Toronto</td>
+      <td>28 September</td>
+      <td>www..com</td>
+      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+    </tr>
+    <tr>
+      <td>Web Summit</td>
+      <td>Portugal, Lisbon</td>
+      <td>28 July</td>
+      <td>www..com</td>
+      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+    </tr>
+    <tr>
+      <td>Dreamforce</td>
+      <td>US, San Francisco</td>
+      <td>28 November</td>
+      <td>www..com</td>
+      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+    </tr>
+    </tbody>
+
+  </table>
+</div>
+<!-- START #wdw-event-manager-container -->
+<div class="wdw" id="wdw-event-manager-container">
+  <!-- START #wdw-event-create -->
+  <div id="wdw-event-create">
+    <!-- START #wdw-event-create-headline -->
+    <div id="wdw-event-create-headline">
       <div class="section-content"> <!-- START .flex-container -->
-        <h1>Discover and learn something new!</h1><!-- Filler crap -->
+        <h1>Create Event</h1>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-event-create-headline -->
+    <!-- START .form-container -->
+    <div class="form-container">
+      <div>
+        <input type="text" name="event-name" placeholder="Name">
+        <input type="text" name="event-topics" placeholder="Topics (separate by comma)">
+        <input type="text" name="event-level" placeholder="Level">
+        <input type="text" name="event-speaker" placeholder="Speaker">
+        <input type="text" name="event-speaker-org" placeholder="Organization">
+        <input type="date" name="event-date">
+        <input type="text" name="event-time" placeholder="Time (24h)">
+        <input type="text" name="event-info" placeholder="Info">
+        <button id="create-event-btn">Save</button>
+      </div>
+    </div> <!-- END .form-container -->
+
+  </div> <!-- END #wdw-event-create -->
+  <!-- START #wdw-event-update -->
+  <div id="wdw-event-update" data-event-id="">
+    <!-- START #wdw-event-update-headline -->
+    <div id="wdw-event-update-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Update Event</h1>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-event-update-headline -->
+    <!-- START .form-container -->
+    <div class="form-container">
+      <div>
+        <input type="text" name="event-name" placeholder="Name">
+        <input type="text" name="event-topics" placeholder="Topics (separate by comma)">
+        <input type="text" name="event-level" placeholder="Level">
+        <input type="text" name="event-speaker" placeholder="Speaker">
+        <input type="text" name="event-speaker-org" placeholder="Organization">
+        <input type="date" id="edit-event-date" name="event-date">
+        <input type="text" name="event-time" placeholder="Time (24h)">
+        <input type="text" name="event-info" placeholder="Info">
+        <div class="btn-row">
+          <button id="update-event-btn">Save</button>
+          <button id="cancel-update-event-btn">Cancel</button>
+        </div>
+      </div>
+    </div> <!-- END .form-container -->
+  </div> <!-- END #wdw-event-update -->
+  <!-- START #wdw-event-manage -->
+  <div id="wdw-event-manage">
+    <!-- START #wdw-event-manage-headline -->
+    <div id="wdw-event-manage-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Manage Events</h1>
         <div class="search-form">
           <div>
-            <input type="text" name="search-engine" id="search-engine"  placeholder="Search for events by name, city, and topic..">
-            <span><input type="checkbox" name=""value="availability"><p>Only show events with available seating</p></span>
+            <input type="text" name="search-engine" placeholder="Search Events">
           </div>
-          <button class="btn-search" id="searchEvents">
+          <button class="btn-search">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
         </div>
       </div> <!-- END .flex-container -->
-    </div> <!-- END #wdw-search -->
-    <!-- START #wdw-events -->
-    <div id="wdw-events">
-      <div class="grid_job">
-
-                      <figure class="effect-milo" id="figure1">                   
-                  <img class="featured-company__image" src="https://databricks.com/wp-content/uploads/2016/06/blog-hero@1x.jpg" alt="Spark summit">
-                <figcaption>
-                <h2>Spark Summit  <span> San Francisco, CA </span></h2>
-                    <p> Join more than 3,000 Apache Spark engineers, analysts, scientists, and business professionals for three days of in-depth learning and networking.</p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>               
-
-                              <figure class="effect-milo" id="figure2">                   
-                  <img class="featured-company__image" src="http://www.bigdata-toronto.com/2016/images/slider-conf.jpg?crc=380289081" alt="bigdata torronto">
-                <figcaption>
-
-            <h2>Big Data: Toronto 2017 <span>Toronto, Canada</span></h2>
-                    <p>  With the rise of Deep Learning, AI, IoT, and Digital Transformation, this conference offers you the knowledge and tools to master the data universe. </p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>               
-
-                              <figure class="effect-milo" id="figure3">                   
-                    <img class="featured-company__image" src="https://static1.squarespace.com/static/555f9696e4b0767a7f0769b3/t/58268b16d1758e699d80e0cc/1478920984616/Black+Hat+USA+Infosec+News+%26+Coverage.jpg?format=2500w " alt="blackhatus">
-                <figcaption>
-            <h2>Black Hat USA <span>Las Vegas, NV</span></h2>
-                    <p>A highly technical information security conference that brings together thought leaders from all facets of the infosec world.</p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-
-
-                              <figure class="effect-milo" id="figure4">                       
-                  <img class="featured-company__image" src="http://portugalstartups.com/wp-content/uploads/2015/09/web_summit_01.jpg" alt="web summit">
-                <figcaption>
-            <h2>Web Summit <span>Lisbon, Portugal</span></h2>
-                    <p>	Gathering together a diverse group of political leaders, business execs, and startup founders to shed insight on the ever-evolving tech industry.</p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>               
-                                                              
-                                                                                    
-                            <figure class="effect-milo" id="figure5">                   
-                  <img class="featured-company__image" src="https://thenextweb.com/conference/uploads/visuals/visual-home.jpg" alt="the next web">
-                <figcaption>
-            <h2>TheNextWeb <span> Brooklyn, NY</span></h2>
-                    <p> Discover the true stories behind the make or break moments of the world’s most successful individuals and companies.</p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>       
-
-
-                                    <figure class="effect-milo" id="figure6">                   
-                    <img class="featured-company__image" src="http://www.thesfnews.com/wp-content/uploads/2015/09/dreamforce.jpg" alt="dream force">
-                <figcaption>
-            <h2>Dreamforce <span>San Francisco, CA</span></h2>
-                    <p>An annual user conference hosted by Salesforce.com, bringing together thought leaders, industry pioneers and thousands of IT professionals.</p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>               
-                  </div>
-    </div> <!-- END #wdw-events -->
-    <!-- START #wdw-login -->
-    <div class="wdw" id="wdw-login">
-      <div id="loginform">
-        <div id="loginbackground">
-          <h2> Login as Administrator</h2>
-          <input type="text"  placeholder="Username" id="inputusername" >
-          <input type="password" placeholder="Password" id="inputpassword">
-          <button class="snip0050" id="loginbtn"><span>Submit</span><i class="ion-checkmark"></i></button>
-        </div>
-      </div>
-    </div> <!-- END #wdw-login -->
-    <!-- START #wdw-register-member -->
-    <div class="wdw" id="wdw-register-member">
-      <div id="registerform">
-        <div id="regbackground"> <h2>Generate New Members</h2>
-          <input type="text"  placeholder="First Name" id="inputfnamereg" >
-          <input type="text"  placeholder="Last Name" id="inputlnamereg" >
-          <input type="text"  placeholder="Location" id="inputlocationreg" >
-          <input type="text"  placeholder="Email" id="inputemailreg" >
-          <input type="text"  placeholder="Username" id="inputusernamereg" >
-          <input type="password" placeholder="Password" id="inputpasswordreg">
-          <button class="snip0050" id="memberbtn"><span>Submit</span><i class="ion-checkmark"></i></button>
-        </div>
-      </div>
-    </div> <!-- END #wdw-register-member -->
-  </div> <!-- END #main-container -->
-
-  <!-- START wdw calendar -->
-  <div class="wdw" id="wdw-calendar" >
-    <input type="text" id="myInput" onkeyup="searchEvents()" placeholder="Search for events..">
-    <table id="myTable">
-      <tbody class="calendar-back">
-      <tr class="header">
-        <th style="width:20%;">Events</th>
-        <th style="width:20%;">Country</th>
-        <th style="width:20%;">Date</th>
-        <th style="width:20%;">Link</th>
-        <th style="width:20%;">Delete</th>
-      </tr>
+    </div> <!-- END #wdw-event-manage-headline -->
+    <table id="event-listing">
+      <thead>
       <tr>
-        <td>Spark Summit</td>
-        <td>San Francisco , CA</td>
-        <td>1 May</td>
-        <td>www..com</td>
-        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+        <th>Name</th>
+        <th id="topic-search">Topics</th>
+        <th>Speaker</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th><!-- EDITING OPTIONS --></th>
       </tr>
-      <tr>
-        <td>Black hat</td>
-        <td>USA, Las Vegas</td>
-        <td>10 June</td>
-        <td>www..com</td>
-        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-      </tr>
-      <tr>
-        <td>TheNextWeb</td>
-        <td>US, Brooklyn</td>
-        <td>28 December</td>
-        <td>www..com</td>
-        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-      </tr>
-      <tr>
-        <td>bigdata</td>
-        <td>Canada, Toronto</td>
-        <td>28 September</td>
-        <td>www..com</td>
-        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-      </tr>
-      <tr>
-        <td>Web Summit</td>
-        <td>Portugal, Lisbon</td>
-        <td>28 July</td>
-        <td>www..com</td>
-        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-      </tr>
-      <tr>
-        <td>Dreamforce</td>
-        <td>US, San Francisco</td>
-        <td>28 November</td>
-        <td>www..com</td>
-        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-      </tr>
+      </thead>
+      <tbody>
+      <!-- DATA GOES HERE -->
       </tbody>
-
     </table>
-  </div>
-  <!-- START #wdw-event-manager-container -->
-  <div id="wdw-event-manager-container">
-    <!-- START #wdw-event-create -->
-    <div id="wdw-event-create">
-	    <!-- START #wdw-event-create-headline -->
-	    <div id="wdw-event-create-headline">
-	      <div class="section-content"> <!-- START .flex-container -->
-	        <h1>Create Event</h1>
-	      </div> <!-- END .flex-container -->
-	    </div> <!-- END #wdw-event-create-headline -->
-	    <!-- START .form-container -->
-	    <div class="form-container">
-		    <div>
-				<input type="text" name="event-name" placeholder="Name">
-				<input type="text" name="event-topics" placeholder="Topics (separate by comma)">
-				<input type="text" name="event-level" placeholder="Level">
-				<input type="text" name="event-speaker" placeholder="Speaker">
-				<input type="text" name="event-speaker-org" placeholder="Organization">
-				<input type="date" name="event-date">
-				<input type="text" name="event-time" placeholder="Time (24h)">
-				<input type="text" name="event-info" placeholder="Info">
-				<button id="create-event-btn">Save</button>
-		    </div>
-	    </div> <!-- END .form-container -->
+  </div><!-- END #wdw-event-manage -->
+</div> <!-- END #wdw-event-manager-container -->
 
-    </div> <!-- END #wdw-event-create -->
-    <!-- START #wdw-event-update -->
-    <div id="wdw-event-update" data-event-id="">
-      	<!-- START #wdw-event-update-headline -->
-      	<div id="wdw-event-update-headline">
-	      <div class="section-content"> <!-- START .flex-container -->
-      		<h1>Update Event</h1>
-	      </div> <!-- END .flex-container -->
-	    </div> <!-- END #wdw-event-update-headline -->
-		<!-- START .form-container -->
-	    <div class="form-container">
-		    <div>
-				<input type="text" name="event-name" placeholder="Name">
-				<input type="text" name="event-topics" placeholder="Topics (separate by comma)">
-				<input type="text" name="event-level" placeholder="Level">
-				<input type="text" name="event-speaker" placeholder="Speaker">
-				<input type="text" name="event-speaker-org" placeholder="Organization">
-				<input type="date" id="edit-event-date" name="event-date">
-				<input type="text" name="event-time" placeholder="Time (24h)">
-				<input type="text" name="event-info" placeholder="Info">
-				<div class="btn-row">
-					<button id="update-event-btn">Save</button>
-					<button id="cancel-update-event-btn">Cancel</button>
-				</div>
-			</div>
-		</div> <!-- END .form-container -->
-    </div> <!-- END #wdw-event-update -->
-    <!-- START #wdw-event-manage -->
-    <div id="wdw-event-manage">
-      <!-- START #wdw-event-manage-headline -->
-		<div id="wdw-event-manage-headline">
-		  <div class="section-content"> <!-- START .flex-container -->
-		    <h1>Manage Events</h1>
-		    <div class="search-form">
-		      <div>
-		        <input type="text" name="search-engine" placeholder="Search Events">
-		      </div>
-		      <button class="btn-search">
-		        <i class="fa fa-search" aria-hidden="true"></i>
-		      </button>
-		    </div>
-		  </div> <!-- END .flex-container -->
-		</div> <!-- END #wdw-event-manage-headline -->
-      <table id="event-listing">
-        <thead>
-        <tr>
-          <th>Name</th>
-          <th id="topic-search">Topics</th>
-          <th>Speaker</th>
-          <th>Date</th>
-          <th>Time</th>
-          <th><!-- EDITING OPTIONS --></th>
-        </tr>
-        </thead>
-        <tbody>
-        <!-- DATA GOES HERE -->
-        </tbody>
-      </table>
-    </div><!-- END #wdw-event-manage -->
-  </div> <!-- END #wdw-event-manager-container -->
+<div class="wdw" id="partners-container">
 
-  <div id="partners-container">
+  <!-- START #wdw-list-partner -->
+  <div id="wdw-list-partners">
+    <!-- START #wdw-list-partners-headline -->
+    <div id="wdw-list-partners-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Manage Partners</h1>
+        <div class="search-form">
+          <div>
+            <input type="text" name="search-engine" placeholder="Search Partners">
+          </div>
+          <button class="btn-search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-list-partners-headline -->
 
-    <!-- START #wdw-list-partner -->
-    <div id="wdw-list-partners">
-    	<!-- START #wdw-list-partners-headline -->
-		<div id="wdw-list-partners-headline">
-		  <div class="section-content"> <!-- START .flex-container -->
-		    <h1>Manage Partners</h1>
-		    <div class="search-form">
-		      <div>
-		        <input type="text" name="search-engine" placeholder="Search Partners">
-		      </div>
-		      <button class="btn-search">
-		        <i class="fa fa-search" aria-hidden="true"></i>
-		      </button>
-		    </div>
-		  </div> <!-- END .flex-container -->
-		</div> <!-- END #wdw-list-partners-headline -->
-
-      <table id="partners-table">
-        <thead>
-        <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Partner Logo/Pic. Src.</th>
-          <th>Options</th>
-        </tr>
-        </thead>
-        <tbody>
-        <!-- PARTNERS DATA -->
-        </tbody>
-      </table>
-      <button id="add-partner-btn">Add Partner</button>
-    </div><!-- END #wdw-list-partners -->
+    <table id="partners-table">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Partner Logo/Pic. Src.</th>
+        <th>Options</th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- PARTNERS DATA -->
+      </tbody>
+    </table>
+    <button id="add-partner-btn">Add New Partner</button>
+  </div><!-- END #wdw-list-partners -->
 
 
-    <!-- START #wdw-edit-partner -->
-    <div id="wdw-edit-partner">
-    	<!-- START #wdw-edit-partner-headline -->
-      	<div id="wdw-edit-partner-headline">
-	      <div class="section-content"> <!-- START .flex-container -->
-      		<h1>Edit Partner</h1>
-	      </div> <!-- END .flex-container -->
-	    </div> <!-- END #wdw-edit-partner-headline -->
+  <!-- START #wdw-edit-partner -->
+  <div id="wdw-edit-partner">
+    <!-- START #wdw-edit-partner-headline -->
+    <div id="wdw-edit-partner-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Edit Partner</h1>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-edit-partner-headline -->
+    <div class="partners-form-container">
+      <input class="partner-input-fields" type="text" name="partner-name" placeholder="Name">
+      <input class="partner-input-fields" type="text" name="partner-type" placeholder="Type">
+      <input class="partner-input-fields" type="text" name="partner-descr" placeholder="Description">
+      <input class="partner-input-fields" type="text" name="partner-pict" placeholder="Picture source(for now)">
+      <div class="btn-container"><button id="partner-save-btn">Save</button><button id="cancel-btn">Cancel</button></div>
+    </div> <!--End partners-form-container-->
+  </div><!-- END #wdw-edit-partner-container -->
 
-	    <input class="partner-input-fields" type="text" name="partner-name" placeholder="Name">
-	    <input class="partner-input-fields" type="text" name="partner-type" placeholder="Type">
-	    <input class="partner-input-fields" type="text" name="partner-descr" placeholder="Description">
-	    <input class="partner-input-fields" type="text" name="partner-pict" placeholder="Picture source(for now)">
-	    <div class="btn-container"><button id="partner-save-btn">Save</button><button id="cancel-btn">Cancel</button></div>
-    </div><!-- END #wdw-edit-partner-container -->
-
-    <!-- START #wdw-add-partner -->
-    <div id="wdw-add-partner">
-    	<!-- START #wdw-add-partner-headline -->
-      	<div id="wdw-add-partner-headline">
-	      <div class="section-content"> <!-- START .flex-container -->
-      		<h1>Add Partner</h1>
-	      </div> <!-- END .flex-container -->
-	    </div> <!-- END #wdw-add-partner-headline -->
-
+  <!-- START #wdw-add-partner -->
+  <div id="wdw-add-partner">
+    <!-- START #wdw-add-partner-headline -->
+    <div id="wdw-add-partner-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Add Partner</h1>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-add-partner-headline -->
+    <div class="partners-form-container">
       <input class="partner-input-fields" type="text" name="partner-add-name" placeholder="Name">
       <input class="partner-input-fields" type="text" name="partner-add-type" placeholder="Type">
-      <input class="partner-input-fields" type="text" name="partner-add-descr" placeholder="Description">
+      <textarea class="partner-input-fields" type="text" rows="3" name="partner-add-descr" placeholder="Description"></textarea>
       <input class="partner-input-fields" type="text" name="partner-add-pict" placeholder="Picture source(for now)">
       <div class="btn-container"><button id="partner-add-now-btn">Add Partner</button><button id="cancel-btn2">Cancel</button></div>
-    </div><!-- END #wdw-add-partner-container -->
+    </div> <!--End partners-form-container-->
+  </div><!-- END #wdw-add-partner-container -->
 
-  </div> <!-- END #wdw-partners-container -->
-
-
-  <script src="assets/components/jquery/jquery.min.js"></script>
-  <script src="assets/js/scripts.min.js"></script>
-  <script src="https://use.fontawesome.com/20600c73f5.js"></script>
-  <!--<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"> </script>-->
+</div> <!-- END #wdw-partners-container -->
 
 
+<script src="assets/components/jquery/jquery.min.js"></script>
+<script src="assets/js/scripts.min.js"></script>
+<script src="https://use.fontawesome.com/20600c73f5.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"> </script>-->
 
 
-  </body>
+
+
+</body>
 
 </html>

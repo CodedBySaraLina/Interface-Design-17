@@ -343,8 +343,10 @@
   
   //Hide/Show - Wdw
   function hideWindowsAndShowOneWindow(sWindowId) {
-    $('.wdw').hide(); //fadeout 500
-    $('#' + sWindowId).show(); // fade in 500
+    // $('.wdw').hide();
+    $('.wdw').fadeOut(300); //fadeout 500
+    // $('#' + sWindowId).show();
+    $('#' + sWindowId).fadeIn(300); // fade in 500
   }
   
   
@@ -435,14 +437,15 @@
   
   
   /**********************************************************************/
-//Functions
+  //Functions
   /**********************************************************************/
-
-
-
-//on load
+  
+  
+  /**********************************************************************/
+  //on load
+  /**********************************************************************/
   $(document).ready(function() {
-    hideWindowsAndShowOneWindow('wdw-home');
+    hideWindowsAndShowOneWindow('wdw-events');
   });
   
   
@@ -455,38 +458,38 @@
   }
 
 //func logout
-
-
-/*
-//Define array of events to loop through -> append to the table
-  function searchEvents() {
-    // Declare variables
-    var input, filter, table, tr, td, i;
-    input = document.getElementById('topic-search');
-    filter = input.value.toUpperCase();
-    table = document.getElementById('myTable');
-    tr = table.getElementsByTagName('tr');
-    
-    // Loop through all table rows, and hide those who don't match the search query
-    for (i = 0; i < tr.length; i++) {
-      
-      td = tr[i].getElementsByTagName('td')[0];
-      if (td) {
-        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = '';
-        } else {
-          tr[i].style.display = 'none';
-        }
-      }
-    }
-  }
-
-
-//Search Through Table ->
-  $('#myInput').keyup(function() {
-    searchEvents();
-  });
-  */
+  
+  
+  /*
+   //Define array of events to loop through -> append to the table
+   function searchEvents() {
+   // Declare variables
+   var input, filter, table, tr, td, i;
+   input = document.getElementById('topic-search');
+   filter = input.value.toUpperCase();
+   table = document.getElementById('myTable');
+   tr = table.getElementsByTagName('tr');
+   
+   // Loop through all table rows, and hide those who don't match the search query
+   for (i = 0; i < tr.length; i++) {
+   
+   td = tr[i].getElementsByTagName('td')[0];
+   if (td) {
+   if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+   tr[i].style.display = '';
+   } else {
+   tr[i].style.display = 'none';
+   }
+   }
+   }
+   }
+   
+   
+   //Search Through Table ->
+   $('#myInput').keyup(function() {
+   searchEvents();
+   });
+   */
   
   /*
    function createPost() { //Takes object  Post
@@ -742,15 +745,15 @@
   });
   
   $('#partner-add-now-btn').on('click', function () {
-  
+    
     var obj = {};
-  
-   /* obj.id = new Date().getTime();*/
+    
+    /* obj.id = new Date().getTime();*/
     obj.name = $("input[name='partner-add-name']").val()
     obj.type = $("input[name='partner-add-type']").val();
     obj.description = $("input[name='partner-add-descr']").val();
     obj.partnerpic_src = $("input[name='partner-add-pict']").val();
-  
+    
     $("input[name='partner-add-name']").val("")
     $("input[name='partner-add-type']").val("");
     $("input[name='partner-add-descr']").val("");
@@ -805,10 +808,11 @@
     
     
   });
+  
+  /**********************************************************************/
+  //Home page Search
+  /**********************************************************************/
 
-  /**********************************************************************/
-  //Home page Search 
-  /**********************************************************************/
 
 
 function compare(inputVal, dataVal, jObj) {
@@ -842,9 +846,28 @@ function compare(inputVal, dataVal, jObj) {
 
       console.log(aInput);
       
-      //get instance of localStorage
-      var jTemp = JSON.parse(localStorage.events);
+      jTemp.forEach(function(j){
+        
+        var name = j.name;
+        var topic = j.topic;
+        var level = j.level;
+        var org = j.speaker_organization;
+        var location = j.location;
+        
+        console.log(name, topic, level, org);
+        console.log("compare to: " + temp);
+        
+        
+        
+        /*var containsBool = j.includes(a);
+         
+         if(containsBool) {
+         console.log(containsBool);
+         }
+         */
+      });
       
+
       //check each aInput for a match
       aInput.forEach(function(a) {
 
@@ -875,12 +898,13 @@ function compare(inputVal, dataVal, jObj) {
   }); 
 
 
+
   
   /**********************************************************************/
   //Event Listeners
   /**********************************************************************/
   
- 
+  
   //Post
   $('#postbtn').on('click', function() {
     getPost();
@@ -888,29 +912,33 @@ function compare(inputVal, dataVal, jObj) {
   });
 
 //Nav - Login
-  $('#linkLogin').on('click', function() {
+  $('#link-login').on('click', function() {
     hideWindowsAndShowOneWindow('wdw-login');
     console.log('Nav - login clicked');
   });
 
 //Nav - Home
-  $('#linkHome').on('click', function() {
-    hideWindowsAndShowOneWindow('wdw-home');
+  $('#link-home').on('click', function() {
+    hideWindowsAndShowOneWindow('wdw-events');
     console.log('Nav - Home Clicked ');
   });
 
 
 //Nav - Event
-  $('#linkEvents').on('click', function() {
-    hideWindowsAndShowOneWindow('wdw-events');
-    console.log('Nav - Link Event');
+  $('#link-events').on('click', function() {
+    hideWindowsAndShowOneWindow('wdw-event-manager-container');
   });
 
 
 //Nav - News
   $('#linkNews').on('click', function() {
     hideWindowsAndShowOneWindow('wdw-news');
-    console.log('Nav - News clicked');
+  });
+
+
+//Nav - Partners
+  $('#link-partners').on('click', function() {
+    hideWindowsAndShowOneWindow('partners-container');
   });
 
 //Nav - Calendar
