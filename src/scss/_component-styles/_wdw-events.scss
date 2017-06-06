@@ -1,54 +1,79 @@
 #wdw-events {
-	@extend .flex-section;
-	min-height: calc(50vh - #{$nav-height});
+	@extend .navigation-container;
+
+	#event-listing {
+		@extend .flex-section;
+		height: auto;
+	}
 
 	.event {
 		@extend .flex-child;
 		height: calc( (100vh - #{$nav-height}) / 2 ) ;
-	}
-
-	.event:nth-child(even) { background-color: orange; /* TEMP */ }
-
-	.event-thirds {
-		@extend .event;
-		width: 33.33%;
-
+		width: 100%;
 		/* Put in a mixin? */
 		-moz-transition: all 0.3s;
 		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
+		background-image: url("http://hydroviz.fr/home/jpy/apps/concours_pesticides/app/static/images/logo_js.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
-	.event-thirds:hover {
+	.event:hover {
+		z-index: 50;
+		box-shadow: 0px 5px 10px $gray;
+
 		/* Put in a mixin? */
 		-moz-transform:scale(1.1); 
 		-webkit-transform: scale(1.1);
 		transform:  scale(1.1);
-		opacity: 0.5;
 	}
 
-	.event-thirds div {
+	.event-thirds {
+		@extend .event;
+		width: 33.33%;
+	}
+
+	.event-halves {
+		@extend .event;
+		width: 50%;
+	}
+
+	.event-thirds:hover, .event-halves:hover {
+		@extend .event:hover;
+	}
+
+	.event-thirds div, .event-halves div, .event div {
 		@extend .flex-child;
 		position: relative;
 		width: 100%;
 		flex-direction: column;
+		text-align: center;
 	}
 
-	.hover-hide { visibility: hidden; }
-	.hover-show { visibility: visible; }
+	.event-thirds div h5, .event-halves div h5, .event div h5 {
+		margin-top: $margin-t;
+	}
+}
 
-	.event-thirds:hover div .hover-hide { @extend .hover-show; }
+/* Media Queries */
+@media screen and (max-width: 960px)  {
+	.event-thirds, .event-halves {
+		min-width: 50%;
+		max-width: 100%;
+	}
+}
 
-	/* .event-thirds .admin-features {
-		@extend .hover-hide;
+@media screen and (max-width: 700px) {
+	.event-thirds, .event-halves, .event {
 		width: 100%;
-		display: inline-flex;
-		flex-direction: row;
-		position: absolute;
-		bottom: $margin-n;
-	} */ 
+	}
+}
 
-
+@media screen and (max-height: 500px) {
+	.event-thirds, .event-halves, .event {
+		height: 275px;
+	}
 }
 
 /*	NOTES:
