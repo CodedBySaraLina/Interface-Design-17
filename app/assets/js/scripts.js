@@ -845,6 +845,7 @@ function compare(inputVal, dataVal, jObj) {
       var jResults = {};
 
       console.log(aInput);
+
       
       jTemp.forEach(function(j){
         
@@ -867,7 +868,6 @@ function compare(inputVal, dataVal, jObj) {
          */
       });
       
-
       //check each aInput for a match
       aInput.forEach(function(a) {
 
@@ -896,8 +896,6 @@ function compare(inputVal, dataVal, jObj) {
         });
       }); 
   }); 
-
-
 
   
   /**********************************************************************/
