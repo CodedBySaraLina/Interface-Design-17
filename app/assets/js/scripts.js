@@ -809,95 +809,103 @@
     
   });
   
+
   /**********************************************************************/
-  //Home page Search
+  //Home page Search 
   /**********************************************************************/
 
+function compare(inputVal, dataVal, jObj, jData) {
+  var inputValLower = inputVal.toLowerCase();
+  var dataValLower = dataVal.toLowerCase();
 
+  console.log("The input value is: " + inputValLower);
+  console.log("The JSON data to compare is: " + dataValLower);
 
-function compare(inputVal, dataVal, jObj) {
-	inputVal = inputVal.toLowerCase();
-  dataVal = dataVal.toLowerCase();
-
-  console.log("The input value is: " + inputVal);
-  console.log("The JSON data to compare is: " + dataVal);
-
-  var bool = dataVal.includes(inputVal);
+  var bool = dataValLower.includes(inputValLower);
   console.log("The bool = " + bool);
 
     if (bool == true) {
-    	console.log("True");
-      //add to jResults (must exist within the scope of the function)
-      jResults.add(jObj);
+      console.log("Match made");
+      jData.push(jObj);
     } else {
-    	console.log("False");
+      console.log("False");
     }
-
 }
-
-
 
  //Search input - Home page 
   $('#searchEvents').on('click', function () {
       //get input value of #search-engine
       var inputSearchField =  $('#search-engine').val();
       var aInput = inputSearchField.split(" ");
-      var jResults = {};
+      var jResults = [];
 
       console.log(aInput);
-
       
-      jTemp.forEach(function(j){
-        
-        var name = j.name;
-        var topic = j.topic;
-        var level = j.level;
-        var org = j.speaker_organization;
-        var location = j.location;
-        
-        console.log(name, topic, level, org);
-        console.log("compare to: " + temp);
-        
-        
-        
-        /*var containsBool = j.includes(a);
-         
-         if(containsBool) {
-         console.log(containsBool);
-         }
-         */
-      });
+      //get instance of localStorage
+      var jTemp = JSON.parse(localStorage.events);
       
       //check each aInput for a match
       aInput.forEach(function(a) {
 
-        //check each array object for a match in corresponding json
-        //a == jTemp.incrementor.property 
         var temp = a;
 
         jTemp.forEach(function(j){
 
-           var name = j.name;
-           var topic = j.topic;
-           var level = j.level;
-           var org = j.speaker_organization;
-           var location = j.location;
+          var name = j.name;
+          var topic = j.topic;
+          var level = j.level;
+          var org = j.speaker_organization;
+          var location = j.location;
 
-          // console.log("compare " + temp + " to: " + j.name, "Loca :" + j.location + " Organization " + j.speaker_organization );
 
-           //Compare the values from input -> arrays
-          compare(temp, name);
-          //compare(temp, topic); //this is an array
-          compare(temp, level);
-          compare(temp, org);
-          //compare(temp, location); //this is a JSON object
+          compare(temp, name, j, jResults);
+          //compare(temp, topic, j, jResults); //this is an array
+          compare(temp, level, j, jResults);
+          compare(temp, org, j, jResults);
+          //compare(temp, location, j, jResults); //this is a JSON object
 
-  
         });
-      }); 
+      });
+
+      //remove duplicates
+      console.log(jResults);
+
+      var jResultsFinal = jResults.filter(function(elem, index, self) {
+      return index == self.indexOf(elem);
+      });
+
+      console.log(jResultsFinal);
+
+      //clear default items from 
+      $(".grid_job").empty();
+
+      //append to DOM
+      jResultsFinal.forEach(function(j) {
+        //get an instance of an event and append it to the DOM..
+        $(".grid_job").append('\
+            <figure class="effect-milo" data-event-id="' + j.id + '">\
+              <img class="featured-company__image" /*src="' + "j.image" + '"*/ alt="' + /* name */ + '">\
+              <figcaption>\
+                <h2>' + j.name + '<span>' + "j.location.city" + '</span></h2>\
+                <p>' + "j.topics" + '</p>\
+                <a href="#">View more</a>\
+              </figcaption>\
+            </figure>\
+          ');
+
+        /* SAMPLE OF event thumb-nail (.effect-milo)
+          <figure class="effect-milo" id="figure1">
+            <img class="featured-company__image" src="https://databricks.com/wp-content/uploads/2016/06/blog-hero@1x.jpg" alt="Spark summit">
+            <figcaption>
+              <h2>Spark Summit  <span> San Francisco, CA </span></h2>
+              <p> Join more than 3,000 Apache Spark engineers, analysts, scientists, and business professionals for three days of in-depth learning and networking.</p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
+        */
+      });
   }); 
 
-  
   /**********************************************************************/
   //Event Listeners
   /**********************************************************************/

@@ -910,6 +910,7 @@ svg:hover path {
 	top: $nav-height; */ }
 
 #wdw-events {
+  min-height: calc(50vh - 110px);
   /* .event-thirds .admin-features {
 		@extend .hover-hide;
 		width: 100%;

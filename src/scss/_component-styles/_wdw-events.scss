@@ -1,5 +1,6 @@
 #wdw-events {
 	@extend .flex-section;
+	min-height: calc(50vh - #{$nav-height});
 
 	.event {
 		@extend .flex-child;
