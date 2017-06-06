@@ -804,31 +804,40 @@
   /**********************************************************************/
   //Home page Search
   /**********************************************************************/
-  
-  function searchEventsDisplay() {
-  
-  }
-  
-  
-  
-  //Search input - Home page
+
+
+
+function compare(inputVal, dataVal, jObj) {
+	inputVal = inputVal.toLowerCase();
+  dataVal = dataVal.toLowerCase();
+
+  console.log("The input value is: " + inputVal);
+  console.log("The JSON data to compare is: " + dataVal);
+
+  var bool = dataVal.includes(inputVal);
+  console.log("The bool = " + bool);
+
+    if (bool == true) {
+    	console.log("True");
+      //add to jResults (must exist within the scope of the function)
+      jResults.add(jObj);
+    } else {
+    	console.log("False");
+    }
+
+}
+
+
+
+ //Search input - Home page 
   $('#searchEvents').on('click', function () {
-    //get input value of #search-engine
-    var inputSearchField =  $('#search-engine').val();
-    var aInput = inputSearchField.split(" ");
-    
-    
-    console.log(aInput);
-    
-    //get instance of localStorage
-    var jTemp = JSON.parse(localStorage.events);
-    
-    //check each aInput for a match
-    aInput.forEach(function(a) {
-      console.log("Value: " + a);
-      //check each array object for a match in corresponding json
-      //a == jTemp.incrementor.property
-      var temp = a;
+      //get input value of #search-engine
+      var inputSearchField =  $('#search-engine').val();
+      var aInput = inputSearchField.split(" ");
+      var jResults = {};
+
+      console.log(aInput);
+
       
       jTemp.forEach(function(j){
         
@@ -851,13 +860,35 @@
          */
       });
       
-      
-    });
-    
-    
-  });
+      //check each aInput for a match
+      aInput.forEach(function(a) {
+
+        //check each array object for a match in corresponding json
+        //a == jTemp.incrementor.property 
+        var temp = a;
+
+        jTemp.forEach(function(j){
+
+           var name = j.name;
+           var topic = j.topic;
+           var level = j.level;
+           var org = j.speaker_organization;
+           var location = j.location;
+
+          // console.log("compare " + temp + " to: " + j.name, "Loca :" + j.location + " Organization " + j.speaker_organization );
+
+           //Compare the values from input -> arrays
+          compare(temp, name);
+          //compare(temp, topic); //this is an array
+          compare(temp, level);
+          compare(temp, org);
+          //compare(temp, location); //this is a JSON object
+
   
-  
+        });
+      }); 
+  }); 
+
   
   /**********************************************************************/
   //Event Listeners

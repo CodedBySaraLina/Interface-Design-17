@@ -1,7 +1,7 @@
 [
 	{
 		"id": "12456",
-		"name": "Beginner Game Development",
+		"name": "Beginner Game",
 		"topic": ["Unity", "Game Development"],
 		"level": "Beginner",
 		"speaker": "Somebody",
@@ -12,7 +12,7 @@
 		"info": "Fuck yes!",
 		"past": "false"
 	},
-		{
+	{
 		"id": "12456679768",
 		"name": "Introduction to SCRUM",
 		"topic": ["Project Management"],
