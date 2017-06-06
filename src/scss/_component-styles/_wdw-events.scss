@@ -20,6 +20,11 @@
 	}
 
 	.event:hover {
+		z-index: 50;
+
+		box-shadow: 0px 0px 10px $gray;
+
+
 		/* Put in a mixin? */
 		-moz-transform:scale(1.1); 
 		-webkit-transform: scale(1.1);

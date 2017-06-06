@@ -922,6 +922,8 @@ svg:hover path {
   background-size: cover; }
 
 #wdw-events .event:hover, #wdw-events .event-thirds:hover, #wdw-events .event-halves:hover {
+  z-index: 50;
+  box-shadow: 0px 0px 10px #6A6365;
   /* Put in a mixin? */
   -ms-transform: scale(1.1);
       transform: scale(1.1); }
