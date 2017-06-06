@@ -944,6 +944,7 @@ svg:hover path {
 #wdw-events .event-thirds div h5, #wdw-events .event-halves div h5, #wdw-events .event div h5, #wdw-events .event-thirds div h5, #wdw-events .event-halves div h5 {
   margin-top: 7px; }
 
+/* Media Queries */
 @media screen and (max-width: 960px) {
   .event-thirds, .event-halves {
     min-width: 50%;
@@ -952,6 +953,10 @@ svg:hover path {
 @media screen and (max-width: 700px) {
   .event-thirds, .event-halves, .event, #wdw-events .event-thirds, #wdw-events .event-halves {
     width: 100%; } }
+
+@media screen and (max-height: 500px) {
+  .event-thirds, .event-halves, .event, #wdw-events .event-thirds, #wdw-events .event-halves {
+    height: 275px; } }
 
 /*	NOTES:
 	- This component will need a width media query and a height media query! 
