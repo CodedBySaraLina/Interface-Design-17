@@ -1,25 +1,22 @@
 #wdw-events {
-	@extend .flex-section;
-	min-height: calc(50vh - #{$nav-height});
+	@extend .navigation-container;
+
+	#event-listing {
+		@extend .flex-section;
+		height: auto;
+	}
 
 	.event {
 		@extend .flex-child;
 		height: calc( (100vh - #{$nav-height}) / 2 ) ;
-	}
-
-	.event:nth-child(even) { background-color: orange; /* TEMP */ }
-
-	.event-thirds {
-		@extend .event;
-		width: 33.33%;
-
+		width: 100%;
 		/* Put in a mixin? */
 		-moz-transition: all 0.3s;
 		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
 	}
 
-	.event-thirds:hover {
+	.event:hover {
 		/* Put in a mixin? */
 		-moz-transform:scale(1.1); 
 		-webkit-transform: scale(1.1);
@@ -27,26 +24,38 @@
 		opacity: 0.5;
 	}
 
-	.event-thirds div {
+	.event:nth-child(even) { background-color: orange; /* TEMP */ }
+
+	.event-thirds {
+		@extend .event;
+		width: 33.33%;
+	}
+
+	.event-halves {
+		@extend .event;
+		width: 50%;
+	}
+
+	.event-thirds:hover, .event-halves:hover {
+		@extend .event:hover;
+	}
+
+	.event-thirds div, .event-halves div, .event div {
 		@extend .flex-child;
 		position: relative;
 		width: 100%;
 		flex-direction: column;
+		text-align: center;
+	}
+
+	.event-thirds div h5, .event-halves div h5, .event div h5 {
+		margin-top: $margin-t;
 	}
 
 	.hover-hide { visibility: hidden; }
 	.hover-show { visibility: visible; }
 
 	.event-thirds:hover div .hover-hide { @extend .hover-show; }
-
-	/* .event-thirds .admin-features {
-		@extend .hover-hide;
-		width: 100%;
-		display: inline-flex;
-		flex-direction: row;
-		position: absolute;
-		bottom: $margin-n;
-	} */ 
 
 
 }
