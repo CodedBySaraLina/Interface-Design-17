@@ -1,7 +1,7 @@
 [
 	{
 		"id": "12456",
-		"name": "Beginner Game",
+		"name": "Beginner Game Development",
 		"topic": ["Unity", "Game Development"],
 		"level": "Beginner",
 		"speaker": "Somebody",
@@ -20,7 +20,8 @@
 		"speaker": "Me",
 		"speaker_organization": "KEA",
 		"date": { "day": 7, "month": 9, "year": 2017 },
-		"time_24h": { "hour" : "15", "minute" : "00" } ,
+		"time_24h": { "hour" : "15", "minute" : "00" },
+		"location" : { "street-add" : "Lygten 37", "city" : "Copenhagen", "zip" : "2200", "country" : "Denmark" },
 		"info": "Get organized, motherfucker",
 		"past": "false"
 	},
@@ -32,7 +33,8 @@
 		"speaker": "Somebody",
 		"speaker_organization": "Oracle",
 		"date": { "day": 8, "month": 8, "year": 2017 },
-		"time_24h": { "hour" : "15", "minute" : "00" } ,
+		"time_24h": { "hour" : "15", "minute" : "00" },
+		"location" : { "street-add" : "Lygten 37", "city" : "Copenhagen", "zip" : "2200", "country" : "Denmark" },
 		"info": "Learn Java. Coffee not included.",
 		"past": "false"
 	}
