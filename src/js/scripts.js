@@ -805,10 +805,13 @@
   //Home page Search
   /**********************************************************************/
 
+  /**********************************************************************/
+  //Home page Search 
+  /**********************************************************************/
 
 
 function compare(inputVal, dataVal, jObj) {
-	inputVal = inputVal.toLowerCase();
+  inputVal = inputVal.toLowerCase();
   dataVal = dataVal.toLowerCase();
 
   console.log("The input value is: " + inputVal);
@@ -818,11 +821,11 @@ function compare(inputVal, dataVal, jObj) {
   console.log("The bool = " + bool);
 
     if (bool == true) {
-    	console.log("True");
+      console.log("True");
       //add to jResults (must exist within the scope of the function)
       jResults.add(jObj);
     } else {
-    	console.log("False");
+      console.log("False");
     }
 
 }
@@ -837,28 +840,9 @@ function compare(inputVal, dataVal, jObj) {
       var jResults = {};
 
       console.log(aInput);
-
       
-      jTemp.forEach(function(j){
-        
-        var name = j.name;
-        var topic = j.topic;
-        var level = j.level;
-        var org = j.speaker_organization;
-        var location = j.location;
-        
-        console.log(name, topic, level, org);
-        console.log("compare to: " + temp);
-        
-        
-        
-        /*var containsBool = j.includes(a);
-         
-         if(containsBool) {
-         console.log(containsBool);
-         }
-         */
-      });
+      //get instance of localStorage
+      var jTemp = JSON.parse(localStorage.events);
       
       //check each aInput for a match
       aInput.forEach(function(a) {
@@ -888,8 +872,6 @@ function compare(inputVal, dataVal, jObj) {
         });
       }); 
   }); 
-
-  
   /**********************************************************************/
   //Event Listeners
   /**********************************************************************/
