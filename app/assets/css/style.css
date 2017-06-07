@@ -910,6 +910,27 @@ svg:hover path {
   #nav-bar nav ul li.user-function {
     display: none; }
 
+#menuicon {
+  display: none; }
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  nav li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: none; }
+  nav li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: none; } }
+
 .box {
   width: 33%;
   height: 130px; }
