@@ -13,7 +13,7 @@
 (function ($, window, document, undefined) {
   
   'use strict';
-
+//dsdsd
 
 //check if user state == admin or user
 //if false, do this..
@@ -320,10 +320,6 @@
     //delete tr by id
     $(document).find('[data-event-id='+sDataId+']').remove();
   });
-
-//functions
-
-//populate data to parent containers
 
 
 //populate data to tables on pageload
