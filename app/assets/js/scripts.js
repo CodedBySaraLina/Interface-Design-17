@@ -321,7 +321,6 @@
     $(document).find('[data-event-id='+sDataId+']').remove();
   });
 
-//functions
 
 //populate data to tables on pageload
   function initPopData() {
