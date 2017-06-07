@@ -103,6 +103,7 @@
       <li class="nav-link" id="link-location"><a>Location</a></li>
       <li class="nav-link" id="link-home"><a>Home</a></li>
       <li class="nav-link" id="link-events"><a>Events</a></li>
+      <li class="nav-link" id="link-members"><a>Users</a></li>
       <li class="nav-link" id="link-partners"><a>Partners</a></li>
       <li class="nav-link" id="link-manage" class="user-function"><a>Manage</a></li><!-- ADD DROP DOWN MENU FOR EASE AND SIMPLICITY -->
       <li class="nav-link" id="link-login"><a>Login</a></li>
@@ -187,6 +188,7 @@
       </div>
     </div>
   </div> <!-- END #wdw-login -->
+
   <!-- START #wdw-register-member -->
   <div class="wdw" id="wdw-register-member">
     <div id="registerform">
@@ -203,64 +205,7 @@
   </div> <!-- END #wdw-register-member -->
 </div> <!-- END #main-container -->
 
-<!-- START wdw calendar -->
-<div class="wdw" id="wdw-calendar" >
-  <input type="text" id="myInput" onkeyup="searchEvents()" placeholder="Search for events..">
-  <table id="myTable">
-    <tbody class="calendar-back">
-    <tr class="header">
-      <th style="width:20%;">Events</th>
-      <th style="width:20%;">Country</th>
-      <th style="width:20%;">Date</th>
-      <th style="width:20%;">Link</th>
-      <th style="width:20%;">Delete</th>
-    </tr>
-    <tr>
-      <td>Spark Summit</td>
-      <td>San Francisco , CA</td>
-      <td>1 May</td>
-      <td>www..com</td>
-      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-    </tr>
-    <tr>
-      <td>Black hat</td>
-      <td>USA, Las Vegas</td>
-      <td>10 June</td>
-      <td>www..com</td>
-      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-    </tr>
-    <tr>
-      <td>TheNextWeb</td>
-      <td>US, Brooklyn</td>
-      <td>28 December</td>
-      <td>www..com</td>
-      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-    </tr>
-    <tr>
-      <td>bigdata</td>
-      <td>Canada, Toronto</td>
-      <td>28 September</td>
-      <td>www..com</td>
-      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-    </tr>
-    <tr>
-      <td>Web Summit</td>
-      <td>Portugal, Lisbon</td>
-      <td>28 July</td>
-      <td>www..com</td>
-      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-    </tr>
-    <tr>
-      <td>Dreamforce</td>
-      <td>US, San Francisco</td>
-      <td>28 November</td>
-      <td>www..com</td>
-      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-    </tr>
-    </tbody>
 
-  </table>
-</div>
 <!-- START #wdw-event-manager-container -->
 <div class="wdw" id="wdw-event-manager-container">
   <!-- START #wdw-event-create -->
@@ -423,6 +368,7 @@
 
 
 <script src="assets/components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="assets/js/scripts.min.js"></script>
 <script src="https://use.fontawesome.com/20600c73f5.js"></script>
 <!--<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"> </script>-->
