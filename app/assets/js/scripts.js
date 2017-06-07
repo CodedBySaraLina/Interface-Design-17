@@ -32,7 +32,9 @@
       jData = JSON.stringify(jData);
       localStorage.events = jData;
       console.log("localStorage.events successfully populated");
-      initPopData();
+      //populate data in #event-listing
+
+      initPopData(); //populate data in event-management table
     });
   } else if (localStorage.events) {
     //load everything from localstorage and populate the div with data..
@@ -320,7 +322,7 @@
   });
 
 //functions
-//populate data on pageload
+//populate data to tables on pageload
   function initPopData() {
     //since localstorage will always have values,
     //append all of localstorage's content to the corresponding table
@@ -810,9 +812,9 @@
   });
   
 
-  /**********************************************************************/
-  //Home page Search 
-  /**********************************************************************/
+/**********************************************************************/
+//Home page Search 
+/**********************************************************************/
 
 function compare(inputVal, dataVal, jObj, jData) {
   var inputValLower = inputVal.toLowerCase();
@@ -832,7 +834,11 @@ function compare(inputVal, dataVal, jObj, jData) {
     }
 }
 
- //Search input - Home page 
+//on initialization, load from localStorage.events
+
+
+ //#searchEvents on Click --> Search through localStorage.events
+ //output results in the DOM
   $('#searchEvents').on('click', function () {
       //get input value of #search-engine
       var inputSearchField =  $('#search-engine').val();

@@ -914,7 +914,7 @@ svg:hover path {
 
 #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves {
   height: calc( (100vh - 110px) / 2);
-  width: 100%;
+  max-width: 100%;
   /* Put in a mixin? */
   transition: all 0.3s;
   background-image: url("http://hydroviz.fr/home/jpy/apps/concours_pesticides/app/static/images/logo_js.jpg");
