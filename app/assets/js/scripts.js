@@ -1065,6 +1065,12 @@ function compare(inputVal, dataVal, jObj, jData) {
   //Event Listeners
   /**********************************************************************/
   
+//
+$('#link-about').on('click', function() {
+  console.log('cabout nav clicked ');
+  hideWindowsAndShowOneWindow('wdw-about');
+});
+
   
   //Post
   $('#postbtn').on('click', function() {

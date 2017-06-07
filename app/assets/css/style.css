@@ -246,7 +246,7 @@ hr {
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search,
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search,
 input,
 select,
 textarea {
@@ -265,7 +265,7 @@ optgroup {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search,
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search,
 input {
   /* 1 */
   overflow: visible; }
@@ -274,7 +274,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search,
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search,
 select {
   /* 1 */
   text-transform: none; }
@@ -284,7 +284,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search,
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -294,7 +294,7 @@ html [type="button"],
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner, .section-heading .btn-search::-moz-focus-inner, #wdw-search .btn-search::-moz-focus-inner, #wdw-event-create-headline .btn-search::-moz-focus-inner, #wdw-event-update-headline .btn-search::-moz-focus-inner, #wdw-event-manage-headline .btn-search::-moz-focus-inner, #wdw-list-partners-headline .btn-search::-moz-focus-inner, #wdw-edit-partner-headline .btn-search::-moz-focus-inner, #wdw-add-partner-headline .btn-search::-moz-focus-inner,
+button::-moz-focus-inner, .section-heading .btn-search::-moz-focus-inner, #wdw-search .btn-search::-moz-focus-inner, #wdw-event-create-headline .btn-search::-moz-focus-inner, #wdw-event-update-headline .btn-search::-moz-focus-inner, #wdw-event-manage-headline .btn-search::-moz-focus-inner, #wdw-list-partners-headline .btn-search::-moz-focus-inner, #wdw-edit-partner-headline .btn-search::-moz-focus-inner, #wdw-add-partner-headline .btn-search::-moz-focus-inner, #aboutTxt .btn-search::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
@@ -304,7 +304,7 @@ button::-moz-focus-inner, .section-heading .btn-search::-moz-focus-inner, #wdw-s
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring, .section-heading .btn-search:-moz-focusring, #wdw-search .btn-search:-moz-focusring, #wdw-event-create-headline .btn-search:-moz-focusring, #wdw-event-update-headline .btn-search:-moz-focusring, #wdw-event-manage-headline .btn-search:-moz-focusring, #wdw-list-partners-headline .btn-search:-moz-focusring, #wdw-edit-partner-headline .btn-search:-moz-focusring, #wdw-add-partner-headline .btn-search:-moz-focusring,
+button:-moz-focusring, .section-heading .btn-search:-moz-focusring, #wdw-search .btn-search:-moz-focusring, #wdw-event-create-headline .btn-search:-moz-focusring, #wdw-event-update-headline .btn-search:-moz-focusring, #wdw-event-manage-headline .btn-search:-moz-focusring, #wdw-list-partners-headline .btn-search:-moz-focusring, #wdw-edit-partner-headline .btn-search:-moz-focusring, #wdw-add-partner-headline .btn-search:-moz-focusring, #aboutTxt .btn-search:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
@@ -406,7 +406,7 @@ textarea {
   list-style: none; }
 
 /*Button submit*/
-button.snip0050, .section-heading .snip0050.btn-search, #wdw-search .snip0050.btn-search, #wdw-event-create-headline .snip0050.btn-search, #wdw-event-update-headline .snip0050.btn-search, #wdw-event-manage-headline .snip0050.btn-search, #wdw-list-partners-headline .snip0050.btn-search, #wdw-edit-partner-headline .snip0050.btn-search, #wdw-add-partner-headline .snip0050.btn-search {
+button.snip0050, .section-heading .snip0050.btn-search, #wdw-search .snip0050.btn-search, #wdw-event-create-headline .snip0050.btn-search, #wdw-event-update-headline .snip0050.btn-search, #wdw-event-manage-headline .snip0050.btn-search, #wdw-list-partners-headline .snip0050.btn-search, #wdw-edit-partner-headline .snip0050.btn-search, #wdw-add-partner-headline .snip0050.btn-search, #aboutTxt .snip0050.btn-search {
   font-family: 'Raleway', Arial, sans-serif;
   border: none;
   background-color: #000000;
@@ -425,13 +425,13 @@ button.snip0050, .section-heading .snip0050.btn-search, #wdw-search .snip0050.bt
   opacity: 1;
   transition: all 0.3s; }
 
-button.snip0050 span, .section-heading .snip0050.btn-search span, #wdw-search .snip0050.btn-search span, #wdw-event-create-headline .snip0050.btn-search span, #wdw-event-update-headline .snip0050.btn-search span, #wdw-event-manage-headline .snip0050.btn-search span, #wdw-list-partners-headline .snip0050.btn-search span, #wdw-edit-partner-headline .snip0050.btn-search span, #wdw-add-partner-headline .snip0050.btn-search span {
+button.snip0050 span, .section-heading .snip0050.btn-search span, #wdw-search .snip0050.btn-search span, #wdw-event-create-headline .snip0050.btn-search span, #wdw-event-update-headline .snip0050.btn-search span, #wdw-event-manage-headline .snip0050.btn-search span, #wdw-list-partners-headline .snip0050.btn-search span, #wdw-edit-partner-headline .snip0050.btn-search span, #wdw-add-partner-headline .snip0050.btn-search span, #aboutTxt .snip0050.btn-search span {
   display: inline-block;
   transition: all 0.3s;
   opacity: 0.8;
   transition-delay: 0.3s; }
 
-button.snip0050 i, .section-heading .snip0050.btn-search i, #wdw-search .snip0050.btn-search i, #wdw-event-create-headline .snip0050.btn-search i, #wdw-event-update-headline .snip0050.btn-search i, #wdw-event-manage-headline .snip0050.btn-search i, #wdw-list-partners-headline .snip0050.btn-search i, #wdw-edit-partner-headline .snip0050.btn-search i, #wdw-add-partner-headline .snip0050.btn-search i {
+button.snip0050 i, .section-heading .snip0050.btn-search i, #wdw-search .snip0050.btn-search i, #wdw-event-create-headline .snip0050.btn-search i, #wdw-event-update-headline .snip0050.btn-search i, #wdw-event-manage-headline .snip0050.btn-search i, #wdw-list-partners-headline .snip0050.btn-search i, #wdw-edit-partner-headline .snip0050.btn-search i, #wdw-add-partner-headline .snip0050.btn-search i, #aboutTxt .snip0050.btn-search i {
   font-size: 28px;
   text-align: center;
   width: 100%;
@@ -445,7 +445,7 @@ button.snip0050 i, .section-heading .snip0050.btn-search i, #wdw-search .snip005
   transition: all 0.3s;
   transition-delay: 0s; }
 
-button.snip0050:before, .section-heading .snip0050.btn-search:before, #wdw-search .snip0050.btn-search:before, #wdw-event-create-headline .snip0050.btn-search:before, #wdw-event-update-headline .snip0050.btn-search:before, #wdw-event-manage-headline .snip0050.btn-search:before, #wdw-list-partners-headline .snip0050.btn-search:before, #wdw-edit-partner-headline .snip0050.btn-search:before, #wdw-add-partner-headline .snip0050.btn-search:before {
+button.snip0050:before, .section-heading .snip0050.btn-search:before, #wdw-search .snip0050.btn-search:before, #wdw-event-create-headline .snip0050.btn-search:before, #wdw-event-update-headline .snip0050.btn-search:before, #wdw-event-manage-headline .snip0050.btn-search:before, #wdw-list-partners-headline .snip0050.btn-search:before, #wdw-edit-partner-headline .snip0050.btn-search:before, #wdw-add-partner-headline .snip0050.btn-search:before, #aboutTxt .snip0050.btn-search:before {
   border-radius: 3px;
   content: '';
   top: 3px;
@@ -457,7 +457,7 @@ button.snip0050:before, .section-heading .snip0050.btn-search:before, #wdw-searc
   transition: all 0.3s;
   transition-delay: 0.15s; }
 
-button.snip0050:hover, .section-heading .snip0050.btn-search:hover, #wdw-search .snip0050.btn-search:hover, #wdw-event-create-headline .snip0050.btn-search:hover, #wdw-event-update-headline .snip0050.btn-search:hover, #wdw-event-manage-headline .snip0050.btn-search:hover, #wdw-list-partners-headline .snip0050.btn-search:hover, #wdw-edit-partner-headline .snip0050.btn-search:hover, #wdw-add-partner-headline .snip0050.btn-search:hover,
+button.snip0050:hover, .section-heading .snip0050.btn-search:hover, #wdw-search .snip0050.btn-search:hover, #wdw-event-create-headline .snip0050.btn-search:hover, #wdw-event-update-headline .snip0050.btn-search:hover, #wdw-event-manage-headline .snip0050.btn-search:hover, #wdw-list-partners-headline .snip0050.btn-search:hover, #wdw-edit-partner-headline .snip0050.btn-search:hover, #wdw-add-partner-headline .snip0050.btn-search:hover, #aboutTxt .snip0050.btn-search:hover,
 button.snip0050.hover,
 .section-heading .snip0050.hover.btn-search,
 #wdw-search .snip0050.hover.btn-search,
@@ -466,10 +466,11 @@ button.snip0050.hover,
 #wdw-event-manage-headline .snip0050.hover.btn-search,
 #wdw-list-partners-headline .snip0050.hover.btn-search,
 #wdw-edit-partner-headline .snip0050.hover.btn-search,
-#wdw-add-partner-headline .snip0050.hover.btn-search {
+#wdw-add-partner-headline .snip0050.hover.btn-search,
+#aboutTxt .snip0050.hover.btn-search {
   color: #000000; }
 
-button.snip0050:hover.blue, .section-heading .snip0050.btn-search:hover.blue, #wdw-search .snip0050.btn-search:hover.blue, #wdw-event-create-headline .snip0050.btn-search:hover.blue, #wdw-event-update-headline .snip0050.btn-search:hover.blue, #wdw-event-manage-headline .snip0050.btn-search:hover.blue, #wdw-list-partners-headline .snip0050.btn-search:hover.blue, #wdw-edit-partner-headline .snip0050.btn-search:hover.blue, #wdw-add-partner-headline .snip0050.btn-search:hover.blue,
+button.snip0050:hover.blue, .section-heading .snip0050.btn-search:hover.blue, #wdw-search .snip0050.btn-search:hover.blue, #wdw-event-create-headline .snip0050.btn-search:hover.blue, #wdw-event-update-headline .snip0050.btn-search:hover.blue, #wdw-event-manage-headline .snip0050.btn-search:hover.blue, #wdw-list-partners-headline .snip0050.btn-search:hover.blue, #wdw-edit-partner-headline .snip0050.btn-search:hover.blue, #wdw-add-partner-headline .snip0050.btn-search:hover.blue, #aboutTxt .snip0050.btn-search:hover.blue,
 button.snip0050.hover.blue,
 .section-heading .snip0050.hover.blue.btn-search,
 #wdw-search .snip0050.hover.blue.btn-search,
@@ -478,10 +479,11 @@ button.snip0050.hover.blue,
 #wdw-event-manage-headline .snip0050.hover.blue.btn-search,
 #wdw-list-partners-headline .snip0050.hover.blue.btn-search,
 #wdw-edit-partner-headline .snip0050.hover.blue.btn-search,
-#wdw-add-partner-headline .snip0050.hover.blue.btn-search {
+#wdw-add-partner-headline .snip0050.hover.blue.btn-search,
+#aboutTxt .snip0050.hover.blue.btn-search {
   color: #20638f; }
 
-button.snip0050:hover.red, .section-heading .snip0050.btn-search:hover.red, #wdw-search .snip0050.btn-search:hover.red, #wdw-event-create-headline .snip0050.btn-search:hover.red, #wdw-event-update-headline .snip0050.btn-search:hover.red, #wdw-event-manage-headline .snip0050.btn-search:hover.red, #wdw-list-partners-headline .snip0050.btn-search:hover.red, #wdw-edit-partner-headline .snip0050.btn-search:hover.red, #wdw-add-partner-headline .snip0050.btn-search:hover.red,
+button.snip0050:hover.red, .section-heading .snip0050.btn-search:hover.red, #wdw-search .snip0050.btn-search:hover.red, #wdw-event-create-headline .snip0050.btn-search:hover.red, #wdw-event-update-headline .snip0050.btn-search:hover.red, #wdw-event-manage-headline .snip0050.btn-search:hover.red, #wdw-list-partners-headline .snip0050.btn-search:hover.red, #wdw-edit-partner-headline .snip0050.btn-search:hover.red, #wdw-add-partner-headline .snip0050.btn-search:hover.red, #aboutTxt .snip0050.btn-search:hover.red,
 button.snip0050.hover.red,
 .section-heading .snip0050.hover.red.btn-search,
 #wdw-search .snip0050.hover.red.btn-search,
@@ -490,10 +492,11 @@ button.snip0050.hover.red,
 #wdw-event-manage-headline .snip0050.hover.red.btn-search,
 #wdw-list-partners-headline .snip0050.hover.red.btn-search,
 #wdw-edit-partner-headline .snip0050.hover.red.btn-search,
-#wdw-add-partner-headline .snip0050.hover.red.btn-search {
+#wdw-add-partner-headline .snip0050.hover.red.btn-search,
+#aboutTxt .snip0050.hover.red.btn-search {
   color: #962d22; }
 
-button.snip0050:hover.yellow, .section-heading .snip0050.btn-search:hover.yellow, #wdw-search .snip0050.btn-search:hover.yellow, #wdw-event-create-headline .snip0050.btn-search:hover.yellow, #wdw-event-update-headline .snip0050.btn-search:hover.yellow, #wdw-event-manage-headline .snip0050.btn-search:hover.yellow, #wdw-list-partners-headline .snip0050.btn-search:hover.yellow, #wdw-edit-partner-headline .snip0050.btn-search:hover.yellow, #wdw-add-partner-headline .snip0050.btn-search:hover.yellow,
+button.snip0050:hover.yellow, .section-heading .snip0050.btn-search:hover.yellow, #wdw-search .snip0050.btn-search:hover.yellow, #wdw-event-create-headline .snip0050.btn-search:hover.yellow, #wdw-event-update-headline .snip0050.btn-search:hover.yellow, #wdw-event-manage-headline .snip0050.btn-search:hover.yellow, #wdw-list-partners-headline .snip0050.btn-search:hover.yellow, #wdw-edit-partner-headline .snip0050.btn-search:hover.yellow, #wdw-add-partner-headline .snip0050.btn-search:hover.yellow, #aboutTxt .snip0050.btn-search:hover.yellow,
 button.snip0050.hover.yellow,
 .section-heading .snip0050.hover.yellow.btn-search,
 #wdw-search .snip0050.hover.yellow.btn-search,
@@ -502,20 +505,21 @@ button.snip0050.hover.yellow,
 #wdw-event-manage-headline .snip0050.hover.yellow.btn-search,
 #wdw-list-partners-headline .snip0050.hover.yellow.btn-search,
 #wdw-edit-partner-headline .snip0050.hover.yellow.btn-search,
-#wdw-add-partner-headline .snip0050.hover.yellow.btn-search {
+#wdw-add-partner-headline .snip0050.hover.yellow.btn-search,
+#aboutTxt .snip0050.hover.yellow.btn-search {
   color: #a85913; }
 
-button.snip0050:hover span, .section-heading .snip0050.btn-search:hover span, #wdw-search .snip0050.btn-search:hover span, #wdw-event-create-headline .snip0050.btn-search:hover span, #wdw-event-update-headline .snip0050.btn-search:hover span, #wdw-event-manage-headline .snip0050.btn-search:hover span, #wdw-list-partners-headline .snip0050.btn-search:hover span, #wdw-edit-partner-headline .snip0050.btn-search:hover span, #wdw-add-partner-headline .snip0050.btn-search:hover span,
-button.snip0050.hover span, .section-heading .snip0050.hover.btn-search span, #wdw-search .snip0050.hover.btn-search span, #wdw-event-create-headline .snip0050.hover.btn-search span, #wdw-event-update-headline .snip0050.hover.btn-search span, #wdw-event-manage-headline .snip0050.hover.btn-search span, #wdw-list-partners-headline .snip0050.hover.btn-search span, #wdw-edit-partner-headline .snip0050.hover.btn-search span, #wdw-add-partner-headline .snip0050.hover.btn-search span {
+button.snip0050:hover span, .section-heading .snip0050.btn-search:hover span, #wdw-search .snip0050.btn-search:hover span, #wdw-event-create-headline .snip0050.btn-search:hover span, #wdw-event-update-headline .snip0050.btn-search:hover span, #wdw-event-manage-headline .snip0050.btn-search:hover span, #wdw-list-partners-headline .snip0050.btn-search:hover span, #wdw-edit-partner-headline .snip0050.btn-search:hover span, #wdw-add-partner-headline .snip0050.btn-search:hover span, #aboutTxt .snip0050.btn-search:hover span,
+button.snip0050.hover span, .section-heading .snip0050.hover.btn-search span, #wdw-search .snip0050.hover.btn-search span, #wdw-event-create-headline .snip0050.hover.btn-search span, #wdw-event-update-headline .snip0050.hover.btn-search span, #wdw-event-manage-headline .snip0050.hover.btn-search span, #wdw-list-partners-headline .snip0050.hover.btn-search span, #wdw-edit-partner-headline .snip0050.hover.btn-search span, #wdw-add-partner-headline .snip0050.hover.btn-search span, #aboutTxt .snip0050.hover.btn-search span {
   opacity: 0;
   transition-delay: 0s; }
 
-button.snip0050:hover i, .section-heading .snip0050.btn-search:hover i, #wdw-search .snip0050.btn-search:hover i, #wdw-event-create-headline .snip0050.btn-search:hover i, #wdw-event-update-headline .snip0050.btn-search:hover i, #wdw-event-manage-headline .snip0050.btn-search:hover i, #wdw-list-partners-headline .snip0050.btn-search:hover i, #wdw-edit-partner-headline .snip0050.btn-search:hover i, #wdw-add-partner-headline .snip0050.btn-search:hover i,
-button.snip0050.hover i, .section-heading .snip0050.hover.btn-search i, #wdw-search .snip0050.hover.btn-search i, #wdw-event-create-headline .snip0050.hover.btn-search i, #wdw-event-update-headline .snip0050.hover.btn-search i, #wdw-event-manage-headline .snip0050.hover.btn-search i, #wdw-list-partners-headline .snip0050.hover.btn-search i, #wdw-edit-partner-headline .snip0050.hover.btn-search i, #wdw-add-partner-headline .snip0050.hover.btn-search i {
+button.snip0050:hover i, .section-heading .snip0050.btn-search:hover i, #wdw-search .snip0050.btn-search:hover i, #wdw-event-create-headline .snip0050.btn-search:hover i, #wdw-event-update-headline .snip0050.btn-search:hover i, #wdw-event-manage-headline .snip0050.btn-search:hover i, #wdw-list-partners-headline .snip0050.btn-search:hover i, #wdw-edit-partner-headline .snip0050.btn-search:hover i, #wdw-add-partner-headline .snip0050.btn-search:hover i, #aboutTxt .snip0050.btn-search:hover i,
+button.snip0050.hover i, .section-heading .snip0050.hover.btn-search i, #wdw-search .snip0050.hover.btn-search i, #wdw-event-create-headline .snip0050.hover.btn-search i, #wdw-event-update-headline .snip0050.hover.btn-search i, #wdw-event-manage-headline .snip0050.hover.btn-search i, #wdw-list-partners-headline .snip0050.hover.btn-search i, #wdw-edit-partner-headline .snip0050.hover.btn-search i, #wdw-add-partner-headline .snip0050.hover.btn-search i, #aboutTxt .snip0050.hover.btn-search i {
   opacity: 1;
   transition-delay: 0s; }
 
-button.snip0050:hover:before, .section-heading .snip0050.btn-search:hover:before, #wdw-search .snip0050.btn-search:hover:before, #wdw-event-create-headline .snip0050.btn-search:hover:before, #wdw-event-update-headline .snip0050.btn-search:hover:before, #wdw-event-manage-headline .snip0050.btn-search:hover:before, #wdw-list-partners-headline .snip0050.btn-search:hover:before, #wdw-edit-partner-headline .snip0050.btn-search:hover:before, #wdw-add-partner-headline .snip0050.btn-search:hover:before,
+button.snip0050:hover:before, .section-heading .snip0050.btn-search:hover:before, #wdw-search .snip0050.btn-search:hover:before, #wdw-event-create-headline .snip0050.btn-search:hover:before, #wdw-event-update-headline .snip0050.btn-search:hover:before, #wdw-event-manage-headline .snip0050.btn-search:hover:before, #wdw-list-partners-headline .snip0050.btn-search:hover:before, #wdw-edit-partner-headline .snip0050.btn-search:hover:before, #wdw-add-partner-headline .snip0050.btn-search:hover:before, #aboutTxt .snip0050.btn-search:hover:before,
 button.snip0050.hover:before,
 .section-heading .snip0050.hover.btn-search:before,
 #wdw-search .snip0050.hover.btn-search:before,
@@ -524,22 +528,23 @@ button.snip0050.hover:before,
 #wdw-event-manage-headline .snip0050.hover.btn-search:before,
 #wdw-list-partners-headline .snip0050.hover.btn-search:before,
 #wdw-edit-partner-headline .snip0050.hover.btn-search:before,
-#wdw-add-partner-headline .snip0050.hover.btn-search:before {
+#wdw-add-partner-headline .snip0050.hover.btn-search:before,
+#aboutTxt .snip0050.hover.btn-search:before {
   left: 3px;
   right: 3px;
   background: #ffffff;
   transition-delay: 0s; }
 
-button.snip0050:active:before, .section-heading .snip0050.btn-search:active:before, #wdw-search .snip0050.btn-search:active:before, #wdw-event-create-headline .snip0050.btn-search:active:before, #wdw-event-update-headline .snip0050.btn-search:active:before, #wdw-event-manage-headline .snip0050.btn-search:active:before, #wdw-list-partners-headline .snip0050.btn-search:active:before, #wdw-edit-partner-headline .snip0050.btn-search:active:before, #wdw-add-partner-headline .snip0050.btn-search:active:before {
+button.snip0050:active:before, .section-heading .snip0050.btn-search:active:before, #wdw-search .snip0050.btn-search:active:before, #wdw-event-create-headline .snip0050.btn-search:active:before, #wdw-event-update-headline .snip0050.btn-search:active:before, #wdw-event-manage-headline .snip0050.btn-search:active:before, #wdw-list-partners-headline .snip0050.btn-search:active:before, #wdw-edit-partner-headline .snip0050.btn-search:active:before, #wdw-add-partner-headline .snip0050.btn-search:active:before, #aboutTxt .snip0050.btn-search:active:before {
   background: rgba(255, 255, 255, 0.7); }
 
-button.snip0050.blue, .section-heading .snip0050.blue.btn-search, #wdw-search .snip0050.blue.btn-search, #wdw-event-create-headline .snip0050.blue.btn-search, #wdw-event-update-headline .snip0050.blue.btn-search, #wdw-event-manage-headline .snip0050.blue.btn-search, #wdw-list-partners-headline .snip0050.blue.btn-search, #wdw-edit-partner-headline .snip0050.blue.btn-search, #wdw-add-partner-headline .snip0050.blue.btn-search {
+button.snip0050.blue, .section-heading .snip0050.blue.btn-search, #wdw-search .snip0050.blue.btn-search, #wdw-event-create-headline .snip0050.blue.btn-search, #wdw-event-update-headline .snip0050.blue.btn-search, #wdw-event-manage-headline .snip0050.blue.btn-search, #wdw-list-partners-headline .snip0050.blue.btn-search, #wdw-edit-partner-headline .snip0050.blue.btn-search, #wdw-add-partner-headline .snip0050.blue.btn-search, #aboutTxt .snip0050.blue.btn-search {
   background-color: #20638f; }
 
-button.snip0050.red, .section-heading .snip0050.red.btn-search, #wdw-search .snip0050.red.btn-search, #wdw-event-create-headline .snip0050.red.btn-search, #wdw-event-update-headline .snip0050.red.btn-search, #wdw-event-manage-headline .snip0050.red.btn-search, #wdw-list-partners-headline .snip0050.red.btn-search, #wdw-edit-partner-headline .snip0050.red.btn-search, #wdw-add-partner-headline .snip0050.red.btn-search {
+button.snip0050.red, .section-heading .snip0050.red.btn-search, #wdw-search .snip0050.red.btn-search, #wdw-event-create-headline .snip0050.red.btn-search, #wdw-event-update-headline .snip0050.red.btn-search, #wdw-event-manage-headline .snip0050.red.btn-search, #wdw-list-partners-headline .snip0050.red.btn-search, #wdw-edit-partner-headline .snip0050.red.btn-search, #wdw-add-partner-headline .snip0050.red.btn-search, #aboutTxt .snip0050.red.btn-search {
   background-color: #962d22; }
 
-button.snip0050.yellow, .section-heading .snip0050.yellow.btn-search, #wdw-search .snip0050.yellow.btn-search, #wdw-event-create-headline .snip0050.yellow.btn-search, #wdw-event-update-headline .snip0050.yellow.btn-search, #wdw-event-manage-headline .snip0050.yellow.btn-search, #wdw-list-partners-headline .snip0050.yellow.btn-search, #wdw-edit-partner-headline .snip0050.yellow.btn-search, #wdw-add-partner-headline .snip0050.yellow.btn-search {
+button.snip0050.yellow, .section-heading .snip0050.yellow.btn-search, #wdw-search .snip0050.yellow.btn-search, #wdw-event-create-headline .snip0050.yellow.btn-search, #wdw-event-update-headline .snip0050.yellow.btn-search, #wdw-event-manage-headline .snip0050.yellow.btn-search, #wdw-list-partners-headline .snip0050.yellow.btn-search, #wdw-edit-partner-headline .snip0050.yellow.btn-search, #wdw-add-partner-headline .snip0050.yellow.btn-search, #aboutTxt .snip0050.yellow.btn-search {
   background-color: #a85913; }
 
 @font-face {
@@ -668,10 +673,10 @@ a {
 ul li {
   display: inline-block; }
 
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, input, textarea {
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search, input, textarea {
   border-radius: 0px; }
 
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search {
   background-color: #6A6365; }
 
 i:hover {
@@ -692,7 +697,7 @@ a:hover {
   -ms-transform: scale(1.3);
       transform: scale(1.3); }
 
-.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events #event-listing, #loginform, #registerform, .flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves, #wdw-events .event-thirds div, #wdw-events .event-halves div, #wdw-events .event div, .form-container, footer {
+.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #aboutTxt, #nav-bar, .box, #wdw-events #event-listing, #loginform, #registerform, .flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #aboutTxt input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves, #wdw-events .event-thirds div, #wdw-events .event-halves div, #wdw-events .event div, .form-container, footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -701,7 +706,7 @@ a:hover {
       align-items: center;
   overflow: hidden; }
 
-.flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events #event-listing, #loginform, #registerform {
+.flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #aboutTxt, #nav-bar, .box, #wdw-events #event-listing, #loginform, #registerform {
   /* default - flex-direction: row; */
   width: 100%;
   height: calc(100vh - 110px); }
@@ -710,7 +715,7 @@ a:hover {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves, #wdw-events .event-thirds div, #wdw-events .event-halves div, #wdw-events .event div {
+.flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #aboutTxt input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves, #wdw-events .event-thirds div, #wdw-events .event-halves div, #wdw-events .event div {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-negative: 1;
@@ -740,28 +745,28 @@ a:hover {
     margin-top: 0; }
   .form-container div input {
     width: 100%; }
-  .form-container div button, .form-container div .section-heading .btn-search, .section-heading .form-container div .btn-search, .form-container div #wdw-search .btn-search, #wdw-search .form-container div .btn-search, .form-container div #wdw-event-create-headline .btn-search, #wdw-event-create-headline .form-container div .btn-search, .form-container div #wdw-event-update-headline .btn-search, #wdw-event-update-headline .form-container div .btn-search, .form-container div #wdw-event-manage-headline .btn-search, #wdw-event-manage-headline .form-container div .btn-search, .form-container div #wdw-list-partners-headline .btn-search, #wdw-list-partners-headline .form-container div .btn-search, .form-container div #wdw-edit-partner-headline .btn-search, #wdw-edit-partner-headline .form-container div .btn-search, .form-container div #wdw-add-partner-headline .btn-search, #wdw-add-partner-headline .form-container div .btn-search {
+  .form-container div button, .form-container div .section-heading .btn-search, .section-heading .form-container div .btn-search, .form-container div #wdw-search .btn-search, #wdw-search .form-container div .btn-search, .form-container div #wdw-event-create-headline .btn-search, #wdw-event-create-headline .form-container div .btn-search, .form-container div #wdw-event-update-headline .btn-search, #wdw-event-update-headline .form-container div .btn-search, .form-container div #wdw-event-manage-headline .btn-search, #wdw-event-manage-headline .form-container div .btn-search, .form-container div #wdw-list-partners-headline .btn-search, #wdw-list-partners-headline .form-container div .btn-search, .form-container div #wdw-edit-partner-headline .btn-search, #wdw-edit-partner-headline .form-container div .btn-search, .form-container div #wdw-add-partner-headline .btn-search, #wdw-add-partner-headline .form-container div .btn-search, .form-container div #aboutTxt .btn-search, #aboutTxt .form-container div .btn-search {
     margin-top: 15px; }
   .form-container .btn-row {
     height: auto;
     width: inherit;
     display: inline; }
 
-.section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline {
+.section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #aboutTxt {
   text-align: center;
   height: 247.5px;
   background-color: #282526;
   color: #fff; }
-  .section-heading h1, #wdw-search h1, #wdw-event-create-headline h1, #wdw-event-update-headline h1, #wdw-event-manage-headline h1, #wdw-list-partners-headline h1, #wdw-edit-partner-headline h1, #wdw-add-partner-headline h1 {
+  .section-heading h1, #wdw-search h1, #wdw-event-create-headline h1, #wdw-event-update-headline h1, #wdw-event-manage-headline h1, #wdw-list-partners-headline h1, #wdw-edit-partner-headline h1, #wdw-add-partner-headline h1, #aboutTxt h1 {
     margin-top: 0; }
-  .section-heading .search-form, #wdw-search .search-form, #wdw-event-create-headline .search-form, #wdw-event-update-headline .search-form, #wdw-event-manage-headline .search-form, #wdw-list-partners-headline .search-form, #wdw-edit-partner-headline .search-form, #wdw-add-partner-headline .search-form {
+  .section-heading .search-form, #wdw-search .search-form, #wdw-event-create-headline .search-form, #wdw-event-update-headline .search-form, #wdw-event-manage-headline .search-form, #wdw-list-partners-headline .search-form, #wdw-edit-partner-headline .search-form, #wdw-add-partner-headline .search-form, #aboutTxt .search-form {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-align: center;
         align-items: center; }
-  .section-heading .search-form div, #wdw-search .search-form div, #wdw-event-create-headline .search-form div, #wdw-event-update-headline .search-form div, #wdw-event-manage-headline .search-form div, #wdw-list-partners-headline .search-form div, #wdw-edit-partner-headline .search-form div, #wdw-add-partner-headline .search-form div {
+  .section-heading .search-form div, #wdw-search .search-form div, #wdw-event-create-headline .search-form div, #wdw-event-update-headline .search-form div, #wdw-event-manage-headline .search-form div, #wdw-list-partners-headline .search-form div, #wdw-edit-partner-headline .search-form div, #wdw-add-partner-headline .search-form div, #aboutTxt .search-form div {
     text-align: left; }
-  .section-heading .search-form div span, #wdw-search .search-form div span, #wdw-event-create-headline .search-form div span, #wdw-event-update-headline .search-form div span, #wdw-event-manage-headline .search-form div span, #wdw-list-partners-headline .search-form div span, #wdw-edit-partner-headline .search-form div span, #wdw-add-partner-headline .search-form div span {
+  .section-heading .search-form div span, #wdw-search .search-form div span, #wdw-event-create-headline .search-form div span, #wdw-event-update-headline .search-form div span, #wdw-event-manage-headline .search-form div span, #wdw-list-partners-headline .search-form div span, #wdw-edit-partner-headline .search-form div span, #wdw-add-partner-headline .search-form div span, #aboutTxt .search-form div span {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-align: center;
@@ -769,17 +774,17 @@ a:hover {
     margin-top: 7px;
     position: relative;
     left: 0px; }
-  .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"] {
+  .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #aboutTxt input[name="search-engine"] {
     width: 100%;
     height: 50px; }
-  .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
+  .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search {
     color: #fff;
     background-color: #86B954;
     margin-left: 30px;
     width: 60px;
     height: 60px; }
 
-.line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"] {
+.line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #aboutTxt input[name="search-engine"] {
   width: 100%;
   /* just need some value to work with.. */
   padding: 10px;
@@ -806,7 +811,7 @@ input {
 input[type="checkbox"] {
   margin-right: 7px; }
 
-button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
+button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search, #aboutTxt .btn-search {
   padding: 15px;
   border: none;
   outline: none;
@@ -1559,4 +1564,11 @@ figure.effect-milo:hover p {
 footer {
   height: 90px;
   background-color: #282526;
-  color: white; }
+  color: white;
+  height: calc(100vh - $nav-height); }
+
+#h1about {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
