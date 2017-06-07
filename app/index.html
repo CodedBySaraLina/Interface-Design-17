@@ -410,7 +410,7 @@
         <div class="partners-form-container">
             <input class="partner-input-fields" type="text" name="partner-name" placeholder="Name">
             <input class="partner-input-fields" type="text" name="partner-type" placeholder="Type">
-            <input class="partner-input-fields" type="text" name="partner-descr" placeholder="Description">
+            <textarea class="partner-input-fields" type="text" rows="3" name="partner-descr" placeholder="Description"></textarea>
             <input class="partner-input-fields" type="text" name="partner-pict" placeholder="Picture source(for now)">
             <div class="btn-container"><button id="partner-save-btn">Save</button><button id="cancel-btn">Cancel</button></div>
         </div> <!--End partners-form-container-->
@@ -429,7 +429,7 @@
             <input class="partner-input-fields" type="text" name="partner-add-type" placeholder="Type">
             <textarea class="partner-input-fields" type="text" rows="3" name="partner-add-descr" placeholder="Description"></textarea>
             <form class="partner-input-fields" id="upload-image" action="" method="post" enctype="multipart/form-data">
-                <div id="image-preview"><img id="image-tag" src="noimage.png" /></div>
+                <div id="image-preview"><img id="image-tag" src="assets/data/images/noimage.png" /></div>
                 <input class="partner-input-fields" type="file" name="file" id="file-input">
                 <input type="submit" value="Upload" class="submit" />
                 <h4 id='loading' >loading..</h4>

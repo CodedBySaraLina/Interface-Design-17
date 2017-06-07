@@ -687,7 +687,7 @@
         //setting the input fields to be edited
         $("input[name='partner-name']").val(elem.name);
         $("input[name='partner-type']").val(elem.type);
-        $("input[name='partner-descr']").val(elem.description);
+        $("textarea[name='partner-descr']").val(elem.description);
         $("input[name='partner-pict']").val(elem.partnerpic_src);
         
       }
@@ -703,7 +703,7 @@
     obj.id = id;
     obj.name = $("input[name='partner-name']").val()
     obj.type = $("input[name='partner-type']").val();
-    obj.description = $("input[name='partner-descr']").val();
+    obj.description = $("textarea[name='partner-add-descr']").val();
     obj.partnerpic_src = $("input[name='partner-pict']").val();
     
     
@@ -741,16 +741,17 @@
     var obj = {};
     
     /* obj.id = new Date().getTime();*/
-    obj.name = $("input[name='partner-add-name']").val()
+    obj.name = $("input[name='partner-add-name']").val();
     obj.type = $("input[name='partner-add-type']").val();
-    obj.description = $("input[name='partner-add-descr']").val();
+    obj.description = $("textarea[name='partner-add-descr']").val();
     obj.partnerpic_src = $("input[name='partner-add-pict']").val();
     
     $("input[name='partner-add-name']").val("")
     $("input[name='partner-add-type']").val("");
-    $("input[name='partner-add-descr']").val("");
+    $("textarea[name='partner-add-descr']").val("");
     $("input[name='partner-add-pict']").val("");
-    
+
+    console.log("obj::::", obj);
     //save new partner in local storage
     var oPartners = JSON.parse(localStorage.partners);
     obj.id = oPartners.length + 1;
@@ -793,6 +794,9 @@
             localStorage.setItem("partners", JSON.stringify(oPartners));
             listPartnersFromLS();
             swal("Deleted!", "The partner has been deleted.", "success");
+            setInterval(function(){
+              swal.close();
+            },1000);
           });
       }
       
