@@ -313,7 +313,7 @@
     $(document).find('[data-event-id='+sDataId+']').remove();
   });
 
-//functions
+
 //populate data to tables on pageload
   function initPopData() {
     //since localstorage will always have values,
@@ -984,3 +984,8 @@ function compare(inputVal, dataVal, jObj, jData) {
   
 })(jQuery, window, document);
 
+
+//Nav - members 
+$('#link-members').on('click', function() {
+  hideWindowsAndShowOneWindow('members-container');
+});
