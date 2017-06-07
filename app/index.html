@@ -367,6 +367,108 @@
 </div> <!-- END #wdw-partners-container -->
 
 
+
+<div class="wdw" id="wdw-location" >
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snazzy Maps Super Simple Example</title>
+        
+        <style type="text/css">
+            #map {
+                width: 1050px;
+                height: 650px;  
+             
+            }
+
+        
+        </style>
+        
+       
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 3,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(55.958096, 9.198065), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+/* IMPLEMENT ICON ON MAPS 
+                var imageIcon =  new.google.maps.MarkerImage('app/assets/icon/seo-blackhat-512.png'),
+                //Marker is 20 px 
+                new google.maps.Size(20,32),
+                //the origin for this image is 0,0 
+                new google.maps.Point(0,0);
+  */ 
+                
+                
+
+                var locationsAnnotation = [
+                    ['Spotify Sweden', 57.673975, 12.014914, 4],
+                    ['TechLogic Norway', 59.919942, 10.747581, 5],
+                    ['Lemony UnitedKingdom',51.517878, -0.128382, 3],
+                    ['Ted Germany', 48.603818, 10.951690, 2],
+                    ['Security Russia', 57.162775, 54.178553, 1]
+
+
+                ]; 
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                //secondPosition: new google.maps.LatLng(20.6700, -33.9400),
+                // thirdPosition : new google.maps.LatLng(10.6700, 23.9400),
+                //var secondMarker =  new google.maps.LatLng(10.6700, 23.9400);
+                //var multipleMarkersPoint = [  ['London Eye, London', 51.503454,-0.119562],
+                // ['Palace of Westminster, London', 51.499633,-0.124755]]; 
+        
+                  for(var i = 0; i < locationsAnnotation.length; i++) {
+                    // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locationsAnnotation[i][1], locationsAnnotation[i][2]),
+                    map: map,
+                    title: 'Tech!'
+                });
+            }
+     } 
+
+                
+        </script>
+    </head>
+    <body>
+        <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
+        <h1 id="tech-h1"> Tech Events GLobally </h1>
+     
+        
+        <div  id="map"></div>
+
+  
+    </body>
+</html>
+
+ 
+</div>
+
+
+
+
 <script src="assets/components/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="assets/js/scripts.min.js"></script>

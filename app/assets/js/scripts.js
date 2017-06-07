@@ -967,6 +967,13 @@ function compare(inputVal, dataVal, jObj, jData) {
   });
 
 
+//Nav - location 
+
+$('#link-location').on('click', function() {
+  console.log('loca clicked ');
+  hideWindowsAndShowOneWindow('wdw-location');
+});
+
 //Page - Post an event
   $('#btnpostevent').on('click', function() {
     hideWindowsAndShowOneWindow('wdw-post-event');

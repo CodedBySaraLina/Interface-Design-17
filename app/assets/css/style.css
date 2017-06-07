@@ -861,6 +861,12 @@ button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create
   top: 0;
   bottom: 0; }
 
+#tech-h1 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 /* STYLE ELEMENTS */
 svg {
   width: 150px;
