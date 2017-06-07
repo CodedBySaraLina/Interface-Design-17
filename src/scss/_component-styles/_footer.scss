@@ -1,0 +1,9 @@
+
+
+footer{
+
+@extend .flex-container;  
+height: 90px; 
+background-color: $dark-gray; 
+color:white;
+}

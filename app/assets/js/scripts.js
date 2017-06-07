@@ -136,6 +136,67 @@
 	');
   });
 
+// Create - Members 
+$('#member-add-now-btn').on('click', function() {
+console.log('Save member btn clicked ');
+var sId = new Date(); 
+sId = sId.valueOf(); 
+var sName = $('#members-container').find("input[name='member-add-name']").val();
+var sType = $('#members-container').find("input[name='member-add-type']").val();
+var sDesc = $('#members-container').find("input[name='member-add-descr']").val();
+var mPic = $('#members-container').find("input[name='member-add-pict']").val();
+var sMembers = $('#members-container').find("input[name='member-title']").val();
+console.log(sName, sType, sDesc, mPic); //3 not takign input 
+
+var aMembers = []; 
+//get each member and store in array 
+var aMembers = sMembers.split(","); 
+//console.log(aMembers);
+
+for(var i = 0; i < aMembers.length; i++) {
+  if (aMembers[i].charAt(0) == " ") {
+    console.log("first char : " + aMembers[i].charAt(0));
+    aMembers[i] = aMembers[i].slice(1, aMembers[i].length); 
+    console.log("Str now equals " + aMembers[i]);
+  }
+}
+
+
+var jMemberO = {
+  idMemb: sId,
+  nameMemb: sName,
+  typeMemb: sType,
+  descMemb: sDesc,
+  picMemb: mPic,
+  //membMemb: aMembers
+};
+
+console.log(jMemberO);
+
+var localTemp = JSON.parse(localStorage.members);
+
+localTemp.push(jMemberO); 
+
+localStorage.setItem("Members", JSON.stringify(localTemp)); 
+
+//Append data - DOM 
+ $("#members-table").append('<tr data-member-id="' + jMemberO.idMemb + '">\
+									<td>' + jMemberO.sType + '</td>\
+									<td>' + jMemberO.picMemb + '</td>\
+                  <td>' + jMemberO.descMemb + '</td>\
+									<td>\
+										<i class="fa fa-pencil" id="edit-member-icon" aria-hidden="true"></i>\
+										<i class="fa fa-trash" id="delete-member-icon" aria-hidden="true"></i>\
+									</td>\
+								</tr>\
+	');
+});
+
+
+
+
+
+
 //U from CRUD - onClick .fa-edit - open editing interface
   $(document).on("click", "#edit-event-icon", function() {
     console.log(".fa-pencil icon clicked");
@@ -342,6 +403,97 @@
 			');
     });
   }
+
+
+
+
+
+//U from CRUD - update Members  // save data from editing interface 
+$('#edit-member-icon').on('click' , function( ) {
+  console.log('member edit clicked');
+
+  //get values 
+  var sId = $('#wdw-edit-partner').attr('data-member-id'); //Get DOm 
+  var sName =  $('#wdw-edit-partner').find("input[name='member-name']").val();
+  var sType = $('#members-container').find("input[name='member-add-type']").val();
+ var sDesc = $('#members-container').find("input[name='member-add-descr']").val();
+ var mPic = $('#members-container').find("input[name='member-add-pict']").val();
+var sMembers = $('#members-container').find("input[name='member-title']").val();
+
+var aMembers = []; 
+var aMembers = sMembers.split(","); 
+console.log(aMembers);
+
+for(i = 0; i < aMembers.length; i++) {
+  if (aMembers[i].charAt(0) == " " ) {
+    console.log("first char: " , aMembers[i].charAt(0)); 
+    aMembers[i] = aMembers[i].slice(1 ,aMembers[i].length); 
+    console.log('Str now equals ' + aMembers[i]);
+  }
+
+  if(aMembers[i].charAt(aMembers[i].length - 1 ) == " " ) {
+    console.log("last char ", aMembers[i].charAt(0) ); 
+    aMembers[i] = aMembers[i].slice(0, aMembers[i].length - 1);
+    console.log("str equals " + aMembers[i]);
+  }
+
+}
+console.log(aMembers);
+
+
+//Create object to push into JSON 
+var jMemberO = {
+  idMemb: sId,
+  nameMemb: sName,
+  typeMemb: sType,
+  descMemb: sDesc,
+  picMemb: mPic,
+  membMemb: aMembers
+};
+console.log(jMemberO);
+
+
+//PUsh JmemberO To localstorage 
+var localTemp = JSON.parse(localStorage.members);
+//find theo bjects in JSON 
+localTemp.forEach(function(j) {
+  //find object with matching id 
+  if(j.id == jEventObj.id) {
+    //remove object with matching id 
+    localTemp.splice(localTemp.indexOf(j), 1); 
+  }
+});
+
+
+//Push JMemberO to localTemp 
+localTemp.push(jMemberO); 
+//rewrite localstorage 
+localStorage.setItem('events', JSON.stringify(localTemp));
+//remove data attr from window 
+$('#wdw-member-update').attr('data-member-id', ''); 
+//Delete old DOM rep.
+
+
+$(document).find('[data-member-id='+jMemberO.idMemb+']').remove();
+    //append new DOM representation
+    $("#member-listing tbody").prepend('<tr data-member-id="' + jMemberO.idMemb + '">\
+									<td>' + jMemberO.nameMemb+ '</td>\
+									<td>' + jMemberO.typeMemb + '</td>\
+									<td>' + jMemberO.picMemb + '</td>\
+                  	<td>' + jMemberO.descMemb + '</td>\
+									<td>\
+										<i class="fa fa-pencil" id="edit-event-icon" aria-hidden="true"></i>\
+										<i class="fa fa-trash" id="delete-event-icon" aria-hidden="true"></i>\
+									</td>\
+								</tr>\
+	    ');
+  });
+
+
+
+
+
+
   
   //Hide/Show - Wdw
   function hideWindowsAndShowOneWindow(sWindowId) {
@@ -950,6 +1102,13 @@ function compare(inputVal, dataVal, jObj, jData) {
     hideWindowsAndShowOneWindow('partners-container');
   });
 
+
+//nav - MEmbers 
+$('#link-members').on('click', function(){
+  console.log('members nav click');
+  hideWindowsAndShowOneWindow('wdw-members');
+});
+
 //Nav - Calendar
   $('#linkCalendar').on('click', function() {
     hideWindowsAndShowOneWindow('wdw-calendar');
@@ -964,7 +1123,6 @@ function compare(inputVal, dataVal, jObj, jData) {
 
 
 //Nav - location 
-
 $('#link-location').on('click', function() {
   console.log('loca clicked ');
   hideWindowsAndShowOneWindow('wdw-location');
@@ -993,14 +1151,18 @@ $('#link-location').on('click', function() {
 
 
 
-//Admin Index
-  
-  console.log('events' , aEvents);
-  
-})(jQuery, window, document);
-
-
 //Nav - members 
 $('#link-members').on('click', function() {
+  console.log('click members nav');
   hideWindowsAndShowOneWindow('members-container');
 });
+
+
+
+
+
+//Admin Index  
+  console.log('events' , aEvents);
+
+})(jQuery, window, document);
+

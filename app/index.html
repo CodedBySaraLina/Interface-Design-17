@@ -189,7 +189,7 @@
     </div>
   </div> <!-- END #wdw-login -->
 
-  <!-- START #wdw-register-member -->
+  <!-- START #wdw-register-member 
   <div class="wdw" id="wdw-register-member">
     <div id="registerform">
       <div id="regbackground"> <h2>Generate New Members</h2>
@@ -202,7 +202,8 @@
         <button class="snip0050" id="memberbtn"><span>Submit</span><i class="ion-checkmark"></i></button>
       </div>
     </div>
-  </div> <!-- END #wdw-register-member -->
+    
+  </div> <!-- END #wdw-register-member
 </div> <!-- END #main-container -->
 
 
@@ -466,6 +467,99 @@
  
 </div>
 
+
+
+
+
+
+<!-- #wdw-members --> 
+<div class="wdw" id="members-container">
+
+  <!-- START #wdw-list-member -->
+  <div id="wdw-list-member">
+    <!-- START #wdw-list-partners-headline -->
+    <div id="wdw-list-member-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Manage Members</h1>
+        <div class="search-form">
+          <div>
+            <input type="text" name="search-engine" placeholder="Search Members">
+          </div>
+          <button class="btn-search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-list-partners-headline -->
+
+    
+
+
+  <!-- START #wdw-member -->
+  <div id="wdw-edit-Member">
+    <!-- START #wdw-edit-member-headline -->
+    <div id="wdw-edit-Member-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Edit Member</h1>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-edit-member-headline -->
+    <div class="member-form-container">
+      <input class="partner-input-fields" type="text" name="member-name" placeholder="Name">
+      <input class="partner-input-fields" type="text" name="member-type" placeholder="Type">
+        <input class="partner-input-fields" type="text" name="member-title" placeholder="Title">
+      <input class="partner-input-fields" type="text" name="member-descr" placeholder="Description">
+      <input class="partner-input-fields" type="text" name="member-pict" placeholder="Picture source(for now)">
+      <div class="btn-container"><button id="member-save-btn">Save</button><button id="cancel-btn">Cancel</button></div>
+    </div> <!--End member-form-container-->
+  </div><!-- END #wdw-edit-member-container -->
+
+  <!-- START #wdw-add-member -->
+  <div id="wdw-add-member">
+    <!-- START #wdw-add-memberr-headline -->
+    <div id="wdw-add-member-headline">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Add member</h1>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-add-partner-headline -->
+    <div class="member-form-container">
+      <input class="member-input-fields" type="text" name="member-add-name" placeholder="Name">
+      <input class="member-input-fields" type="text" name="member-add-type" placeholder="Type">
+      
+       <input class="member-input-fields" type="text" rows="3" name="member-add-descr" placeholder="Description">
+      <input class="member-input-fields" type="text" name="member-add-pict" placeholder="Picture source(for now)">
+      <div class="btn-container"><button id="member-add-now-btn">Add member</button><button id="cancel-btn2">Cancel</button></div>
+    </div> <!--End member-form-container-->
+  </div><!-- END #wdw-add-member-container -->
+
+
+
+ <table id="members-table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th id="topic-search">Topics</th>
+        <th>Speaker</th>
+        <th>Description</th>
+       <!-- <th>Time</th> -->
+        <th><!-- EDITING OPTIONS --></th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- DATA GOES HERE -->
+      </tbody>
+    </table>
+    <!--<button id="add-Member-btn">Add New Member</button>-->
+  </div><!-- END #wdw-list-partners -->
+
+</div> <!-- END <div id="wdw-members-container"></div> -->
+
+
+
+<footer>
+  <div class="footer" id="footer">
+    <h3>Tekhus &copy;</h3>
+     </div>
+</footer>
 
 
 
