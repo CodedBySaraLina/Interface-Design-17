@@ -878,10 +878,14 @@ function compare(inputVal, dataVal, jObj, jData) {
       //clear default items from 
       $("#event-listing").empty();
 
+      var baseNumber = jResultsFinal.length / 3;
+      console.log("The base number is: " + baseNumber);
+
       //append to DOM
       jResultsFinal.forEach(function(j) {
         var aTopics = j.topic;
 
+        console.log(jResultsFinal.length);
         console.log(j.name);
 
         //get an instance of an event and append it to the DOM..
@@ -890,10 +894,12 @@ function compare(inputVal, dataVal, jObj, jData) {
               <div>\
                 <h1>' + j.name + '</h1>\
                 <h2>' + aTopics + '</h2>\
-                <h5>' + j.date.day + '-' + j.date.month + '-' + j.date.year '</h5>\
+                <h5>' + j.date.day + '-' + j.date.month + '-' + j.date.year + '</h5>\
               </div>\
             </div>\
           ');
+
+
       });
   }); 
 
