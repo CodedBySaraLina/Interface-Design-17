@@ -857,7 +857,6 @@ function compare(inputVal, dataVal, jObj, jData) {
           var org = j.speaker_organization;
           var location = j.location;
 
-
           compare(temp, name, j, jResults);
           //compare(temp, topic, j, jResults); //this is an array
           compare(temp, level, j, jResults);
@@ -877,32 +876,30 @@ function compare(inputVal, dataVal, jObj, jData) {
       console.log(jResultsFinal);
 
       //clear default items from 
-      $(".grid_job").empty();
+      $("#event-listing").empty();
+
+      var baseNumber = jResultsFinal.length / 3;
+      console.log("The base number is: " + baseNumber);
 
       //append to DOM
       jResultsFinal.forEach(function(j) {
+        var aTopics = j.topic;
+
+        console.log(jResultsFinal.length);
+        console.log(j.name);
+
         //get an instance of an event and append it to the DOM..
-        $(".grid_job").append('\
-            <figure class="effect-milo" data-event-id="' + j.id + '">\
-              <img class="featured-company__image" /*src="' + "j.image" + '"*/ alt="' + /* name */ + '">\
-              <figcaption>\
-                <h2>' + j.name + '<span>' + "j.location.city" + '</span></h2>\
-                <p>' + "j.topics" + '</p>\
-                <a href="#">View more</a>\
-              </figcaption>\
-            </figure>\
+        $("#event-listing").append('\
+            <div class="event-thirds" data-event-id="' + j.id + '">\
+              <div>\
+                <h1>' + j.name + '</h1>\
+                <h2>' + aTopics + '</h2>\
+                <h5>' + j.date.day + '-' + j.date.month + '-' + j.date.year + '</h5>\
+              </div>\
+            </div>\
           ');
 
-        /* SAMPLE OF event thumb-nail (.effect-milo)
-          <figure class="effect-milo" id="figure1">
-            <img class="featured-company__image" src="https://databricks.com/wp-content/uploads/2016/06/blog-hero@1x.jpg" alt="Spark summit">
-            <figcaption>
-              <h2>Spark Summit  <span> San Francisco, CA </span></h2>
-              <p> Join more than 3,000 Apache Spark engineers, analysts, scientists, and business professionals for three days of in-depth learning and networking.</p>
-              <a href="#">View more</a>
-            </figcaption>
-          </figure>
-        */
+
       });
   }); 
 

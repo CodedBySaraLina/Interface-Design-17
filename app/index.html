@@ -112,23 +112,24 @@
 </div> <!-- END #nav-bar -->
 <!-- START #main-container -->
 <div id="main-container">
-  <!-- START #wdw-search -->
-  <div id="wdw-search">
-    <div class="section-content"> <!-- START .flex-container -->
-      <h1>Discover and learn something new!</h1><!-- Filler crap -->
-      <div class="search-form">
-        <div>
-          <input type="text" name="search-engine" id="search-engine"  placeholder="Search for events by name, city, and topic..">
-          <span><input type="checkbox" name=""value="availability"><p>Only show events with available seating</p></span>
-        </div>
-        <button class="btn-search" id="searchEvents">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div> <!-- END .flex-container -->
-  </div> <!-- END #wdw-search -->
+
   <!-- START #wdw-events -->
-  <div id="wdw-events">
+  <div id="wdw-events" class="wdw">
+    <!-- START #wdw-search -->
+    <div id="wdw-search">
+      <div class="section-content"> <!-- START .flex-container -->
+        <h1>Discover and learn something new!</h1><!-- Filler crap -->
+        <div class="search-form">
+          <div>
+            <input type="text" name="search-engine" id="search-engine"  placeholder="Search for events by name, city, and topic..">
+            <span><input type="checkbox" name=""value="availability"><p>Only show events with available seating</p></span>
+          </div>
+          <button class="btn-search" id="searchEvents">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div> <!-- END .flex-container -->
+    </div> <!-- END #wdw-search -->
     <div id="event-listing">
       <div class="event-thirds">
         <div>
@@ -328,7 +329,7 @@
         </div>
       </div> <!-- END .flex-container -->
     </div> <!-- END #wdw-event-manage-headline -->
-    <table id="event-listing">
+    <table>
       <thead>
       <tr>
         <th>Name</th>
