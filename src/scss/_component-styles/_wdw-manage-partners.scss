@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 #partners-container {
   @extend .navigation-container;
 }
@@ -49,4 +51,53 @@
 
 #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline {
   @extend .section-heading;
+}
+
+.image-tag{
+  width:  300px;
+  height: 200px;
+}
+
+#img-displayed{
+  width:  100px;
+  height: 70px;
+
+}
+
+.loading{
+  display: none;
+}
+
+.upload-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.file-input{
+  display: flex;
+  flex-direction:column;
+  width: auto;
+  background-color: $white;
+  font-weight: bold;
+}
+
+.submit{
+  display: flex;
+  float: left;
+  flex-direction:column;
+  height: 30px;
+  padding: 5px;
+  background-color: $gray;
+  color: $white;
+}
+
+.submit:hover{
+  cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+  cursor:pointer;
+  background-color: $gray !important;
+  color: $white !important;
 }

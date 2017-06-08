@@ -391,7 +391,7 @@
                 <th>Options</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="table-body">
             <!-- PARTNERS DATA -->
             </tbody>
         </table>
@@ -411,7 +411,15 @@
             <input class="partner-input-fields" type="text" name="partner-name" placeholder="Name">
             <input class="partner-input-fields" type="text" name="partner-type" placeholder="Type">
             <textarea class="partner-input-fields" type="text" rows="3" name="partner-descr" placeholder="Description"></textarea>
-            <input class="partner-input-fields" type="text" name="partner-pict" placeholder="Picture source(for now)">
+            <form class="partner-input-fields upload-image" action="" method="post" enctype="multipart/form-data">
+                <div class="image-preview"><img class="image-tag" src="assets/data/images/noimage.png" /></div>
+                <div class="upload-btns">
+                <input class="partner-input-fields file-input" type="file" name="file">
+                <input type="submit" value="Upload" class="submit" />
+                </div>
+                <h4 class='loading' >loading..</h4>
+                <div class="message"></div>
+            </form>
             <div class="btn-container"><button id="partner-save-btn">Save</button><button id="cancel-btn">Cancel</button></div>
         </div> <!--End partners-form-container-->
     </div><!-- END #wdw-edit-partner-container -->
@@ -428,12 +436,14 @@
             <input class="partner-input-fields" type="text" name="partner-add-name" placeholder="Name">
             <input class="partner-input-fields" type="text" name="partner-add-type" placeholder="Type">
             <textarea class="partner-input-fields" type="text" rows="3" name="partner-add-descr" placeholder="Description"></textarea>
-            <form class="partner-input-fields" id="upload-image" action="" method="post" enctype="multipart/form-data">
-                <div id="image-preview"><img id="image-tag" src="assets/data/images/noimage.png" /></div>
-                <input class="partner-input-fields" type="file" name="file" id="file-input">
-                <input type="submit" value="Upload" class="submit" />
-                <h4 id='loading' >loading..</h4>
-                <div id="message"></div>
+            <form class="partner-input-fields upload-image" action="" method="post" enctype="multipart/form-data">
+                <div class="image-preview"><img class="image-tag" src="assets/data/images/noimage.png" /></div>
+                <div class="upload-btns">
+                    <input class="partner-input-fields file-input" type="file" name="file">
+                    <input type="submit" value="Upload" class="submit" />
+                </div>
+                <h4 class="loading">loading..</h4>
+                <div class="message"></div>
             </form>
             <div class="btn-container"><button id="partner-add-now-btn">Add Partner</button><button id="cancel-btn2">Cancel</button></div>
         </div> <!--End partners-form-container-->

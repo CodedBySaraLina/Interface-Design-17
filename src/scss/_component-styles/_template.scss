@@ -26,6 +26,10 @@ button {
   background-color: $gray;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 i:hover {
   color: $white;
   cursor: pointer;

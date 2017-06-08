@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:100,100i");
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:100,100i");
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:100,100i");
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -673,6 +674,9 @@ button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create
 
 button, .section-heading .btn-search, #wdw-search .btn-search, #wdw-event-create-headline .btn-search, #wdw-event-update-headline .btn-search, #wdw-event-manage-headline .btn-search, #wdw-list-partners-headline .btn-search, #wdw-edit-partner-headline .btn-search, #wdw-add-partner-headline .btn-search {
   background-color: #6A6365; }
+
+button:hover, .section-heading .btn-search:hover, #wdw-search .btn-search:hover, #wdw-event-create-headline .btn-search:hover, #wdw-event-update-headline .btn-search:hover, #wdw-event-manage-headline .btn-search:hover, #wdw-list-partners-headline .btn-search:hover, #wdw-edit-partner-headline .btn-search:hover, #wdw-add-partner-headline .btn-search:hover {
+  cursor: pointer; }
 
 i:hover {
   color: #fff;
@@ -1500,6 +1504,17 @@ figure.effect-milo:hover p {
   background-color: orange;
   /* for DEV purposes only */ }
 
+/* COLORS */
+/* STYLE SYSTEM */
+/* golden-ratio */
+/* giant margin */
+/* big margin */
+/* normal margin */
+/* small margin */
+/* tiny margin */
+/* nav height - set height */
+/* based after the classic 960 grid system */
+/* dimensions of btns */
 #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner {
   background-color: deepskyblue; }
 
@@ -1533,3 +1548,50 @@ figure.effect-milo:hover p {
 
 .partners-form-container, #partners-table {
   margin-top: 30px; }
+
+.image-tag {
+  width: 300px;
+  height: 200px; }
+
+#img-displayed {
+  width: 100px;
+  height: 70px; }
+
+.loading {
+  display: none; }
+
+.upload-btns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.file-input {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: auto;
+  background-color: #fff;
+  font-weight: bold; }
+
+.submit {
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 30px;
+  padding: 5px;
+  background-color: #6A6365;
+  color: #fff; }
+
+.submit:hover {
+  cursor: pointer; }
+
+::-webkit-file-upload-button {
+  cursor: pointer;
+  background-color: #6A6365 !important;
+  color: #fff !important; }
