@@ -13,7 +13,7 @@
 (function ($, window, document, undefined) {
   
   'use strict';
-
+//dsdsd
 
 //check if user state == admin or user
 //if false, do this..
@@ -371,7 +371,7 @@
     $(document).find('[data-event-id='+sDataId+']').remove();
   });
 
-//functions
+
 
 //populate data to tables on pageload
   function initPopData() {
@@ -1043,3 +1043,8 @@ function compare(inputVal, dataVal, jObj, jData) {
   
 })(jQuery, window, document);
 
+
+//Nav - members 
+$('#link-members').on('click', function() {
+  hideWindowsAndShowOneWindow('members-container');
+});
