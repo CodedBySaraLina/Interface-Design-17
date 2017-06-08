@@ -692,7 +692,7 @@ a:hover {
   -ms-transform: scale(1.3);
       transform: scale(1.3); }
 
-.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events #event-listing, #loginform, #registerform, .flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves, #wdw-events .event-thirds div, #wdw-events .event-halves div, #wdw-events .event div, .form-container {
+.flex-container, .flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events #home-event-listing, #loginform, #registerform, .flex-child, .section-content, .form-container div, .line-form, .section-heading input[name="search-engine"], #wdw-search input[name="search-engine"], #wdw-event-create-headline input[name="search-engine"], #wdw-event-update-headline input[name="search-engine"], #wdw-event-manage-headline input[name="search-engine"], #wdw-list-partners-headline input[name="search-engine"], #wdw-edit-partner-headline input[name="search-engine"], #wdw-add-partner-headline input[name="search-engine"], #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves, #wdw-events .event-thirds div, #wdw-events .event-halves div, #wdw-events .event div, .form-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -701,7 +701,7 @@ a:hover {
       align-items: center;
   overflow: hidden; }
 
-.flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events #event-listing, #loginform, #registerform {
+.flex-section, .flex-section-column, #wdw-event-create, #wdw-event-update, #wdw-event-manage, #wdw-list-partners, #wdw-edit-partner, #wdw-add-partner, .section-heading, #wdw-search, #wdw-event-create-headline, #wdw-event-update-headline, #wdw-event-manage-headline, #wdw-list-partners-headline, #wdw-edit-partner-headline, #wdw-add-partner-headline, #nav-bar, .box, #wdw-events #home-event-listing, #loginform, #registerform {
   /* default - flex-direction: row; */
   width: 100%;
   height: calc(100vh - 110px); }
@@ -909,7 +909,7 @@ svg:hover path {
   /* position: relative;
 	top: $nav-height; */ }
 
-#wdw-events #event-listing {
+#wdw-events #home-event-listing {
   height: auto; }
 
 #wdw-events .event, #wdw-events .event-thirds, #wdw-events .event-halves {

@@ -21,18 +21,68 @@
     $.getJSON("assets/data/events.json").done( function(jData) {
       console.log(jData);
       //put the jData objects into localStorage
-      jData = JSON.stringify(jData);
-      localStorage.events = jData;
+      sData = JSON.stringify(jData);
+      localStorage.events = sData;
       console.log("localStorage.events successfully populated");
-      //populate data in #event-listing
+
+      var sEvents = localStorage.events;
+      var jEvents = JSON.parse(sEvents);
+
+      jEvents.forEach(function(j) {
+        if (jEvents.indexOf(j) <= 9) {
+          //start
+          console.log("works");
+
+          var aTopics = j.topic;
+
+          $("#home-event-listing").append('\
+              <div class="event-thirds" data-event-id="' + j.id + '">\
+                <div>\
+                  <h1>' + j.name + '</h1>\
+                  <h2>' + aTopics + '</h2>\
+                  <h5>' + j.date.day + '-' + j.date.month + '-' + j.date.year + '</h5>\
+                </div>\
+              </div>\
+          ');
+          //end
+        }
+      });
 
       initPopData(); //populate data in event-management table
     });
   } else if (localStorage.events) {
     //load everything from localstorage and populate the div with data..
     console.log("localStorage.events has data");
+    
+    var sEvents = localStorage.events;
+    var jEvents = JSON.parse(sEvents);
+
+    jEvents.forEach(function(j) {
+      if (jEvents.indexOf(j) <= 9) {
+        //start
+        console.log("works");
+
+        var aTopics = j.topic;
+
+        $("#home-event-listing").append('\
+            <div class="event-thirds" data-event-id="' + j.id + '">\
+              <div>\
+                <h1>' + j.name + '</h1>\
+                <h2>' + aTopics + '</h2>\
+                <h5>' + j.date.day + '-' + j.date.month + '-' + j.date.year + '</h5>\
+              </div>\
+            </div>\
+        ');
+        //end
+      }
+    });
+
     initPopData();
   }
+
+
+
+
 
 //C from CRUD - onClick #save-btn - save data from interface to localStorage
   $("#create-event-btn").on("click", function() {
@@ -314,6 +364,7 @@
   });
 
 //functions
+
 //populate data to tables on pageload
   function initPopData() {
     //since localstorage will always have values,
@@ -874,7 +925,7 @@ function compare(inputVal, dataVal, jObj, jData) {
       console.log(jResultsFinal);
 
       //clear default items from 
-      $("#event-listing").empty();
+      $("#home-event-listing").empty();
 
       var baseNumber = jResultsFinal.length / 3;
       console.log("The base number is: " + baseNumber);
@@ -887,7 +938,7 @@ function compare(inputVal, dataVal, jObj, jData) {
         console.log(j.name);
 
         //get an instance of an event and append it to the DOM..
-        $("#event-listing").append('\
+        $("#home-event-listing").append('\
             <div class="event-thirds" data-event-id="' + j.id + '">\
               <div>\
                 <h1>' + j.name + '</h1>\
